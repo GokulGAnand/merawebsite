@@ -28,7 +28,7 @@ const AccordionBody = (props: AccordionBodyProps) => {
 
 export default function FaqAccordion() {
   return (
-    <div className=' bg-accordionBody mt-12 mb-24  '>
+    <div className=' bg-accordionBody mt-12 mb-24   '>
       {faqs.map((faq) => {
         return (
           <AccordionBody

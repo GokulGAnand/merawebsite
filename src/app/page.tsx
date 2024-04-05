@@ -7,6 +7,7 @@ import GetCarPrice from '@/components/strips/GetCarPrice';
 import { OurServices } from '@/components/strips/OurServices';
 import { CustomerFeedBack } from '@/components/strips/CustomerFeedBack';
 import Faq from '@/components/strips/Faq';
+import { OurSteps } from '@/components/strips/OurSteps';
 
 /**
  * SVGR Support
@@ -29,7 +30,7 @@ export default function HomePage() {
       <section>
         <MainBanner />
         <OurServices />
-        {/* <OurSteps /> */}
+        {/* <OurSteps />  */}
         <GetCarPrice />
         <CustomerFeedBack />
         <Faq />

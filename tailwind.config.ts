@@ -36,6 +36,8 @@ export default {
         dotColor: 'rgba(57, 112, 183, 0.23)',
         accordionBody: 'rgba(242, 242, 242, 0.73)',
         accordionBorder: 'rgba(51, 48, 48, 0.08)',
+        footerColor: '#072646',
+        linkColor: '#53BDE5',
       },
       keyframes: {
         flicker: {
