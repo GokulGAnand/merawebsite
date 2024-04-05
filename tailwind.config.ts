@@ -33,6 +33,9 @@ export default {
         serviceCardBorder: '#E5F4F2',
         serviceCardShadowColor: 'rgba(51, 102, 255, 0.05)',
         ctaBannerBlue: '#2B6FB7',
+        dotColor: 'rgba(57, 112, 183, 0.23)',
+        accordionBody: 'rgba(242, 242, 242, 0.73)',
+        accordionBorder: 'rgba(51, 48, 48, 0.08)',
       },
       keyframes: {
         flicker: {

@@ -5,6 +5,8 @@ import '@/lib/env';
 import { MainBanner } from '@/components/banner/MainBanner';
 import GetCarPrice from '@/components/strips/GetCarPrice';
 import { OurServices } from '@/components/strips/OurServices';
+import { CustomerFeedBack } from '@/components/strips/CustomerFeedBack';
+import Faq from '@/components/strips/Faq';
 
 /**
  * SVGR Support
@@ -29,6 +31,8 @@ export default function HomePage() {
         <OurServices />
         {/* <OurSteps /> */}
         <GetCarPrice />
+        <CustomerFeedBack />
+        <Faq />
       </section>
     </main>
   );
