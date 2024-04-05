@@ -13,6 +13,17 @@ const nextConfig = {
   //     'res.cloudinary.com',
   //   ],
   // },
+  experimental: {
+    turbo: {
+      rules: {
+        '*.svg': {
+          loaders: ['@svgr/webpack'],
+
+          as: '*.tsx',
+        },
+      },
+    },
+  },
 
   webpack(config) {
     // Grab the existing rule that handles SVG imports

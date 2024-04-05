@@ -1,9 +1,12 @@
 import { Metadata } from 'next';
+import { DM_Sans } from 'next/font/google';
 import * as React from 'react';
 
 import '@/styles/globals.css';
 // !STARTERCONF This is for demo purposes, remove @/styles/colors.css import immediately
 import '@/styles/colors.css';
+
+import { Header } from '@/components/header/Header';
 
 import { siteConfig } from '@/constant/config';
 
@@ -49,14 +52,23 @@ export const metadata: Metadata = {
   // ],
 };
 
+const DMSANS = DM_Sans({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-dm-sans',
+});
+
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <html>
-      <body>{children}</body>
+    <html lang='en' className={`${DMSANS.variable} font-sans`}>
+      <body>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }

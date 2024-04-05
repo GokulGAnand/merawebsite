@@ -6,7 +6,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        primary: ['Inter', ...defaultTheme.fontFamily.sans],
+        primary: ['var(--font-dm-sans)', ...defaultTheme.fontFamily.sans],
       },
       colors: {
         primary: {
@@ -24,6 +24,15 @@ export default {
           950: 'rgb(var(--tw-color-primary-950) / <alpha-value>)',
         },
         dark: '#222222',
+        headerLinkColor: '#2D2D2D',
+        bannerChipColor: '#E8F0F8',
+        bannerChipText: '#2A71BD',
+        whiteButtonText: '#3970B7',
+        stripBlueColor: '#F4FCFF',
+        subHeadingColor: '#64676C',
+        serviceCardBorder: '#E5F4F2',
+        serviceCardShadowColor: 'rgba(51, 102, 255, 0.05)',
+        ctaBannerBlue: '#2B6FB7',
       },
       keyframes: {
         flicker: {
