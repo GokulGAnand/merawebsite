@@ -6,8 +6,8 @@ export default function OurStepsHead() {
     <div className='flex flex-col justify-center items-center px-40 gap-2 '>
       <div className=' text-3xl font-bold leading-10 flex flex-col  items-start align-middle gap-1 '>
         <div>
-          <div className=' -mr-4 flex justify-end'>
-            <MeraVectorBlue width={70} heigth={70} />
+          <div className=' flex justify-end'>
+            <MeraVectorBlue width={50} heigth={11} />
           </div>
           <div className='flex'>Ready. Set. Sold</div>
         </div>

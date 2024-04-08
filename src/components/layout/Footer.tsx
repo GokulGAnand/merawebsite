@@ -15,7 +15,7 @@ function Footer() {
         <div className='w-1/3 flex flex-col align-middle items-center'>
           <UsefulLinks />
         </div>
-        <div className='w-1/3 flex flex-col items-end'>
+        <div className='w-1/3 flex flex-col align-middle items-end'>
           <ShowroomLinks />
         </div>
       </div>

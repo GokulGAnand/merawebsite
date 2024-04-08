@@ -33,7 +33,7 @@ export default function GetCarPrice() {
           <div>
             <Button
               variant='light'
-              className='font-bold px-4 py-4 rounded-lg  '
+              className='font-bold text-center flex justify-center rounded-lg min-w-48 min-h-16  '
               rightIcon={GrFormNextLink}
             >
               Get Car Price

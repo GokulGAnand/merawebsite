@@ -8,7 +8,7 @@ import HeaderLinks from '@/components/links/HeaderLinks';
 
 export const Header = () => {
   return (
-    <div className='h-20 w-full flex flex-wrap justify-between align-middle place-items-center px-4 xl:px-40'>
+    <div className='h-20 w-full flex flex-wrap justify-between align-middle place-items-center px-4 xl:px-40 shadow-md '>
       <div className='flex align-middle place-items-center   gap-8'>
         <Link href='/'>
           <div className='cursor-pointer '>
