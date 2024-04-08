@@ -20,7 +20,9 @@ export default function TestimonialCard(props: TestimonialProps) {
         </div>
       </div>
       <div className='text-lg font-medium leading-normal'>{customer}</div>
-      <div>{comments} </div>
+      <div className='font-normal leading-5 text-ellipsis text-sm'>
+        {comments}{' '}
+      </div>
     </div>
   );
 }
