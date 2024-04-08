@@ -26,5 +26,5 @@ export default function StarRating({ rating }: { rating: number }) {
         ))}
       </div>
     );
-  }
+  } else <></>;
 }
