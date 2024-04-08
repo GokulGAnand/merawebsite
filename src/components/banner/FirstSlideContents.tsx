@@ -25,15 +25,6 @@ export const FirstSlideContents = () => {
               </div>
             </div>
           </div>
-          {/* <div className='flex text-5xl align-middle items-center gap-2 '>
-            <h1 className=' text-5xl'>Selling Your </h1>
-            <span className='-mt-3'>
-              <div className='px-2'>
-                <MeraVector width={70} heigth={70} />
-              </div>
-              <h1 className='text-5xl'> {'  '}Car?</h1>
-            </span>{' '}
-          </div> */}
           <div>
             <h1 className=' text-5xl'>We are Buying!</h1>
           </div>
