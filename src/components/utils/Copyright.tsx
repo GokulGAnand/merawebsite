@@ -10,7 +10,7 @@ export default function Copyright() {
       <div className='flex gap-2 text-md '>
         <div>Copyright © {year} MeraCars, brought to you by </div>
         <div>
-          <TeamTech />
+          <TeamTech width={148} height={28} />
         </div>
       </div>
       <div className='flex gap-2'>

@@ -6,7 +6,7 @@ export default function BrandLinks() {
   return (
     <>
       <div>
-        <FooterLogo />
+        <FooterLogo width={142} height={48} />
       </div>
       <div className='text-sm font-normal leading-8'>
         Mera Cars is the most trusted way of buying and selling used cars.

@@ -1,11 +1,9 @@
 import { LucideMoveRight } from 'lucide-react';
 import React from 'react';
-
 import Button from '@/components/buttons/Button';
-
-import CarPriceBanner from '~/svg/CarPriceBanner.svg';
 import CarBanner from '~/images/ToyCarBanner.png';
 import Image from 'next/image';
+import { GrFormNextLink } from 'react-icons/gr';
 
 export default function GetCarPrice() {
   return (
@@ -36,7 +34,7 @@ export default function GetCarPrice() {
             <Button
               variant='light'
               className='font-bold px-4 py-4 rounded-lg  '
-              rightIcon={LucideMoveRight}
+              rightIcon={GrFormNextLink}
             >
               Get Car Price
             </Button>

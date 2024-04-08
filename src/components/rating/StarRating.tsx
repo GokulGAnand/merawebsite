@@ -8,9 +8,15 @@ export default function StarRating({ rating }: { rating: number }) {
   const halfStars = rating % 1 ? 1 : 0;
   const emptyStars = 5 - fullStars - halfStars;
 
-  const fullStarsArray = Array(fullStars).fill(<FullStar />);
-  const halfStarsArray = halfStars ? [<HalfStar key={''} />] : [];
-  const emptyStarsArray = Array(emptyStars).fill(<EmptyStar />);
+  const fullStarsArray = Array(fullStars).fill(
+    <FullStar width={24} height={24} />
+  );
+  const halfStarsArray = halfStars
+    ? [<HalfStar key={''} width={24} height={24} />]
+    : [];
+  const emptyStarsArray = Array(emptyStars).fill(
+    <EmptyStar width={24} height={24} />
+  );
 
   return (
     <div style={{ display: 'flex' }}>

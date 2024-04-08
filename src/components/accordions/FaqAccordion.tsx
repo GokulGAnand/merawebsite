@@ -17,7 +17,11 @@ const AccordionBody = (props: AccordionBodyProps) => {
       <div className='flex cursor-pointer items-center justify-between'>
         <span className=' font-medium text-md leading-4'>{question}</span>
 
-        <ChevronDown className=' transition-all duration-500 group-focus:-rotate-180' />
+        <ChevronDown
+          height={9}
+          width={17}
+          className=' transition-all duration-500 group-focus:-rotate-180'
+        />
       </div>
       <div className=' w-2/3 text-sm font-normal leading-5 invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000 group-focus:pt-5'>
         {answer}

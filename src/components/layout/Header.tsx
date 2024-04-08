@@ -12,7 +12,7 @@ export const Header = () => {
       <div className='flex align-middle place-items-center   gap-8'>
         <Link href='/'>
           <div className='cursor-pointer '>
-            <Logo className='w-36 h-8' />
+            <Logo width={144} height={32} className='w-36 h-8' />
           </div>
         </Link>
 
