@@ -7,6 +7,7 @@ import '@/styles/globals.css';
 import '@/styles/colors.css';
 
 import { Header } from '@/components/layout/Header';
+import { ThemeModeScript } from 'flowbite-react';
 
 import { siteConfig } from '@/constant/config';
 import Footer from '@/components/layout/Footer';
@@ -66,6 +67,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en' className={`${DMSANS.variable} font-sans`}>
+      <head>
+        <ThemeModeScript />
+      </head>
       <body>
         <Header />
         {children}

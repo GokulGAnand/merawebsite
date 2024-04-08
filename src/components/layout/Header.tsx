@@ -1,33 +1,10 @@
-'use client';
 import Link from 'next/link';
 import React from 'react';
 
 import Button from '@/components/buttons/Button';
 
 import Logo from '~/images/logoHeader.svg';
-
-const headerLinks = [
-  {
-    label: 'Home',
-    route: '/',
-  },
-  {
-    label: 'Sell Your Car',
-    route: '/sell',
-  },
-  {
-    label: 'MeraPartners',
-    route: '/',
-  },
-  {
-    label: 'Car Inspection',
-    route: '/',
-  },
-  {
-    label: 'More',
-    route: '/',
-  },
-];
+import HeaderLinks from '@/components/links/HeaderLinks';
 
 export const Header = () => {
   return (
@@ -39,20 +16,7 @@ export const Header = () => {
           </div>
         </Link>
 
-        <div className='hidden lg:flex lg:flex-grow  gap-3'>
-          {headerLinks.map((option) => {
-            return (
-              <div
-                key={option.label}
-                className='xl:px-5 flex text-headerLinkColor '
-              >
-                <Link className='text-lg' href={option.route}>
-                  {option.label}
-                </Link>
-              </div>
-            );
-          })}
-        </div>
+        <HeaderLinks />
       </div>
       <div className='flex '>
         <Button

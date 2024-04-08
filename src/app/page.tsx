@@ -30,7 +30,7 @@ export default function HomePage() {
       <section>
         <MainBanner />
         <OurServices />
-        {/* <OurSteps />  */}
+        <OurSteps />
         <GetCarPrice />
         <CustomerFeedBack />
         <Faq />

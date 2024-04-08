@@ -8,23 +8,23 @@ import {
 
 export const socials = [
   {
-    icon: <RiFacebookFill width={11} height={19} />,
+    icon: <RiFacebookFill fontSize={19} />,
     link: 'www.facebook.com',
   },
   {
-    icon: <RiTwitterFill width={19} height={15} />,
+    icon: <RiTwitterFill fontSize={19} />,
     link: 'www.twitter.com',
   },
   {
-    icon: <RiInstagramFill />,
+    icon: <RiInstagramFill fontSize={19} />,
     link: 'www.instagram.com',
   },
   {
-    icon: <RiLinkedinFill />,
+    icon: <RiLinkedinFill fontSize={19} />,
     link: 'www.linkedin.com',
   },
   {
-    icon: <RiYoutubeFill />,
+    icon: <RiYoutubeFill fontSize={19} />,
     link: 'www.youtube.com',
   },
 ];

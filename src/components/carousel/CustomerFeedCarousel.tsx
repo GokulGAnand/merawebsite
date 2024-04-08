@@ -29,8 +29,8 @@ export default function CustomerFeedCarousel() {
           <button
             key={index}
             type='button'
-            className={`bg-${
-              index === activeSlide ? 'whiteButtonText' : 'dotColor'
+            className={`bg-whiteButtonText opacity-${
+              index === activeSlide ? '100' : '20'
             } w-2 h-2 rounded-full`}
             aria-current={index === activeSlide}
             aria-label={`Slide ${index + 1}`}

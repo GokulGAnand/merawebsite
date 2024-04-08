@@ -1,8 +1,9 @@
 import type { Config } from 'tailwindcss';
 import defaultTheme from 'tailwindcss/defaultTheme';
+import flowbite from 'flowbite-react/tailwind';
 
 export default {
-  content: ['./src/**/*.{js,jsx,ts,tsx}'],
+  content: ['./src/**/*.{js,jsx,ts,tsx}', flowbite.content()],
   theme: {
     extend: {
       fontFamily: {
@@ -66,5 +67,5 @@ export default {
       },
     },
   },
-  plugins: [require('@tailwindcss/forms')],
+  plugins: [require('@tailwindcss/forms'), flowbite.plugin()],
 } satisfies Config;
