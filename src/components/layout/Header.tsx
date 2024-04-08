@@ -31,7 +31,7 @@ const headerLinks = [
 
 export const Header = () => {
   return (
-    <div className='h-20 flex justify-between align-middle place-items-center px-40'>
+    <div className='h-20 w-full flex flex-wrap justify-between align-middle place-items-center px-4 xl:px-40'>
       <div className='flex align-middle place-items-center   gap-8'>
         <Link href='/'>
           <div className='cursor-pointer '>
@@ -39,17 +39,22 @@ export const Header = () => {
           </div>
         </Link>
 
-        <div className='flex gap-3'>
+        <div className='hidden lg:flex lg:flex-grow  gap-3'>
           {headerLinks.map((option) => {
             return (
-              <div key={option.label} className='px-5 text-headerLinkColor '>
-                <Link href={option.route}>{option.label}</Link>
+              <div
+                key={option.label}
+                className='xl:px-5 flex text-headerLinkColor '
+              >
+                <Link className='text-lg' href={option.route}>
+                  {option.label}
+                </Link>
               </div>
             );
           })}
         </div>
       </div>
-      <div>
+      <div className='flex '>
         <Button
           variant='primary'
           className=' rounded-lg font-semibold py-3 px-6 text-center'

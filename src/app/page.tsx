@@ -23,7 +23,7 @@ import { OurSteps } from '@/components/strips/OurSteps';
 
 export default function HomePage() {
   return (
-    <main>
+    <main className='w-full'>
       <Head>
         <title>MeraCars - Home</title>
       </Head>

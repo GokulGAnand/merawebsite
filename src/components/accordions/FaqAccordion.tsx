@@ -11,7 +11,7 @@ const AccordionBody = (props: AccordionBodyProps) => {
   const { answer, question, tabIndex } = props;
   return (
     <div
-      className='group flex flex-col gap-1   p-5 border-accordionBorder  border border-t-1 border-b-1 border-l-0 border-r-0 '
+      className='group flex flex-col gap-1  cursor-pointer  p-5 border-accordionBorder  border border-t-1 border-b-1 border-l-0 border-r-0 '
       tabIndex={tabIndex}
     >
       <div className='flex cursor-pointer items-center justify-between'>

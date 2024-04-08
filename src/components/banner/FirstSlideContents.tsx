@@ -15,7 +15,17 @@ export const FirstSlideContents = () => {
           </ul>
         </div>
         <div className=' text-white flex flex-col gap-4 mt-12'>
-          <div className='flex text-5xl align-middle items-center gap-2 '>
+          <div className='flex flex-col gap-2 '>
+            <div className=' text-5xl font-bold leading-10 flex flex-col  items-start  gap-1 '>
+              <div>
+                <div className=' mr-6 pb-1 flex justify-end'>
+                  <MeraVector width={70} heigth={70} />
+                </div>
+                <div className='flex'>Selling Your Car?</div>
+              </div>
+            </div>
+          </div>
+          {/* <div className='flex text-5xl align-middle items-center gap-2 '>
             <h1 className=' text-5xl'>Selling Your </h1>
             <span className='-mt-3'>
               <div className='px-2'>
@@ -23,7 +33,7 @@ export const FirstSlideContents = () => {
               </div>
               <h1 className='text-5xl'> {'  '}Car?</h1>
             </span>{' '}
-          </div>
+          </div> */}
           <div>
             <h1 className=' text-5xl'>We are Buying!</h1>
           </div>

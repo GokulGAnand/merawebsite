@@ -6,10 +6,10 @@ import Button from '@/components/buttons/Button';
 import CarPriceBanner from '~/svg/CarPriceBanner.svg';
 export default function GetCarPrice() {
   return (
-    <div className='bg-ctaBannerBlue w-full  h-[465px] '>
+    <div className='bg-ctaBannerBlue w-full h-max  xl:h-[465px] '>
       <div className='py-24 relative  flex h-full'>
-        <div className='w-full  flex-shrink-0 relative h-full '>
-          <CarPriceBanner className=' object-cover w-full ' />
+        <div className='w-full flex flex-1 aspect-square absolute inset-0   flex-shrink-0  h-full '>
+          <CarPriceBanner className=' object-cover max-h-full w-full ' />
         </div>
         <div className='flex flex-col justify-center gap-5 absolute top-0 px-40 py-24 '>
           <ul className='list-none text-white font-bold text-md leading-5'>
