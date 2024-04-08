@@ -1,6 +1,6 @@
 import type { Config } from 'tailwindcss';
 import defaultTheme from 'tailwindcss/defaultTheme';
-import flowbite from 'flowbite-react/tailwind';
+import flowbite from 'flowbite/plugin';
 
 export default {
   content: ['./src/**/*.{js,jsx,ts,tsx}', flowbite.content()],
