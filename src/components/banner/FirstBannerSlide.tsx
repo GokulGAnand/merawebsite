@@ -4,8 +4,8 @@ import CarBanner from '~/images/CarBanner.png';
 
 export const FirstBannerSlide = () => {
   return (
-    <div className='relative  w-full z-0 '>
-      <div className='w-full flex flex-1 h-full  aspect-square absolute inset-0  '>
+    <div className='relative  w-full z-0 rounded-none  '>
+      <div className='w-full flex flex-1 h-full  aspect-square absolute inset-0 rounded-none  '>
         <Image
           src={CarBanner}
           className='w-full h-full object-cover'

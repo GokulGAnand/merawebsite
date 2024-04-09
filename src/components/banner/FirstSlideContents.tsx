@@ -14,7 +14,7 @@ export const FirstSlideContents = () => {
             </li>
           </ul>
         </div>
-        <div className=' text-white flex flex-col gap-4 mt-12'>
+        <div className=' text-white flex flex-col gap-4 mt-6'>
           <div className='flex flex-col gap-2 '>
             <div className=' text-5xl font-bold leading-10 flex flex-col  items-start  gap-1 '>
               <div>

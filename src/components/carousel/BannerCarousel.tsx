@@ -10,7 +10,7 @@ const chevronStyles = {
 
 const BannerCarousel = () => {
   return (
-    <div className='h-full w-screen'>
+    <div className='h-full  '>
       <Carousel
         leftControl={<HiChevronLeft {...chevronStyles} />}
         rightControl={<HiChevronRight {...chevronStyles} />}
