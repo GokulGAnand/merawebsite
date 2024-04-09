@@ -1,21 +1,14 @@
-import { LucideMoveRight } from 'lucide-react';
 import React from 'react';
 import Button from '@/components/buttons/Button';
-import CarBanner from '~/images/ToyCarBanner.png';
-import Image from 'next/image';
 import { GrFormNextLink } from 'react-icons/gr';
+import ToyCarBanner from '~/svg/ToyCarBanner.svg';
 
 export default function GetCarPrice() {
   return (
-    <div className='bg-ctaBannerBlue w-full h-max  xl:h-[465px] '>
-      <div className='py-24 relative  flex h-full'>
-        <div className='w-full flex flex-1 aspect-square absolute inset-0   flex-shrink-0  h-full '>
-          {/* <CarPriceBanner className=' object-cover max-h-full w-full ' /> */}
-          <Image
-            src={CarBanner}
-            className='object-cover'
-            alt='Get Price Banner'
-          />
+    <div className='bg-ctaBannerBlue w-full h-max  xl:h-[465px] flex  '>
+      <div className='relative  flex h-full w-full'>
+        <div className=' flex flex-1  h-full w-full  '>
+          <ToyCarBanner className={'object-cover'} />
         </div>
         <div className='flex flex-col justify-center gap-5 absolute top-0 px-40 py-24 '>
           <ul className='list-none text-white font-bold text-md leading-5'>
