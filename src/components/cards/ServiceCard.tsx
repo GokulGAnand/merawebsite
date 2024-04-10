@@ -32,7 +32,7 @@ export default function ServiceCard(props: Props) {
           <div className='text-xl font-bold'>{heading}</div>
         </div>
       </div>
-      <div className='max-w-96 px-4 pt-3 pb-7 text-sm leading-normal font-medium '>
+      <div className='max-w-96 px-4 pt-3 pb-7 text-sm text-headerLinkColor leading-normal font-medium '>
         {subHeading}
       </div>
     </div>
