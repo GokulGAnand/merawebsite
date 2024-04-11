@@ -4,7 +4,7 @@ import React from 'react';
 
 export default function FaqContent() {
   return (
-    <div className='flex flex-col justify-center px-40 gap-2 '>
+    <div className='flex flex-col justify-center w-[90%] lg:w-[88%] xl:w-[85%] gap-2 '>
       <FaqHead />
       <FaqAccordion />
     </div>

@@ -33,7 +33,7 @@ export default function HomePage() {
         <OurSteps />
         <GetCarPrice />
         <CustomerFeedBack />
-        {/* <Faq /> */}
+        <Faq />
       </section>
     </main>
   );

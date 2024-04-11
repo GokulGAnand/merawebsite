@@ -4,12 +4,14 @@ import MeraVectorBlue from '~/svg/MeraCarsBlueVector.svg';
 export default function FaqHead() {
   return (
     <>
-      <div className=' text-3xl font-bold leading-10 flex flex-col  items-start align-middle gap-1 '>
+      <div className=' text-3xl font-bold leading-10 flex flex-col text-center  items-start align-middle gap-1 '>
         <div>
           <div className=' flex justify-end'>
             <MeraVectorBlue width={50} heigth={11} />
           </div>
-          <div className='flex'>Frequently Asked Questions</div>
+          <div className='text-2xl lg:text-3xl flex'>
+            Frequently Asked Questions
+          </div>
         </div>
       </div>
       <div className='text-subHeadingColor leading-6 text-lg '>

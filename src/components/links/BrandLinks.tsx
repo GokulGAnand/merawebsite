@@ -14,7 +14,7 @@ export default function BrandLinks() {
         online and book a test drive at your home or at a Meracars Car Hub near
         you.{' '}
       </div>
-      <div>
+      <div className='hidden lg:flex'>
         <Socials />
       </div>
     </>
