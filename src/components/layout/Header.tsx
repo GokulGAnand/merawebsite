@@ -17,7 +17,6 @@ export const Header = () => {
                 <Logo width={144} height={32} className='w-36 h-8' />
               </div>
             </Link>
-
             <HeaderLinks />
           </div>
           <div className='hidden lg:flex '>

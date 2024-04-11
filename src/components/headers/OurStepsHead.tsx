@@ -9,7 +9,7 @@ export default function OurStepsHead() {
           <div className=' flex justify-end'>
             <MeraVectorBlue width={50} heigth={11} />
           </div>
-          <div className='flex'>Ready. Set. Sold</div>
+          <div className='flex text-stepsText'>Ready. Set. Sold</div>
         </div>
       </div>
       <div className='flex align-middle justify-center text-center text-subHeadingColor leading-6 text-lg '>

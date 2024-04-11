@@ -19,7 +19,9 @@ export default function TestimonialCard(props: TestimonialProps) {
           <StarRating rating={rating} />
         </div>
       </div>
-      <div className='text-lg font-medium leading-normal'>{customer}</div>
+      <div className='text-lg text-headerLinkColor font-medium leading-normal'>
+        {customer}
+      </div>
       <div className='font-normal text-headerLinkColor leading-5 text-ellipsis text-sm'>
         {comments}{' '}
       </div>

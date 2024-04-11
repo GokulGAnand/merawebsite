@@ -9,7 +9,7 @@ function CustomerFeedbackHead() {
           <div className=' flex justify-end'>
             <MeraVectorBlue width={50} heigth={11} />
           </div>
-          <div className='flex text-center lg:text-3xl text-2xl '>
+          <div className='flex text-center lg:text-3xl text-2xl text-stepsText '>
             Our Customer Feedback
           </div>
         </div>

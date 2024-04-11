@@ -31,7 +31,9 @@ export default function ServiceCard(props: Props) {
               <p className='text-white  -mt-4 text-xs'>STEP {index}</p>
             </div>
           </div>
-          <div className='text-xl font-bold'>{heading}</div>
+          <div className='text-xl font-bold text-headerLinkColor'>
+            {heading}
+          </div>
         </div>
       </div>
       <div className=' px-[3.5%] flex pt-3 pb-7 text-sm text-headerLinkColor leading-normal font-medium '>

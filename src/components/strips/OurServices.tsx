@@ -28,7 +28,7 @@ export const OurServices = () => {
           return (
             <div
               key={service.heading}
-              className='flex gap-4 align-middle place-items-center'
+              className='flex gap-4 align-middle place-items-center text-serviceText'
             >
               <div className='flex align-middle '>
                 <div className='p-2.5 bg-[#CCE5FD] rounded-xl'>

@@ -8,7 +8,7 @@ export default function Copyright() {
   return (
     <div className='flex flex-col lg:flex-row w-full justify-between '>
       <div className='flex gap-2 text-md justify-start align-middle items-center '>
-        <div className='text-[11px] lg:text-sm lg:text-center lg:align-middle flex lg:items-center text-center  flex '>
+        <div className='text-[11px]  lg:text-sm lg:text-center lg:align-middle flex lg:items-center text-center text-copyRightText '>
           Copyright © {year} MeraCars, brought to you by{' '}
         </div>
         <div>
@@ -16,7 +16,7 @@ export default function Copyright() {
         </div>
       </div>
       <div className='lg:flex hidden gap-2 '>
-        <div className=''>All Right Reserved </div>
+        <div className='text-copyRightText'>All Right Reserved </div>
         {' | '}
         <Link className='text-linkColor' href={'/'}>
           Terms and Condition

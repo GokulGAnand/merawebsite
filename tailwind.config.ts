@@ -43,6 +43,9 @@ export default {
         accordionBorder: 'rgba(51, 48, 48, 0.08)',
         footerColor: '#072646',
         linkColor: '#53BDE5',
+        serviceText: '#191825',
+        stepsText: '#0B2C4D',
+        copyRightText: '#E0E0E0',
       },
       keyframes: {
         flicker: {

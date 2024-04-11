@@ -15,7 +15,9 @@ const AccordionBody = (props: AccordionBodyProps) => {
       tabIndex={tabIndex}
     >
       <div className='flex cursor-pointer items-center justify-between'>
-        <span className=' font-medium text-md leading-4'>{question}</span>
+        <span className=' font-medium text-headerLinkColor text-md leading-4'>
+          {question}
+        </span>
 
         <ChevronDown
           height={9}
