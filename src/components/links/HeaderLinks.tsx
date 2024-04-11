@@ -7,7 +7,7 @@ import React from 'react';
 export default function HeaderLinks() {
   const path = usePathname();
   return (
-    <div className='hidden lg:flex lg:flex-grow  gap-3'>
+    <div className='hidden lg:flex gap-[1vw]'>
       {headerLinks.map((option) => {
         const isActive = option.route === path;
         return (

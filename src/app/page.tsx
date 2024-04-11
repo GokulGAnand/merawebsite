@@ -23,7 +23,7 @@ import { OurSteps } from '@/components/strips/OurSteps';
 
 export default function HomePage() {
   return (
-    <main className='w-full'>
+    <main className=' overflow-x-scroll'>
       <Head>
         <title>MeraCars - Home</title>
       </Head>
@@ -31,9 +31,9 @@ export default function HomePage() {
         <MainBanner />
         <OurServices />
         <OurSteps />
-        <GetCarPrice />
+        {/* <GetCarPrice />
         <CustomerFeedBack />
-        <Faq />
+        <Faq /> */}
       </section>
     </main>
   );

@@ -3,9 +3,9 @@ import React from 'react';
 
 export default function UsefulLinks() {
   return (
-    <div className='mt-8'>
+    <div className='mt-8 w-full flex flex-col'>
       <div className=' text-md font-bold leading-6 '>Useful Links </div>
-      <div className='grid grid-cols-2 grid-rows-5 gap-6 mt-4 '>
+      <div className='grid grid-cols-4 lg:grid lg:grid-cols-2 lg:grid-rows-5 lg:gap-6 gap-3 mt-4 w-full '>
         <Link className='text-sm' href='/'>
           About
         </Link>

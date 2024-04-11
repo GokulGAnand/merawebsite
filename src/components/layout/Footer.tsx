@@ -7,23 +7,25 @@ import React from 'react';
 
 function Footer() {
   return (
-    <div className='bg-footerColor text-white w-full '>
-      <div className=' flex justify-between px-40 pt-20 min-w-full'>
-        <div className='w-1/3 flex flex-col gap-5 '>
-          <BrandLinks />
+    <div className='bg-footerColor text-white w-full flex justify-center '>
+      <div className='w-[90%] lg:w-[88%] xl:w-[85%]'>
+        <div className='grid gap-9 lg:grid-flow-col lg:grid-cols-3 justify-between pt-20 min-w-full'>
+          <div className=' flex flex-col gap-5 '>
+            <BrandLinks />
+          </div>
+          <div className=' flex flex-col align-middle items-start lg:items-center'>
+            <UsefulLinks />
+          </div>
+          <div className='flex flex-col align-middle items-end'>
+            <ShowroomLinks />
+          </div>
         </div>
-        <div className='w-1/3 flex flex-col align-middle items-center'>
-          <UsefulLinks />
+        <div className='pt-12 flex justify-center w-full'>
+          <Divider />
         </div>
-        <div className='w-1/3 flex flex-col align-middle items-end'>
-          <ShowroomLinks />
+        <div className='py-6 '>
+          <Copyright />
         </div>
-      </div>
-      <div className='pt-12'>
-        <Divider />
-      </div>
-      <div className='py-6 '>
-        <Copyright />
       </div>
     </div>
   );

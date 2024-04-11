@@ -4,8 +4,8 @@ import MeraVector from '~/svg/MeraCarsVector.svg';
 
 export const FirstSlideContents = () => {
   return (
-    <div>
-      <div className='px-40 py-24'>
+    <div className='w-full flex justify-center '>
+      <div className='w-[90%] lg:w-[88%] xl:w-[85%] py-24 flex flex-col justify-center'>
         <div className='bg-bannerChipColor h-9 rounded-3xl flex align-middle justify-center place-items-center max-w-xs '>
           <ul className='list-none'>
             <li className='flex items-center text-md font-bold text-bannerChipText'>
@@ -16,7 +16,7 @@ export const FirstSlideContents = () => {
         </div>
         <div className=' text-white flex flex-col gap-4 mt-6'>
           <div className='flex flex-col gap-2 '>
-            <div className=' text-5xl font-bold leading-10 flex flex-col  items-start  gap-1 '>
+            <div className='text-4xl lg:text-5xl font-bold leading-10 flex flex-col  items-start  gap-1 '>
               <div>
                 <div className=' mr-6 pb-1 flex justify-end'>
                   <MeraVector width={70} heigth={70} />
@@ -26,7 +26,7 @@ export const FirstSlideContents = () => {
             </div>
           </div>
           <div>
-            <h1 className=' text-5xl'>We are Buying!</h1>
+            <h1 className='text-4xl lg:text-5xl'>We are Buying!</h1>
           </div>
         </div>
         <div className=' max-w-xl text-white mt-8 text-lg'>
@@ -39,13 +39,13 @@ export const FirstSlideContents = () => {
         <div className='flex gap-3 mt-8'>
           <Button
             variant='primary'
-            className='font-bold min-w-48 min-h-16 justify-center rounded-xl'
+            className='font-bold min-w-40 lg:min-w-48 min-h-16 justify-center rounded-xl'
           >
             Sell Your Car
           </Button>
           <Button
             variant='light'
-            className='font-bold min-w-48 min-h-16 justify-center rounded-xl'
+            className='font-bold min-w-40 lg:min-w-48 min-h-16 justify-center rounded-xl'
           >
             Contact Us
           </Button>

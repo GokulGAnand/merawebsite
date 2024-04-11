@@ -14,7 +14,7 @@ export const FirstBannerSlide = () => {
         />
       </div>
 
-      <div className='relative h-full flex z-10  '>
+      <div className='relative h-full flex z-10 w-full  '>
         <FirstSlideContents />
       </div>
     </div>

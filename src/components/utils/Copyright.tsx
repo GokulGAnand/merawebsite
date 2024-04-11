@@ -6,7 +6,7 @@ export default function Copyright() {
   const day = new Date();
   const year = day.getFullYear();
   return (
-    <div className='flex justify-between px-40'>
+    <div className='flex flex-col lg:flex-row w-full justify-between '>
       <div className='flex gap-2 text-md '>
         <div>Copyright © {year} MeraCars, brought to you by </div>
         <div>

@@ -9,6 +9,10 @@ export default {
       fontFamily: {
         primary: ['var(--font-dm-sans)', ...defaultTheme.fontFamily.sans],
       },
+      backgroundImage: {
+        'car-in-hand': "url('/svg/ToyCarBanner.svg')",
+        'main-banner': "url('/images/CarBanner.png')",
+      },
       colors: {
         primary: {
           // Customize it on globals.css :root

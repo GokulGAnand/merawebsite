@@ -22,8 +22,8 @@ const services = [
 
 export const OurServices = () => {
   return (
-    <div className=''>
-      <div className='bg-stripBlueColor py-8  px-40 grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-3  '>
+    <div className='w-full flex justify-center bg-stripBlueColor'>
+      <div className=' py-8 w-[90%] lg:w-[88%] xl:w-[85%] justify-center  grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-3  '>
         {services.map((service) => {
           return (
             <div
