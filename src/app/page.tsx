@@ -29,9 +29,9 @@ export default function HomePage() {
       </Head>
       <section>
         <MainBanner />
-        {/* <OurServices />
-        <OurSteps /> */}
-        {/* <GetCarPrice /> */}
+        <OurServices />
+        <OurSteps />
+        <GetCarPrice />
         <CustomerFeedBack />
         {/* <Faq /> */}
       </section>

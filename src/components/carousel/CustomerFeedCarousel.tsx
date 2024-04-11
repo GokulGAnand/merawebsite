@@ -1,20 +1,22 @@
 'use client';
 import TestimonialCard from '@/components/cards/TestimonialCard';
 import { testimonials } from '@/data/testimonials';
-import React, { useState } from 'react';
 
-export default function CustomerFeedCarousel() {
-  const [activeSlide, setActiveSlide] = useState(0);
-
-  const handleSlideChange = (slideIndex: number) => {
-    setActiveSlide(slideIndex);
-  };
+export default function CustomerFeedCarousel({
+  carouselNumber,
+  slides,
+}: {
+  carouselNumber: number;
+  slides: number;
+}) {
+  const start = slides * carouselNumber;
+  const end = start + slides;
+  console.log(start, end, 'startEnd');
   return (
-    <div className='flex flex-col justify-center items-center px-40'>
-      <div className='flex  gap-7 mt-16 mb-8  justify-center'>
-        {testimonials
-          .slice(activeSlide * 3, activeSlide * 3 + 3)
-          .map((item) => (
+    <>
+      <div className=' flex flex-col justify-center items-center mb-8   '>
+        <div className='flex  gap-7 mt-16 mb-8 w-[90%] lg:w-[88%] xl:w-[85%]  justify-center'>
+          {testimonials.slice(start, end).map((item) => (
             <TestimonialCard
               key={item.customer}
               comments={item.comments}
@@ -23,22 +25,8 @@ export default function CustomerFeedCarousel() {
               rating={item.rating}
             />
           ))}
+        </div>
       </div>
-      <div className='flex gap-1'>
-        {[0, 1, 2].map((index) => (
-          <button
-            key={index}
-            type='button'
-            className={`bg-whiteButtonText opacity-${
-              index === activeSlide ? '100' : '20'
-            } w-2 h-2 rounded-full`}
-            aria-current={index === activeSlide}
-            aria-label={`Slide ${index + 1}`}
-            data-carousel-slide-to={index}
-            onClick={() => handleSlideChange(index)}
-          ></button>
-        ))}
-      </div>
-    </div>
+    </>
   );
 }
