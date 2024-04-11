@@ -11,7 +11,6 @@ export default function CustomerFeedCarousel({
 }) {
   const start = slides * carouselNumber;
   const end = start + slides;
-  console.log(start, end, 'startEnd');
   return (
     <>
       <div className=' flex flex-col justify-center items-center mb-8   '>

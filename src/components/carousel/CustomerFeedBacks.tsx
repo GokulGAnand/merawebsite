@@ -33,9 +33,9 @@ export default function CustomerFeedBacks() {
               off: 'bg-whiteButtonText opacity-20 hover:bg-white ',
               on: 'bg-whiteButtonText',
             },
-            base: 'h-3 w-3 rounded-full',
+            base: 'h-2 w-2 rounded-full',
             wrapper:
-              'absolute bottom-5 left-1/2 flex -translate-x-1/2 space-x-2',
+              'absolute bottom-5 left-1/2 flex  -translate-x-1/2 space-x-1',
           },
         }}
       >

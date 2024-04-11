@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import MeraVectorBlue from '~/svg/MeraCarsBlueVector.svg';
 
 export default function FaqHead() {
   return (
-    <>
+    <Fragment>
       <div className=' text-3xl font-bold leading-10 flex flex-col text-center  items-start align-middle gap-1 '>
         <div>
           <div className=' flex justify-end'>
@@ -18,6 +18,6 @@ export default function FaqHead() {
         Find out how we make car selling clear-cut and trustworthy, just for
         you.
       </div>
-    </>
+    </Fragment>
   );
 }

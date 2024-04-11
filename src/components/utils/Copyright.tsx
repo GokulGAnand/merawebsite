@@ -8,7 +8,7 @@ export default function Copyright() {
   return (
     <div className='flex flex-col lg:flex-row w-full justify-between '>
       <div className='flex gap-2 text-md justify-start '>
-        <div className='lg:text-md text-xs  '>
+        <div className='text-md lg:text-xs  '>
           Copyright © {year} MeraCars, brought to you by{' '}
         </div>
         <div>
