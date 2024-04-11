@@ -2,13 +2,15 @@ import React from 'react';
 import Button from '@/components/buttons/Button';
 import { GrFormNextLink } from 'react-icons/gr';
 import ToyCarBanner from '~/svg/ToyCarBanner.svg';
+import ToyCarMobile from '~/svg/ToyCarMobileBanner.svg';
 
 export default function GetCarPrice() {
   return (
     <div className='bg-ctaBannerBlue w-full  flex  '>
       <div className='  flex h-full w-full'>
         <div className=' relative flex flex-1  h-full w-full  '>
-          <ToyCarBanner className='object-cover' />
+          <ToyCarBanner className='hidden lg:flex object-cover' />
+          <ToyCarMobile className='flex lg:hidden object-cover' />
           <div className='flex flex-col h-full justify-center gap-5  absolute top-0 bottom-0 left-0 right-0 m-auto w-[90%] lg:w-[88%] xl:w-[85%] '>
             <ul className='list-none text-white font-bold text-md leading-5'>
               <li className='flex items-center text-md font-bold'>

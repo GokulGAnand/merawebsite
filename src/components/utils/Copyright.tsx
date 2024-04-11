@@ -7,16 +7,16 @@ export default function Copyright() {
   const year = day.getFullYear();
   return (
     <div className='flex flex-col lg:flex-row w-full justify-between '>
-      <div className='flex gap-2 text-md justify-start '>
-        <div className='text-md lg:text-xs  '>
+      <div className='flex gap-2 text-md justify-start align-middle items-center '>
+        <div className='text-[11px] lg:text-sm lg:text-center lg:align-middle flex lg:items-center text-center  flex '>
           Copyright © {year} MeraCars, brought to you by{' '}
         </div>
         <div>
-          <TeamTech width={148} height={28} />
+          <TeamTech className='w-full max-w-24 lg:max-w-36' />
         </div>
       </div>
-      <div className='lg:flex hidden  gap-2'>
-        <div>All Right Reserved </div>
+      <div className='lg:flex hidden gap-2 '>
+        <div className=''>All Right Reserved </div>
         {' | '}
         <Link className='text-linkColor' href={'/'}>
           Terms and Condition

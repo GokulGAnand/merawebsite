@@ -23,7 +23,7 @@ import { OurSteps } from '@/components/strips/OurSteps';
 
 export default function HomePage() {
   return (
-    <main className=' overflow-x-scroll'>
+    <main className=' overflow-x-clip'>
       <Head>
         <title>MeraCars - Home</title>
       </Head>

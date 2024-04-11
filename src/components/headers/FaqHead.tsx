@@ -9,7 +9,7 @@ export default function FaqHead() {
           <div className=' flex justify-end'>
             <MeraVectorBlue width={50} heigth={11} />
           </div>
-          <div className='text-2xl lg:text-3xl flex'>
+          <div className='text-xl sm:text-2xl lg:text-3xl flex'>
             Frequently Asked Questions
           </div>
         </div>
