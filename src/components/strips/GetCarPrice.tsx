@@ -5,11 +5,11 @@ import ToyCarBanner from '~/svg/ToyCarBanner.svg';
 
 export default function GetCarPrice() {
   return (
-    <div className='bg-ctaBannerBlue w-full h-max flex lg:h-[624px] '>
+    <div className='bg-ctaBannerBlue w-full  flex h-[570px] lg:h-[624px] '>
       <div className='  flex h-full w-full'>
         <div className=' relative flex flex-1  h-full w-full  '>
           <ToyCarBanner className='object-cover' />
-          <div className='flex flex-col h-full justify-center gap-5  absolute top-0 bottom-0 left-0 right-0 m-auto px-40 '>
+          <div className='flex flex-col h-full justify-center gap-5  absolute top-0 bottom-0 left-0 right-0 m-auto w-[90%] lg:w-[88%] xl:w-[85%] '>
             <ul className='list-none text-white font-bold text-md leading-5'>
               <li className='flex items-center text-md font-bold'>
                 <span className='h-1 w-1 bg-white rounded-full mr-1'></span>
