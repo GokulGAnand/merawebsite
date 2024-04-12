@@ -5,6 +5,7 @@ import Button from '@/components/buttons/Button';
 
 import Logo from '~/images/logoHeader.svg';
 import HeaderLinks from '@/components/links/HeaderLinks';
+import Image from 'next/image';
 
 export const Header = () => {
   return (
@@ -21,7 +22,7 @@ export const Header = () => {
           </div>
           <div className='hidden lg:flex '>
             <Button
-              variant='primary'
+              variant='outline'
               className=' flex flex-shrink-0 rounded-lg font-semibold py-3 px-6 text-center'
             >
               Call us at 9999999999

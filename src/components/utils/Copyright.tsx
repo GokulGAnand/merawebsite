@@ -28,16 +28,17 @@ export default function Copyright() {
       </div>
 
       {/* For Mobile  */}
-      <div className='lg:hidden flex gap-2'>
+      <div className='lg:hidden flex flex-col gap-1 mt-3 '>
         <div>All Right Reserved </div>
-        {' | '}
-        <Link className='text-linkColor' href={'/'}>
-          Terms and Condition
-        </Link>
-        {' | '}
-        <Link className='text-linkColor' href={'/'}>
-          Privacy Policy
-        </Link>
+        <div className='mb-4'>
+          <Link className='text-linkColor' href={'/'}>
+            Terms and Conditions
+          </Link>
+          {' | '}
+          <Link className='text-linkColor' href={'/'}>
+            Privacy Policy
+          </Link>
+        </div>
       </div>
     </div>
   );

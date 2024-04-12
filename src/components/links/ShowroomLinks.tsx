@@ -6,11 +6,11 @@ import React from 'react';
 export default function ShowroomLinks() {
   return (
     <>
-      <div className='mt-8'>
-        <div className='text-lg md:text-md font-bold leading-6 '>
+      <div className=' mt-8 lg:mt-8 flex flex-col lg:gap-1.5'>
+        <div className='text-md md:text-md font-bold leading-6 '>
           Sell your car
         </div>
-        <div className=' text-sm mt-4 leading-8'>
+        <div className=' text-sm mt-4 lg:mt-0 leading-8'>
           {showroomLinks.map((showroom, index) => (
             <React.Fragment key={showroom.name}>
               <Link href={showroom.link} target='_blank'>

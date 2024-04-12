@@ -8,13 +8,13 @@ export default function GetCarPrice() {
   return (
     <div className='bg-ctaBannerBlue w-full  flex  '>
       <div className='  flex h-full w-full'>
-        <div className=' relative flex flex-1  h-full w-full  '>
+        <div className=' relative flex flex-1  lg:h-full w-full  '>
           <ToyCarBanner className='hidden lg:flex object-cover' />
           <ToyCarMobile className='flex lg:hidden object-cover' />
-          <div className='flex flex-col h-full justify-center gap-5  absolute top-0 bottom-0 left-0 right-0 m-auto w-[90%] lg:w-[88%] xl:w-[85%] '>
-            <ul className='list-none text-white font-bold text-md leading-5'>
-              <li className='flex items-center text-md font-bold'>
-                <span className='h-1 w-1 bg-white rounded-full mr-1'></span>
+          <div className='flex flex-col lg:h-full py-[25%] lg:py-0 lg:justify-center gap-5  absolute top-0 bottom-0 left-0 right-0 m-auto w-[90%] lg:w-[88%] xl:w-[85%] '>
+            <ul className='list-none lg:text-white  text-bannerChipText  font-bold lg:text-md leading-5'>
+              <li className='flex items-center text-md font-bold lg:bg-transparent bg-bannerChipColor flex-1 w-fit px-3 lg:px-0 py-px lg:py-0 rounded-3xl '>
+                <span className='h-1 w-1 lg:bg-white bg-bannerChipText rounded-full  mr-1'></span>
                 World of used cars in India
               </li>
             </ul>

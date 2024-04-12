@@ -25,7 +25,7 @@ const AccordionBody = (props: AccordionBodyProps) => {
           className=' transition-all duration-500 group-focus:-rotate-180'
         />
       </div>
-      <div className='w-2/3 text-sm flex text-headerLinkColor font-normal leading-5 invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000 group-focus:pt-5'>
+      <div className='lg:w-2/3 w-full text-sm flex text-headerLinkColor font-normal leading-5 invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000 group-focus:pt-5'>
         {answer}
       </div>
     </div>
