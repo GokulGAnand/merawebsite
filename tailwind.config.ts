@@ -46,6 +46,7 @@ export default {
         serviceText: '#191825',
         stepsText: '#0B2C4D',
         copyRightText: '#E0E0E0',
+        mobileSidebarBorder: 'rgba(0, 0, 0, 0.08);',
       },
       keyframes: {
         flicker: {

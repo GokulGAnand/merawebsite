@@ -13,7 +13,7 @@ interface Props {
 export default function ServiceCard(props: Props) {
   const { img, heading, subHeading, index } = props;
   return (
-    <div className='max-w-sm border-serviceCardBorder border border-solid shadow-[-20px_17px_30px_0px_rgba(51,102,255,0.05)]  rounded-3xl '>
+    <div className=' flex  flex-col md:flex-row lg:flex-col max-w-sm  md:max-w-full lg:max-w-sm border-serviceCardBorder border border-solid shadow-[-20px_17px_30px_0px_rgba(51,102,255,0.05)]  rounded-3xl '>
       <div className='flex justify-center p-[3.5%] w-full '>
         <Image
           src={img}
@@ -21,7 +21,7 @@ export default function ServiceCard(props: Props) {
           className='rounded-tl-xl rounded-tr-xl object-contain w-full  '
         />
       </div>
-      <div className=''>
+      <div className='flex flex-col lg:p-0  md:p-[3.5%] '>
         <div className='flex gap-1 px-[3.5%] pt-2 align-middle '>
           <div className='flex gap-2 justify-center align-middle items-center'>
             <div className='flex flex-col'>

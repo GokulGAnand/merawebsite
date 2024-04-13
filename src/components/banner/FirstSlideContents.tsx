@@ -36,7 +36,7 @@ export const FirstSlideContents = () => {
             get a top price with MeraCars
           </p>
         </div>
-        <div className='flex gap-3 mt-8'>
+        <div className='flex flex-col md:flex-row gap-3 mt-8'>
           <Button
             variant='primary'
             className='font-bold min-w-40 lg:min-w-48 min-h-16 justify-center rounded-xl'
