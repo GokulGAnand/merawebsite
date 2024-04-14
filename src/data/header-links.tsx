@@ -15,8 +15,4 @@ export const headerLinks = [
     label: 'Car Inspection',
     route: '/car',
   },
-  {
-    label: 'More',
-    route: '/more',
-  },
 ];

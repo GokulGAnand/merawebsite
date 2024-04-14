@@ -10,7 +10,7 @@ export const FirstBannerSlide = () => {
           src={CarBanner}
           className='w-full h-full object-cover'
           alt='Image'
-          loading='eager'
+          loading='lazy'
         />
       </div>
 

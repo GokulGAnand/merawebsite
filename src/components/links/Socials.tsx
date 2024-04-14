@@ -12,6 +12,7 @@ export default function Socials() {
             key={item.link}
             target='_blank'
             rel='noopener noreferrer'
+            aria-label={item.link}
           >
             <div className=' flex align-middle'>{item.icon}</div>
           </Link>
