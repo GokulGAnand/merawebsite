@@ -1,5 +1,4 @@
 import React from 'react';
-import CustomerOne from '~/svg/CustomerOne.svg';
 import StarRating from '@/components/rating/StarRating';
 
 interface TestimonialProps {

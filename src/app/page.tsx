@@ -3,7 +3,6 @@ import * as React from 'react';
 import '@/lib/env';
 
 import { MainBanner } from '@/components/banner/MainBanner';
-import GetCarPrice from '@/components/strips/GetCarPrice';
 import { OurServices } from '@/components/strips/OurServices';
 import { CustomerFeedBack } from '@/components/strips/CustomerFeedBack';
 import Faq from '@/components/strips/Faq';
