@@ -10,7 +10,7 @@ import NextImage from '@/components/NextImage';
 const CallToAction = () => {
   return (
     <SectionBlock className='last:pb-0 mt-10'>
-      <div className='relative flex w-full overflow-hidden  bg-gray-100 px-6 pt-10 pb-48 md:pt-8  md:px-8 lg:px-[6.75%] lg:py-24'>
+      <div className='relative flex w-full overflow-hidden  bg-gray-100  pt-10 pb-48 md:pt-8 px-[6%] md:px-[6.15%] lg:px-[7%]  xl:px-[7.25%] lg:py-24'>
         <NextImage
           src={ToyCarBanner}
           layout='fill'
