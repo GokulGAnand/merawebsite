@@ -9,10 +9,6 @@ export default {
       fontFamily: {
         primary: ['var(--font-dm-sans)', ...defaultTheme.fontFamily.sans],
       },
-      backgroundImage: {
-        'car-in-hand': "url('/svg/ToyCarBanner.svg')",
-        'main-banner': "url('/images/CarBanner.png')",
-      },
       colors: {
         primary: {
           // Customize it on globals.css :root
@@ -75,5 +71,12 @@ export default {
       },
     },
   },
-  plugins: [require('@tailwindcss/forms'), flowbite.plugin()],
+  daisyui: {
+    themes: [],
+  },
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('daisyui'),
+    flowbite.plugin(),
+  ],
 } satisfies Config;
