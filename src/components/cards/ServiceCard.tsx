@@ -19,6 +19,7 @@ export default function ServiceCard(props: Props) {
           src={img}
           alt='Image'
           className='rounded-tl-xl rounded-tr-xl object-contain w-full  '
+          loading='lazy'
         />
       </div>
       <div className='flex flex-col lg:p-0  md:p-[3.5%] '>

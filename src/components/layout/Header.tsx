@@ -2,12 +2,18 @@ import Link from 'next/link';
 import React from 'react';
 import Button from '@/components/buttons/Button';
 import HeaderLinks from '@/components/links/HeaderLinks';
-import HamburgerMenu from '@/components/links/HamburgerMenu';
 import Logo from '~/svg/MeraLogo.svg';
+import dynamic from 'next/dynamic';
+import SellCarButton from '../buttons/SellCarButton';
+const HamburgerMenu = dynamic(() => import('@/components/links/HamburgerMenu'));
 
 export const Header = () => {
   return (
-    <div className='h-20 w-full fixed top-0 right-0 z-50 bg-white flex flex-wrap justify-center align-middle place-items-center shadow-md '>
+    <div
+      className={
+        'h-20 w-full fixed top-0 right-0 z-50 bg-white flex flex-wrap justify-center align-middle place-items-center shadow-md'
+      }
+    >
       <div className=' w-[90%] lg:w-[88%] xl:w-[85%] flex justify-center'>
         <div className='flex  w-full  justify-between place-items-center'>
           <div className='flex items-center align-middle'>
@@ -34,14 +40,7 @@ export const Header = () => {
               Call us at 9999999999
             </Button>
           </div>
-          <div className='flex lg:hidden '>
-            <Button
-              variant='primary'
-              className=' flex  rounded-lg flex-shrink min-w-max font-semibold py-2 px-6 text-center'
-            >
-              Sell Your Car
-            </Button>
-          </div>
+          <SellCarButton />
         </div>
       </div>
     </div>

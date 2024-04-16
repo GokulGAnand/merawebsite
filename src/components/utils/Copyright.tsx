@@ -22,7 +22,7 @@ export default function Copyright() {
           Terms and Condition
         </Link>
         {' | '}
-        <Link className='text-linkColor' href={'/'}>
+        <Link className='text-linkColor' href={'/privacy-policy'}>
           Privacy Policy
         </Link>
       </div>
@@ -35,7 +35,7 @@ export default function Copyright() {
             Terms and Conditions
           </Link>
           {' | '}
-          <Link className='text-linkColor' href={'/'}>
+          <Link className='text-linkColor' href={'/privacy-policy'}>
             Privacy Policy
           </Link>
         </div>

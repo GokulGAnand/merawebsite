@@ -10,7 +10,7 @@ import { Header } from '@/components/layout/Header';
 import { ThemeModeScript } from 'flowbite-react';
 
 import { siteConfig } from '@/constant/config';
-import Footer from '@/components/layout/Footer';
+import dynamic from 'next/dynamic';
 
 // !STARTERCONF Change these default meta
 // !STARTERCONF Look at @/constant/config to change them
@@ -59,6 +59,8 @@ const DMSANS = DM_Sans({
   display: 'swap',
   variable: '--font-dm-sans',
 });
+
+const Footer = dynamic(() => import('@/components/layout/Footer'));
 
 export default function RootLayout({
   children,

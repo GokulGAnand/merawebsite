@@ -9,18 +9,20 @@ import SectionBlock from '@/components/SectionBlock';
 export default function GetCarPrice() {
   return (
     <SectionBlock>
-      <div className='bg-ctaBannerBlue w-full relative  flex overflow-hidden px-6 py-12 md:px-10 xl:px-32 xl:py-32  '>
+      <div className='bg-ctaBannerBlue w-full relative flex overflow-hidden px-6 py-12 md:px-10 xl:px-32 xl:py-32'>
         <Image
           src={ToyCarBanner}
           layout='fill'
           alt='background pattern'
           className='hidden lg:flex'
+          loading='lazy'
         />
         <Image
           src={ToyCarBannerMobile}
           layout='fill'
           alt='background pattern'
           className='flex lg:hidden'
+          loading='lazy'
         />
         <div className=' z-0 flex h-full w-full'>
           <div className=' relative flex flex-1  lg:h-full w-full  '>
