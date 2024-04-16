@@ -1,7 +1,7 @@
 export const siteConfig = {
   title: 'MeraCars',
   description:
-    'A starter for Next.js, Tailwind CSS, and TypeScript with Absolute Import, Seo, Link component, pre-configured with Husky',
+    'MeraCars is a one stop solution for your car related queries. Feel free to checkout.',
   /** Without additional '/' on the end, e.g. https://theodorusclarence.com */
-  url: 'https://tsnext-tw.thcl.dev',
+  url: 'https://www.meracars.com',
 };
