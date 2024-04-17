@@ -10,8 +10,6 @@ export const FirstBannerSlide = () => {
           src={CarBanner}
           className='w-full h-full object-cover'
           alt='Image'
-          fill
-          sizes='(min-width: 808px) 50vw, 100vw'
           priority
         />
       </div>
