@@ -4,6 +4,7 @@ import UsefulLinks from '@/components/links/UsefulLinks';
 import Copyright from '@/components/utils/Copyright';
 import Divider from '@/components/utils/Divider';
 import React from 'react';
+import Contact from '../links/Contactus';
 
 function Footer() {
   return (
@@ -18,8 +19,9 @@ function Footer() {
               <UsefulLinks />
             </div>
           </div>
-          <div className='flex flex-col align-start items-start lg:align-center lg:items-end'>
+          <div className='flex flex-col align-start items-start lg:align-center '>
             <ShowroomLinks />
+            <Contact />
           </div>
         </div>
         <div className='lg:pt-12 flex justify-center w-full'>
