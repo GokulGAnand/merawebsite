@@ -14,7 +14,9 @@ function Footer() {
             <BrandLinks />
           </div>
           <div className=' flex flex-col align-middle items-start lg:items-center'>
-            <UsefulLinks />
+            <div className='flex w-full lg:w-max'>
+              <UsefulLinks />
+            </div>
           </div>
           <div className='flex flex-col align-start items-start lg:align-center lg:items-end'>
             <ShowroomLinks />
