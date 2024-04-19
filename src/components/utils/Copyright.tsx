@@ -18,7 +18,7 @@ export default function Copyright() {
       <div className='lg:flex hidden gap-2 '>
         <div className='text-copyRightText'>All Right Reserved </div>
         {' | '}
-        <Link className='text-linkColor' href={'/'}>
+        <Link className='text-linkColor' href={'/terms-and-conditions'}>
           Terms and Condition
         </Link>
         {' | '}
@@ -31,7 +31,7 @@ export default function Copyright() {
       <div className='lg:hidden flex flex-col gap-1 mt-3 '>
         <div>All Right Reserved </div>
         <div className='mb-4'>
-          <Link className='text-linkColor' href={'/'}>
+          <Link className='text-linkColor' href={'/terms-and-conditions'}>
             Terms and Conditions
           </Link>
           {' | '}

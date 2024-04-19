@@ -12,7 +12,7 @@ const PageBanner = (props: PageBannerProps) => {
     <div className='hero min-h-[300px] bg-gradient-to-r from-[#53BDE5] to-[#2B6FB7] bg-opacity-90'>
       <div className='hero-overlay bg-opacity-60'></div>
       <div className='hero-content text-center text-neutral-content'>
-        <div className='max-w-md'>
+        <div className='max-w-xl'>
           <HeaderWithBranding
             heading={heading}
             subHeading={subHeading}
