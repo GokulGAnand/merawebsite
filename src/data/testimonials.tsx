@@ -31,39 +31,4 @@ export const testimonials = [
     comments:
       'I wanted to sell my car before migrating to Canada. The team was very helpful from start to finish!',
   },
-  // {
-  //   icon: <CustomerOne width={60} height={60} />,
-  //   rating: 4,
-  //   customer: 'Elvin Tomas2',
-  //   comments:
-  //     'ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
-  // },
-  // {
-  //   icon: <CustomerThree width={60} height={60} />,
-  //   rating: 4,
-  //   customer: 'Elvin Tomas3',
-  //   comments:
-  //     'ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
-  // },
-  // {
-  //   icon: <CustomerThree width={60} height={60} />,
-  //   rating: 4,
-  //   customer: 'Elvin Tomas3',
-  //   comments:
-  //     'ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
-  // },
-  // {
-  //   icon: <CustomerThree width={60} height={60} />,
-  //   rating: 4,
-  //   customer: 'Elvin Tomas5',
-  //   comments:
-  //     'ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
-  // },
-  // {
-  //   icon: <CustomerThree width={60} height={60} />,
-  //   rating: 4,
-  //   customer: 'Elvin Tomas6',
-  //   comments:
-  //     'ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
-  // },
 ];

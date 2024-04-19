@@ -9,13 +9,13 @@ function getTotalCarousels(screen: string) {
     case 'xl':
       return { numArray: [0, 1], slidesPerPage: 3 };
     case 'lg':
-      return { numArray: [0, 1, 2], slidesPerPage: 2 };
+      return { numArray: [0, 1], slidesPerPage: 2 };
     case 'md':
     case 'sm':
     case 'xs':
-      return { numArray: [0, 1, 2, 3, 4, 5], slidesPerPage: 1 };
+      return { numArray: [0, 1, 2, 3], slidesPerPage: 1 };
     default:
-      return { numArray: [0, 1, 2, 3, 4, 5], slidesPerPage: 1 };
+      return { numArray: [0, 1, 2, 3], slidesPerPage: 1 };
   }
 }
 
