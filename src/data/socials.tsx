@@ -1,20 +1,20 @@
 import {
-  RiFacebookFill,
+  // RiFacebookFill,
+  // RiTwitterFill,
   RiInstagramFill,
   RiLinkedinFill,
-  RiTwitterFill,
   RiYoutubeFill,
 } from 'react-icons/ri';
 
 export const socials = [
-  {
-    icon: <RiFacebookFill fontSize={19} />,
-    link: 'www.facebook.com',
-  },
-  {
-    icon: <RiTwitterFill fontSize={19} />,
-    link: 'www.twitter.com',
-  },
+  // {
+  //   icon: <RiFacebookFill fontSize={19} />,
+  //   link: 'www.facebook.com',
+  // },
+  // {
+  //   icon: <RiTwitterFill fontSize={19} />,
+  //   link: 'www.twitter.com',
+  // },
   {
     icon: <RiInstagramFill fontSize={19} />,
     link: 'https://www.instagram.com/meracars',
