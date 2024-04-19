@@ -9,7 +9,7 @@ export const OurSteps = () => {
       <div className='flex flex-col justify-center'>
         <HeaderWithBranding
           heading='Ready. Set. Sold'
-          subHeading='Sell your car the more money way, in three easy steps'
+          subHeading='Sell your car in just three steps'
         />
       </div>
       <div className='w-full flex justify-center'>

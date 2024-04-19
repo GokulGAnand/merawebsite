@@ -4,21 +4,21 @@ import ServiceThree from '~/images/OurServices/ServiceCardThree.png';
 
 export const services = [
   {
-    heading: 'Get Your Car Checked',
+    heading: 'Friendly Car Evaluation',
     subHeading:
-      'Get a free, instant car valuation. Then add info and take photos to create a profile of your vehicle. Then add info and',
+      'Our experts assess your car using our evaluation mobile app so you get the best sale value.',
     image: ServiceOne,
   },
   {
-    heading: 'Money Fast in Your',
+    heading: 'Get Paid Fast',
     subHeading:
-      'Get a free, instant car valuation. Then add info and take photos to create a profile of your vehicle. Then add info and',
+      "Receive your payment quickly after selling. Our process guarantees that you'll get your money securely and without delay.",
     image: ServiceTwo,
   },
   {
-    heading: 'Quick Sale and Smile',
+    heading: 'Quick Sale, Happy Deal',
     subHeading:
-      'Get a free, instant car valuation. Then add info and take photos to create a profile of your vehicle. Then add info and',
+      'Sell your car fast and hassle-free. We handle everything efficiently, ensuring a smooth transaction that leaves you smiling.',
     image: ServiceThree,
   },
 ];
