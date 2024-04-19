@@ -17,14 +17,14 @@ export const socials = [
   },
   {
     icon: <RiInstagramFill fontSize={19} />,
-    link: 'www.instagram.com',
+    link: 'https://www.instagram.com/meracars',
   },
   {
     icon: <RiLinkedinFill fontSize={19} />,
-    link: 'www.linkedin.com',
+    link: 'https://www.linkedin.com/company/99040796/admin/feed/posts/',
   },
   {
     icon: <RiYoutubeFill fontSize={19} />,
-    link: 'www.youtube.com',
+    link: 'https://www.youtube.com/@TeamTechMedia',
   },
 ];
