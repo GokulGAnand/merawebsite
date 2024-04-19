@@ -1,58 +1,58 @@
 export const showroomLinks = [
   {
     name: 'Kasargod',
-    link: '/kasargod',
+    link: '/',
   },
   {
     name: 'Kannur',
-    link: '/kannur',
+    link: '/',
   },
   {
     name: 'Kozhikode',
-    link: '/kozhikode',
+    link: '/',
   },
   {
     name: 'Malappuram',
-    link: '/malappuram',
+    link: '/',
   },
   {
     name: 'Palakkad',
-    link: '/palakkad',
+    link: '/',
   },
   {
     name: 'Thrissur',
-    link: '/thrissur',
+    link: '/',
   },
   {
     name: 'Ernakulam',
-    link: '/ernakulam',
+    link: '/',
   },
   {
     name: 'Idukki',
-    link: '/idukki',
+    link: '/',
   },
   {
     name: 'Kottayam',
-    link: '/kottayam',
+    link: '/',
   },
   {
     name: 'Pathanamthitta',
-    link: '/pathanamthitta',
+    link: '/',
   },
   {
     name: 'Alappuzha',
-    link: '/alappuzha',
+    link: '/',
   },
   {
     name: 'Kollam',
-    link: '/kollam',
+    link: '/',
   },
   {
     name: 'Trivandrum',
-    link: '/trivandrum',
+    link: '/',
   },
   {
     name: 'Wayanad',
-    link: '/wayanad',
+    link: '/',
   },
 ];
