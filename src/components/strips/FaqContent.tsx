@@ -1,8 +1,8 @@
 import Faq from '@/components/accordions/Faq';
 import HeaderWithBranding from '@/components/headers/HeaderWithBranding';
-import React from 'react';
 
 export default function FaqContent() {
+  console.log('Hi');
   return (
     <div className='flex flex-col justify-center w-[90%] lg:w-[88%] xl:w-[85%] gap-2 '>
       <HeaderWithBranding
