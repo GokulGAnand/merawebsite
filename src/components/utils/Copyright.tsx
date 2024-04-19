@@ -25,6 +25,10 @@ export default function Copyright() {
         <Link className='text-linkColor' href={'/privacy-policy'}>
           Privacy Policy
         </Link>
+        {' | '}
+        <Link className='text-linkColor' href={'/refund-policy'}>
+          Refund Policy
+        </Link>
       </div>
 
       {/* For Mobile  */}
@@ -37,6 +41,10 @@ export default function Copyright() {
           {' | '}
           <Link className='text-linkColor' href={'/privacy-policy'}>
             Privacy Policy
+          </Link>
+          {' | '}
+          <Link className='text-linkColor' href={'/refund-policy'}>
+            Refund Policy
           </Link>
         </div>
       </div>

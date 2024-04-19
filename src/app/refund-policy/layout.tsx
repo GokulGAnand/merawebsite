@@ -6,11 +6,11 @@ import PageBanner from '@/components/banner/common/PageBanner';
 import SectionBlock from '@/components/SectionBlock';
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy',
-  description: 'Privacy Policy Page',
+  title: 'Refund Policy',
+  description: 'Refund Policy Page',
 };
 
-export default function PrivacyLayout({
+export default function RefundLayout({
   children,
 }: {
   children: React.ReactNode;
@@ -18,7 +18,7 @@ export default function PrivacyLayout({
   return (
     <>
       <SectionBlock>
-        <PageBanner heading='Privacy Policy' subHeading='' />
+        <PageBanner heading='Refund Policy' subHeading='' />
         {children}
       </SectionBlock>
     </>
