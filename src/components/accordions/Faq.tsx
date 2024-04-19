@@ -27,7 +27,7 @@ const AccordionItem = ({
         />
       </>
     )}
-    className='border-b-2 border-accordionBorder text-headerLinkColor  '
+    className='border-b border-accordionBorder text-headerLinkColor  '
     buttonProps={{
       className: () =>
         `flex w-full px-6 py-4 items-center text-lg text-start font-medium text-md leading-6   `,
