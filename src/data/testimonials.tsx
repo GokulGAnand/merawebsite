@@ -6,64 +6,64 @@ export const testimonials = [
   {
     icon: <CustomerOne width={60} height={60} />,
     rating: 2.5,
-    customer: 'Floyd Miles',
+    customer: 'Vyshak',
     comments:
-      'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.',
+      'Selling my car was super quick and easy. Got a great deal without any trouble!',
   },
   {
     icon: <CustomerTwo width={60} height={60} />,
     rating: 4,
-    customer: 'Ronald Richards',
+    customer: 'Jamshad',
     comments:
-      'ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
+      'The inspection at home was so convenient. Really happy with the honest service.',
   },
   {
     icon: <CustomerThree width={60} height={60} />,
     rating: 4,
-    customer: 'Elvin Tomas',
+    customer: 'Derin',
     comments:
-      'ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
+      'I received my payment the very next day! Completely satisfied with the fast process.',
   },
   {
     icon: <CustomerTwo width={60} height={60} />,
     rating: 4,
-    customer: 'Elvin Tomas1',
+    customer: 'Nighil',
     comments:
-      'ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
+      'I wanted to sell my car before migrating to Canada. The team was very helpful from start to finish!',
   },
-  {
-    icon: <CustomerOne width={60} height={60} />,
-    rating: 4,
-    customer: 'Elvin Tomas2',
-    comments:
-      'ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
-  },
-  {
-    icon: <CustomerThree width={60} height={60} />,
-    rating: 4,
-    customer: 'Elvin Tomas3',
-    comments:
-      'ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
-  },
-  {
-    icon: <CustomerThree width={60} height={60} />,
-    rating: 4,
-    customer: 'Elvin Tomas3',
-    comments:
-      'ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
-  },
-  {
-    icon: <CustomerThree width={60} height={60} />,
-    rating: 4,
-    customer: 'Elvin Tomas5',
-    comments:
-      'ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
-  },
-  {
-    icon: <CustomerThree width={60} height={60} />,
-    rating: 4,
-    customer: 'Elvin Tomas6',
-    comments:
-      'ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
-  },
+  // {
+  //   icon: <CustomerOne width={60} height={60} />,
+  //   rating: 4,
+  //   customer: 'Elvin Tomas2',
+  //   comments:
+  //     'ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
+  // },
+  // {
+  //   icon: <CustomerThree width={60} height={60} />,
+  //   rating: 4,
+  //   customer: 'Elvin Tomas3',
+  //   comments:
+  //     'ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
+  // },
+  // {
+  //   icon: <CustomerThree width={60} height={60} />,
+  //   rating: 4,
+  //   customer: 'Elvin Tomas3',
+  //   comments:
+  //     'ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
+  // },
+  // {
+  //   icon: <CustomerThree width={60} height={60} />,
+  //   rating: 4,
+  //   customer: 'Elvin Tomas5',
+  //   comments:
+  //     'ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
+  // },
+  // {
+  //   icon: <CustomerThree width={60} height={60} />,
+  //   rating: 4,
+  //   customer: 'Elvin Tomas6',
+  //   comments:
+  //     'ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
+  // },
 ];
