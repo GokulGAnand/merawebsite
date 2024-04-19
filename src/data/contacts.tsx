@@ -8,7 +8,7 @@ export const contacts = [
     icon: <Email width={20} height={20} />,
   },
   {
-    value: '+91-8113027722',
+    value: '+91-9656008704',
     icon: <Phone width={20} height={20} />,
   },
   {
