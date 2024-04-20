@@ -9,13 +9,7 @@ export default function UsefulLinks() {
         <Link className='text-sm' href='/'>
           About
         </Link>
-        <Link className='text-sm' href='/'>
-          About
-        </Link>
 
-        <Link className='text-sm' href='/'>
-          Contact us
-        </Link>
         <Link className='text-sm' href='/'>
           Contact us
         </Link>
@@ -23,20 +17,11 @@ export default function UsefulLinks() {
         <Link className='text-sm' href='/'>
           Careers
         </Link>
-        <Link className='text-sm' href='/'>
-          Careers
-        </Link>
 
         <Link className='text-sm' href='/'>
           Culture
         </Link>
-        <Link className='text-sm' href={'/'}>
-          Culture
-        </Link>
 
-        <Link className='text-sm' href={'/'}>
-          Blog
-        </Link>
         <Link className='text-sm' href={'/'}>
           Blog
         </Link>
