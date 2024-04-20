@@ -40,7 +40,7 @@ export default function HamburgerMenu() {
             <SidebarLinks />
           </div>
           <div className='bg-bannerChipColor h-[11vh] flex text-center font-bold justify-center align-middle place-items-center '>
-            Call us at 9999999999
+            Call us at 9656008704
           </div>
         </ul>
       </div>

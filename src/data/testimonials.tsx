@@ -5,7 +5,7 @@ import CustomerThree from '~/svg/CustomerThree.svg';
 export const testimonials = [
   {
     icon: <CustomerOne width={60} height={60} />,
-    rating: 2.5,
+    rating: 5,
     customer: 'Vyshak',
     comments:
       'Selling my car was super quick and easy. Got a great deal without any trouble!',

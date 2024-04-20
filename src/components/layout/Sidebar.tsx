@@ -45,7 +45,7 @@ export default function Sidebar(props: SidebarProps) {
           </div>
         </div>
         <div>
-          {headerLinks.map((link) => {
+          {/* {headerLinks.map((link) => {
             const isActive = link.route === path;
 
             return (
@@ -59,11 +59,8 @@ export default function Sidebar(props: SidebarProps) {
                 {link.label}
               </div>
             );
-          })}
+          })} */}
         </div>
-      </div>
-      <div className='bg-bannerChipColor h-[11vh] flex text-center font-bold justify-center align-middle place-items-center '>
-        Call us at 9999999999
       </div>
     </div>
   );
