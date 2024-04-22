@@ -2,7 +2,6 @@ import React from 'react';
 import Image from 'next/image';
 import about3 from '~/images/AboutUs/about-3.png';
 import about4 from '~/images/AboutUs/about-4.png';
-import HeaderWithBranding from '@/components/headers/HeaderWithBranding';
 import { AboutCard } from '../cards/AboutCard';
 
 export const AboutCompany = () => {

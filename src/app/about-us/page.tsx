@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import * as React from 'react';
-import Image from 'next/image';
 import '@/lib/env';
 
 import Faq from '@/components/strips/Faq';
