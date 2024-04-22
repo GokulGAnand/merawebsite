@@ -36,7 +36,7 @@ export default function ServiceCard(props: Props) {
             </div>
           </div>
         </div>
-        <div className=' px-[3.5%] flex pt-3 pb-7 text-sm text-headerLinkColor leading-normal font-medium '>
+        <div className=' px-[3.5%] flex pt-3 pb-7 text-sm text-headerLinkColor leading-normal font-normal '>
           {subHeading}
         </div>
       </div>
