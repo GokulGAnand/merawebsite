@@ -6,7 +6,7 @@ export default function UsefulLinks() {
     <div className='mt-8 w-full flex flex-col'>
       <div className=' text-md font-bold leading-6 '>Useful Links</div>
       <div className='grid grid-cols-4 lg:grid lg:grid-cols-2 lg:grid-rows-5 lg:gap-6 gap-3 mt-4 w-full '>
-        <Link className='text-sm' href='/'>
+        <Link className='text-sm' href='/about-us'>
           About
         </Link>
 
