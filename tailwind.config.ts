@@ -44,6 +44,7 @@ export default {
         copyRightText: '#E0E0E0',
         mobileSidebarBorder: 'rgba(0, 0, 0, 0.08);',
         callButtonBg: 'rgba(13, 61, 229, 0.1)',
+        aboutHeader: '#2A71BD',
       },
       keyframes: {
         flicker: {

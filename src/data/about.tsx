@@ -7,12 +7,12 @@ export const about = [
   },
   {
     id: 2,
-    title: 'Mission',
+    title: 'Our Mission',
     content: `At Mera cars, we're passionate about connecting buyers and sellers  in the automotive `,
   },
   {
     id: 3,
-    title: 'Vision',
+    title: 'Our Vision',
     content: `At Mera cars, we're passionate about connecting buyers and sellers  in the automotive `,
   },
 ];
