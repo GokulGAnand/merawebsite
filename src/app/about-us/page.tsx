@@ -9,7 +9,7 @@ import { AboutCompany } from '@/components/strips/AboutCompany';
 
 export default function AboutPage() {
   return (
-    <main className=''>
+    <main className='overflow-x-clip'>
       <Head>
         <title>About us</title>
       </Head>

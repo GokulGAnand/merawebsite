@@ -21,7 +21,7 @@ export const achievements = [
     id: 3,
     icon: <Achievement width={63.83} height={63.83} />,
     title_content: '0',
-    label: 'Awards & Recongnitions',
+    label: 'Awards & Recognitions',
   },
   {
     id: 4,

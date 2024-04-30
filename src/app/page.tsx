@@ -23,7 +23,7 @@ import CallToAction from '@/components/strips/GetCarPriceCta';
 
 export default function HomePage() {
   return (
-    <main className=' overflow-x-clip'>
+    <main className='overflow-x-clip'>
       <Head>
         <title>MeraCars - Home</title>
       </Head>
