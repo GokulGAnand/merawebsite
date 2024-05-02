@@ -4,19 +4,19 @@ import Payment from '~/svg/Payment.svg';
 
 const services = [
   {
-    heading: 'Free rc transfer',
+    heading: 'Free RC Transfer',
     subHeading:
       'Enjoy hassle-free paperwork with our Free RC Transfer service.',
     icon: <Paper width={32} heigth={32} />,
   },
   {
-    heading: 'Door step car evaluation',
+    heading: 'Doorstep car evaluation',
     subHeading:
       'Our experts come to your location, providing a thorough assessment of your car’s condition.',
     icon: <Door width={32} heigth={32} />,
   },
   {
-    heading: 'Instant payment in a day',
+    heading: 'Instant Payment in a Day',
     subHeading:
       'Once your car sale is finalised, expect the payment within a day.',
     icon: <Payment width={32} heigth={32} />,

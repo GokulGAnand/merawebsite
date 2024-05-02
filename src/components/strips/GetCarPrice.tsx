@@ -30,7 +30,7 @@ export default function GetCarPrice() {
               <ul className='list-none lg:text-white  text-bannerChipText  font-bold lg:text-md leading-5'>
                 <li className='flex items-center text-md font-bold lg:bg-transparent bg-bannerChipColor flex-1 w-fit px-3 lg:px-0 py-px lg:py-0 rounded-3xl '>
                   <span className='h-1 w-1 lg:bg-white bg-bannerChipText rounded-full  mr-1'></span>
-                  World of used cars in India
+                  Accelerating India's Car Selling Journey
                 </li>
               </ul>
               <div className='text-4xl text-white font-bold leading-10 '>

@@ -9,10 +9,11 @@ export default function BrandLinks() {
         <FooterLogo width={142} height={48} />
       </div>
       <div className='text-sm font-normal leading-8'>
-        Mera Cars is the most trusted way of buying and selling used cars.
-        Choose from over 5000 fully inspected second-hand car models. Select
-        online and book a test drive at your home or at a Meracars Car Hub near
-        you.{' '}
+        MeraCars is your most trustable choice for selling used cars. We make
+        the selling process smooth, fast and straightforward. Every car is
+        carefully inspected to guarantee that you receive the highest possible
+        price. Just give your car details on our website, and we will take care
+        of everything else.{' '}
       </div>
       <div className='hidden lg:flex'>
         <Socials />

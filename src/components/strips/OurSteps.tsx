@@ -8,8 +8,8 @@ export const OurSteps = () => {
     <div className='mt-24 flex flex-col justify-center w-full '>
       <div className='flex flex-col justify-center'>
         <HeaderWithBranding
-          heading='Ready. Set. Sold'
-          subHeading='Sell your car in just three steps'
+          heading='Quick. Easy. Sold'
+          subHeading='Sell your car in just one day with three easy steps'
         />
       </div>
       <div className='w-full flex justify-center'>

@@ -6,11 +6,11 @@ export const FirstSlideContents = () => {
   return (
     <div className='w-full flex justify-center '>
       <div className='w-[90%] lg:w-[88%] xl:w-[85%] py-24 flex flex-col justify-center'>
-        <div className='bg-bannerChipColor h-9 rounded-3xl flex align-middle justify-center place-items-center max-w-xs '>
+        <div className='bg-bannerChipColor h-9 rounded-3xl flex align-middle justify-center place-items-center max-w-sm '>
           <ul className='list-none'>
             <li className='flex items-center text-md font-bold text-bannerChipText'>
               <span className='h-1 w-1 bg-bannerChipText rounded-full mr-2'></span>
-              World of used cars in India
+              Accelerating India's Car Selling Journey
             </li>
           </ul>
         </div>
@@ -26,14 +26,16 @@ export const FirstSlideContents = () => {
             </div>
           </div>
           <div>
-            <h1 className='text-4xl lg:text-5xl'>We are Buying!</h1>
+            <h1 className='text-4xl lg:text-5xl'>
+              We will Buy It for the Best Price.
+            </h1>
           </div>
         </div>
         <div className=' max-w-xl text-white mt-8 text-lg'>
           <p>
-            Sell your car easily and get a top price with MeraCarsSell your car
-            easily and get a top price with MeraCars Sell your car easily and
-            get a top price with MeraCars
+            Sell your car quickly and for more money with MeraCars. We handle
+            all the processes. Enjoy doorstep pickup, same-day payment, and free
+            RC transfer.
           </p>
         </div>
         <div className='flex gap-3 mt-8'>
