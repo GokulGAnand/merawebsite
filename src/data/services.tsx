@@ -1,6 +1,6 @@
-import ServiceOne from '~/images/OurServices/ServiceCardOne.png';
-import ServiceTwo from '~/images/OurServices/ServiceCardTwo.png';
-import ServiceThree from '~/images/OurServices/ServiceCardThree.png';
+import ServiceOne from '~/images/OurServices/ServiceCardOne.webp';
+import ServiceTwo from '~/images/OurServices/ServiceCardTwo.webp';
+import ServiceThree from '~/images/OurServices/ServiceCardThree.webp';
 
 export const services = [
   {

@@ -1,6 +1,6 @@
 'use client';
 import { FirstSlideContents } from '@/components/banner/FirstSlideContents';
-import CarBanner from '~/images/CarBanner.png';
+import CarBanner from '~/images/CarBanner.webp';
 import CarBannerMobile from '~/images/CarBannerMobile.png';
 import NextImage from '../NextImage';
 
