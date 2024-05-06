@@ -5,12 +5,11 @@ import '@/lib/env';
 
 import Faq from '@/components/strips/Faq';
 import { AchievementBox } from '@/components/strips/Achievements';
-import banner from '~/images/AboutUs/Banner.png';
 import { AboutCompany } from '@/components/strips/AboutCompany';
 
 export default function AboutPage() {
   return (
-    <main className='overflow-x-clip'>
+    <main>
       <Head>
         <title>About us</title>
       </Head>
