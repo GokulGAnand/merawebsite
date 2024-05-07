@@ -5,6 +5,7 @@ import HeaderLinks from '@/components/links/HeaderLinks';
 import Logo from '~/svg/MeraLogo.svg';
 import dynamic from 'next/dynamic';
 import SellCarButton from '../buttons/SellCarButton';
+import { contactNum } from '@/data/contacts';
 const HamburgerMenu = dynamic(() => import('@/components/links/HamburgerMenu'));
 
 export const Header = () => {
@@ -37,7 +38,7 @@ export const Header = () => {
               variant='outline'
               className=' flex flex-shrink-0 rounded-lg font-semibold py-3 px-6 text-center'
             >
-              Call us at 9656008704
+              Call us at {contactNum}
             </Button>
           </div>
           <SellCarButton />

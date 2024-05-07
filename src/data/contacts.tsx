@@ -2,13 +2,15 @@ import Email from '~/svg/Email.svg';
 import Phone from '~/svg/Phone.svg';
 import Location from '~/svg/Mark.svg';
 
+export const contactNum = '+91 81130 27722';
+
 export const contacts = [
   {
     value: 'office@teamtechmedia.com',
     icon: <Email width={20} height={20} />,
   },
   {
-    value: '+91-9656008704',
+    value: contactNum,
     icon: <Phone width={20} height={20} />,
   },
   {

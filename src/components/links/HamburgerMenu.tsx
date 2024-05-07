@@ -4,6 +4,7 @@ import { IoMdMenu } from 'react-icons/io';
 import { IoCloseOutline } from 'react-icons/io5';
 import Logo from '~/images/logoHeader.svg';
 import { SidebarLinks } from './SidebarLinks';
+import { contactNum } from '@/data/contacts';
 
 export default function HamburgerMenu() {
   return (
@@ -40,7 +41,7 @@ export default function HamburgerMenu() {
             <SidebarLinks />
           </div>
           <div className='bg-bannerChipColor h-[11vh] flex text-center font-bold justify-center align-middle place-items-center '>
-            Call us at 9656008704
+            Call us at {contactNum}
           </div>
         </ul>
       </div>
