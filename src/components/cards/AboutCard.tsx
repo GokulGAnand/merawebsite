@@ -16,7 +16,9 @@ export const AboutCard = () => {
           heading='Our Company Overview'
           subHeading=''
         />
-        <div className='text-sm leading-[21px]'>{Overview.content}</div>
+        <div className='text-sm leading-[21px] text-headerLinkColor'>
+          {Overview.content}
+        </div>
       </div>
       <div>
         <Divider />
@@ -29,7 +31,9 @@ export const AboutCard = () => {
                 <div className='text-bannerChipText text-lg font-medium'>
                   {item.title}
                 </div>
-                <div className='text-sm'>{item.content}</div>
+                <div className='text-sm text-headerLinkColor'>
+                  {item.content}
+                </div>
               </div>
             );
           })}
