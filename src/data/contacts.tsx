@@ -2,7 +2,7 @@ import Email from '~/svg/Email.svg';
 import Phone from '~/svg/Phone.svg';
 import Location from '~/svg/Mark.svg';
 
-export const contactNum = '+91 8113027722';
+export const contactNum = '+91 81130 27722';
 
 export const contacts = [
   {
