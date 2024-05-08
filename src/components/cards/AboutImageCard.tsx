@@ -2,8 +2,16 @@ import React from 'react';
 import Image from 'next/image';
 import about3 from '~/images/AboutUs/about-3.png';
 import about4 from '~/images/AboutUs/about-4.png';
+import aboutVector from '~/images/AboutUs/AboutVector.png';
 
 export const AboutImageCard = () => {
+  const parentStyle = {
+    backgroundImage: `url(${aboutVector})`,
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center',
+  };
+
   return (
     <div className='flex max-w-max gap-3 sm:w-4/5 md:w-3/5 lg:w-1/2 xl:w-2/5 mx-auto lg:mx-0'>
       <div className='mt-12 lg:mt-20'>
