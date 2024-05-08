@@ -1,21 +1,19 @@
 import { achievements } from '@/data/achievements';
 import AboutPattern from '~/images/AboutUs/AboutPattern.png';
 import React from 'react';
+import Image from 'next/image';
 
 export const AchievementBox = () => {
-  const parentStyle = {
-    backgroundImage: `url(${AboutPattern})`,
-    backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat',
-    backgroundPosition: 'center',
-  };
-
   return (
-    <div className='flex justify-center'>
-      <div
-        className='flex-col justify-center bg-bannerChipText w-[90%] lg:w-[88%] xl:w-[85%] rounded-lg'
-        style={parentStyle}
-      >
+    <div className='flex justify-center relative'>
+      <div className='absolute z-30 flex items-stretch'>
+        <Image
+          className='object-cover lg:flex hidden'
+          src={AboutPattern}
+          alt='Pattern'
+        />
+      </div>
+      <div className='flex-col justify-center bg-bannerChipText w-[90%] lg:w-[88%] xl:w-[85%] rounded-lg z-20'>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-items-center'>
           {achievements.map((achievement) => {
             return (
