@@ -1,4 +1,3 @@
-import { headerLinks } from '@/data/header-links';
 import Link from 'next/link';
 import { IoMdMenu } from 'react-icons/io';
 import { IoCloseOutline } from 'react-icons/io5';
