@@ -25,10 +25,10 @@ export const AchievementBox = () => {
             return (
               <div
                 key={achievement.id}
-                className='flex flex-col items-center py-14'
+                className='flex flex-col items-center lg:py-14 py-6'
               >
                 <div>{achievement.icon}</div>
-                <div className='text-3xl lg:text-5xl leading-[62.5px] font-normal text-white'>
+                <div className='text-3xl lg:text-5xl leading-[62.5px] font-normal text-white lg:pt-4 lg:pb-9'>
                   {achievement.title_content}
                 </div>
                 <div className='text-base text-white'>{achievement.label}</div>
