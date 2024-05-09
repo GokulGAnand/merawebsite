@@ -12,12 +12,12 @@ export const AchievementBox = () => {
           <Image
             src={AboutPattern}
             alt='About Pattern'
-            className='object-contain w-full md:flex hidden'
+            className='object-contain w-full lg:flex hidden'
           />
           <Image
             src={AboutPatternMobile}
             alt='About Pattern'
-            className='object-fill h-full md:hidden opacity-15 mx-auto'
+            className='object-fill w-full h-full lg:hidden opacity-15 mx-auto'
           />
         </div>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-items-center'>
@@ -28,7 +28,7 @@ export const AchievementBox = () => {
                 className='flex flex-col items-center py-14'
               >
                 <div>{achievement.icon}</div>
-                <div className='text-5xl leading-[62.5px] font-normal text-white'>
+                <div className='text-3xl lg:text-5xl leading-[62.5px] font-normal text-white'>
                   {achievement.title_content}
                 </div>
                 <div className='text-base text-white'>{achievement.label}</div>
