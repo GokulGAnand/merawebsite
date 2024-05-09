@@ -16,7 +16,6 @@ export default function AboutUsLayout({
 }: {
   children: React.ReactNode;
 }) {
-  let showImage: true;
   return (
     <>
       <SectionBlock>
