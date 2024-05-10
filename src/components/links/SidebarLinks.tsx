@@ -7,7 +7,7 @@ export const SidebarLinks = () => {
   const path = usePathname();
   return (
     <div>
-      {/* {headerLinks.map((link) => {
+      {headerLinks.map((link) => {
         const isActive = link.route === path;
         return (
           <div
@@ -19,7 +19,7 @@ export const SidebarLinks = () => {
             {link.label}
           </div>
         );
-      })} */}
+      })}
     </div>
   );
 };
