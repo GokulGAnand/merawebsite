@@ -27,7 +27,7 @@ const PageBanner = (props: PageBannerProps) => {
           {srcMobile && (
             <Image
               src={srcMobile}
-              alt='Banner'
+              alt='Banner Mobile'
               className='object-fill h-full w-full lg:hidden flex'
             />
           )}

@@ -25,7 +25,7 @@ function Footer() {
           </div>
         </div>
         <div className='lg:pt-12 flex justify-center w-full'>
-          <Divider />
+          <Divider className={'flex-grow border-t border'} />
         </div>
         <div className='lg:py-6  '>
           <Copyright />
