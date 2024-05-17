@@ -10,7 +10,11 @@ const Contact = () => {
             <div key={contact.value} className='flex align-middle gap-2 '>
               <div className='flex items-center'>{contact.icon}</div>
               <div className='flex items-center w-full text-sm'>
-                {contact.value}
+                {contact.isLink ? (
+                  <a href={`mailto:${contact.value}`}>{contact.value}</a>
+                ) : (
+                  contact.value
+                )}
               </div>
             </div>
           );

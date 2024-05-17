@@ -8,6 +8,7 @@ export const contacts = [
   {
     value: 'office@teamtechmedia.com',
     icon: <Email width={20} height={20} />,
+    isLink: true,
   },
   {
     value: contactNum,
