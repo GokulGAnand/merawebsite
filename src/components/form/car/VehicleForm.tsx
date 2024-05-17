@@ -7,8 +7,8 @@ import GreyBtn from '../components/GreyBtn';
 
 export default function VehicleForm() {
   return (
-    <div className='flex justify-center'>
-      <div className='flex flex-col w-3/4 justify-center shadow-xl '>
+    <div className='flex justify-center lg:px-0 px-4'>
+      <div className='flex flex-col lg:w-3/4 w-full justify-center shadow-xl '>
         <div className='bg-formBg w-full rounded-t-lg px-8 pt-8'>
           <SideHeading heading='Enter your car registration number' />
           <SearchBar />

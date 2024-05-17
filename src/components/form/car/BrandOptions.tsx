@@ -28,7 +28,7 @@ export default function BrandOptions() {
 
   return (
     data && (
-      <div className='grid grid-cols-6 justify-between gap-5'>
+      <div className='grid lg:grid-cols-6 grid-cols-3 justify-between gap-5'>
         {data?.popular?.slice(0, 6)?.map((brand) => {
           return <ButtonOption key={brand.id} imgSrc={brand.logo_with_name} />;
         })}

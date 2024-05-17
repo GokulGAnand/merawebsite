@@ -1,5 +1,6 @@
 'use client';
 import { headerLinks } from '@/data/header-links';
+import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import React from 'react';
 
@@ -10,14 +11,15 @@ export const SidebarLinks = () => {
       {headerLinks.map((link) => {
         const isActive = link.route === path;
         return (
-          <div
+          <Link
+            href={link.route}
             key={link.label}
-            className={` px-5 py-4 border border-solid border-b-mobileSidebarBorder border-x-0 border-t-0  text-${
+            className={`px-5 flex flex-col py-4 border border-solid border-b-mobileSidebarBorder border-x-0 border-t-0  text-${
               isActive ? 'bannerChipText' : `headerLinkColor`
             }`}
           >
             {link.label}
-          </div>
+          </Link>
         );
       })}
     </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import Steps from '../utils/Steps';
+import clsx from 'clsx';
 
 interface StepsInDetailProps {
   index: number;
@@ -13,7 +14,12 @@ export default function StepsInDetail(props: StepsInDetailProps) {
   const primaryTextStyle = 'text-xl md:text-2xl lg:text-xl xl:text-2xl';
   const secondaryTextStyle = 'text-lg md:text-xl lg:text-lg xl:text-xl';
   return (
-    <div className='flex flex-col lg:p-0  md:p-[3.5%] '>
+    <div
+      className={clsx(
+        'flex flex-col lg:p-0  md:p-[3.5%]',
+        isSecondary ? 'justify-center' : 'justify-start',
+      )}
+    >
       <div className='flex gap-1 px-[3.5%] pt-2 align-middle '>
         <div
           className={`flex ${isSecondary ? 'flex-col items-start' : 'flex-row items-center'} gap-2 justify-center align-middle `}

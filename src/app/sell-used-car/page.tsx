@@ -7,24 +7,19 @@ import Image from 'next/image';
 import React from 'react';
 import SellUsedCars from '~/images/SellUsedCars/SellUsedCar.png';
 import MostSearched from '@/components/strips/MostSearched';
+import SellUsedHeading from '@/components/headers/SellUsedHeading';
 
 export default function SellUsedCar() {
   return (
     <div className='flex flex-col'>
       <div className='bg-gradient-to-r from-[#53BDE5] to-[#2B6FB7] min-h-[836px]'>
-        <div className='mt-20'>
-          <HeaderWithBranding
-            heading={`Selling a car? We're buying!`}
-            subHeading=''
-            isBannerHead
-          />
-        </div>
+        <SellUsedHeading />
         <VectorContainer>
           <VehicleForm />
         </VectorContainer>
       </div>
 
-      <div className='flex justify-center -mt-72'>
+      <div className='flex justify-center -mt-32 lg:-mt-72'>
         <Image
           src={SellUsedCars}
           alt='Sell Used Car'
