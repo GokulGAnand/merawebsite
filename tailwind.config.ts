@@ -48,6 +48,13 @@ export default {
         formInputBorder: '#DCDCDC',
         formButton: '#F6F6F6',
         greyBtn: '#E9F2FA',
+        searchInputIcon: '#908F93',
+      },
+      backgroundImage: {
+        carFormGradient: 'linear-gradient(90deg, #53BDE5 0%, #2B6FB7 45.5%)',
+      },
+      boxShadow: {
+        carFormShadow: '8px 9px 26px 13px rgba(255, 255, 255, 0.18)',
       },
       keyframes: {
         flicker: {

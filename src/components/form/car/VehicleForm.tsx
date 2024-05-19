@@ -20,7 +20,7 @@ export default function VehicleForm() {
           <div className='px-8'>
             <SideHeading heading='Start with your car brand' />
             <div className='mt-4 mb-8'>
-              <BrandOptions />
+              <BrandOptions search={''} />
             </div>
             <div className='mb-8'>
               <GreyBtn text='More Brands' />

@@ -9,7 +9,11 @@ const nextConfig = {
 
   // Uncoment to add domain whitelist
   images: {
-    domains: ['media.spinny.com', 'spn-sta.spinny.com'],
+    domains: [
+      'media.spinny.com',
+      'spn-sta.spinny.com',
+      'd308ljkq6e62o1.cloudfront.net',
+    ],
   },
   experimental: {
     turbo: {
