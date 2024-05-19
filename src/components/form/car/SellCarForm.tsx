@@ -1,8 +1,5 @@
-import AllBrands from '@/components/form/car/AllBrands';
-import SearchWithGlass from '@/components/form/inputs/SearchWithGlass';
 import React from 'react';
 import FormSlideControl from '../components/FormSlideControl';
-import SearchWithHeader from './SearchWithHeader';
 import SelectBrand from '../select/SelectBrand';
 
 export default function SellCarForm() {

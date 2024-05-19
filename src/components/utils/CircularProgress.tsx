@@ -29,9 +29,9 @@ export default function CircularProgress() {
         y='50%'
         textAnchor='middle'
         dy='.3em'
-        fontSize='10'
+        fontSize='14'
         fill='#0B2C4D'
-        className='font-medium text-md leading-normal text-stepsText'
+        className='font-medium leading-normal text-stepsText'
       >
         1/9
       </text>
