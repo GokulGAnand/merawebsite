@@ -2,7 +2,7 @@ import React from 'react';
 import SearchBar from './SearchBar';
 import OrSection from './OrSection';
 import { SideHeading } from '../components/SideHeading';
-import BrandOptions from './BrandOptions';
+import BrandOptions from './options/BrandOptions';
 import GreyBtn from '../components/GreyBtn';
 
 export default function VehicleForm() {

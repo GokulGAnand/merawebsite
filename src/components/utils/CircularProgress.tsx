@@ -1,9 +1,15 @@
 import React from 'react';
 
-export default function CircularProgress() {
+interface CircularProgressProps {
+  page: number;
+  count: number;
+}
+
+export default function CircularProgress(props: CircularProgressProps) {
+  const { page, count } = props;
   const radius = 16.5;
   const circumference = 2 * Math.PI * radius;
-  const progress = (1 / 2) * 100; // 50%
+  const progress = (page / count) * 100;
 
   return (
     <svg
@@ -33,7 +39,7 @@ export default function CircularProgress() {
         fill='#0B2C4D'
         className='font-medium leading-normal text-stepsText'
       >
-        1/9
+        {page}/{count}
       </text>
     </svg>
   );

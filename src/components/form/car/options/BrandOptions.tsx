@@ -1,6 +1,6 @@
 'use client';
 import React, { useEffect, useState } from 'react';
-import ButtonOption from './ButtonOption';
+import ButtonOption from '../ButtonOption';
 import clsx from 'clsx';
 import { filterByText } from '@/utils/filter-by-string';
 
@@ -61,12 +61,15 @@ export default function BrandOptions({
         )}
       >
         {filteredOpts?.map(
-          (brand: {
-            id: React.Key | null | undefined;
-            logo_with_name: string | undefined;
-          }) => {
+          (brand: { id: string; logo_with_name: string | undefined }) => {
             return (
-              <ButtonOption key={brand.id} imgSrc={brand.logo_with_name} />
+              <ButtonOption
+                key={brand.id}
+                imgSrc={brand.logo_with_name}
+                value={brand.id}
+                chipValue={brand.id}
+                type='make'
+              />
             );
           },
         )}

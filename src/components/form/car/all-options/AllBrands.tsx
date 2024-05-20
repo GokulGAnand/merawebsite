@@ -1,6 +1,6 @@
 import React from 'react';
-import BrandOptions from './BrandOptions';
-import FormSideHeading from '../components/FormSideHeading';
+import BrandOptions from '../options/BrandOptions';
+import FormSideHeading from '../../components/FormSideHeading';
 
 interface Props {
   search: string;

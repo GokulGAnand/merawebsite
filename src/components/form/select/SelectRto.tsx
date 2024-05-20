@@ -1,15 +1,18 @@
 'use client';
 import React, { useState } from 'react';
 import SearchWithHeader from '../car/SearchWithHeader';
-import AllBrands from '../car/all-options/AllBrands';
+import AllRtos from '../car/all-options/AllRtos';
 
-export default function SelectBrand() {
+export default function SelectRto() {
   const [search, setSearch] = useState('');
   return (
     <>
-      <SearchWithHeader heading='Select your car brand' setSearch={setSearch} />
+      <SearchWithHeader
+        heading='Select RTO location of your car'
+        setSearch={setSearch}
+      />
       <div className='mt-14 flex flex-col gap-4'>
-        <AllBrands search={search} />
+        <AllRtos search={search} />
       </div>
     </>
   );
