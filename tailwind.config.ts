@@ -49,6 +49,7 @@ export default {
         formButton: '#F6F6F6',
         greyBtn: '#E9F2FA',
         searchInputIcon: '#908F93',
+        btnselect: '#BFDCFA',
       },
       backgroundImage: {
         carFormGradient: 'linear-gradient(90deg, #53BDE5 0%, #2B6FB7 45.5%)',
