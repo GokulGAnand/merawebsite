@@ -3,7 +3,6 @@ import React, { useEffect, useState } from 'react';
 import ButtonOption from '../ButtonOption';
 import clsx from 'clsx';
 import { filterByText } from '@/utils/filter-by-string';
-import axios from 'axios';
 
 interface DataProps {
   popular: {
@@ -17,19 +16,16 @@ interface DataProps {
 }
 
 async function getData() {
-  const filterParams = {
-    popular_count: 11,
-  };
-  const response = axios.get(
-    'https://api.spinny.com/v3/api/catalogue/make-list',
-    {
-      params: filterParams,
-    },
+  const params = new URLSearchParams({
+    popular_count: '3',
+  });
+  const res = await fetch(
+    `https://api.spinny.com/v3/api/catalogue/model-list?${params.toString()}`,
   );
-  return response;
+  return res.json();
 }
 
-export default function BrandOptions({
+export default function ModelOptions({
   showAll,
   search,
 }: {
@@ -41,7 +37,7 @@ export default function BrandOptions({
   useEffect(() => {
     const response = getData();
     response.then((res) => {
-      return setData(res.data);
+      return setData(res);
     });
   }, []);
 
