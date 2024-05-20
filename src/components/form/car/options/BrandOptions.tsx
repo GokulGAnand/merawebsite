@@ -61,14 +61,19 @@ export default function BrandOptions({
         )}
       >
         {filteredOpts?.map(
-          (brand: { id: string; logo_with_name: string | undefined }) => {
+          (brand: {
+            id: string;
+            logo_with_name: string | undefined;
+            display_name: string;
+          }) => {
             return (
               <ButtonOption
                 key={brand.id}
                 imgSrc={brand.logo_with_name}
                 value={brand.id}
-                chipValue={brand.id}
+                chipValue={brand.display_name}
                 type='make'
+                page={1}
               />
             );
           },

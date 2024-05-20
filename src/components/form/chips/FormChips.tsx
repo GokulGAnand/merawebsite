@@ -1,5 +1,24 @@
-import React from 'react';
+'use client';
+import { useFormStore } from '@/lib/store/store';
 
-export default function FormChips() {
-  return <div className='justify-center flex'>FormChips</div>;
+interface FormChipProps {
+  label: string;
+  page?: number;
+}
+
+export default function FormChips(props: FormChipProps) {
+  const { label, page } = props;
+  const { switchPage } = useFormStore();
+
+  function handleFormChip() {
+    switchPage(page);
+  }
+  return (
+    <button
+      onClick={handleFormChip}
+      className='justify-center flex px-2 py-2 text-xs leading-5 font-medium rounded-md bg-white cursor-pointer'
+    >
+      {label}
+    </button>
+  );
 }

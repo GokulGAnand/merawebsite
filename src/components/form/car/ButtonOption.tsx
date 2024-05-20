@@ -9,10 +9,11 @@ interface Props {
   type: string;
   text?: string;
   imgSrc?: string;
+  page?: number;
 }
 
 export default function ButtonOption(props: Props) {
-  const { text, imgSrc, chipValue, value, type } = props;
+  const { text, imgSrc, chipValue, value, type, page } = props;
   const { incrementPage, addBrand, addChip } = useFormStore();
 
   function handleBtn() {
@@ -22,6 +23,7 @@ export default function ButtonOption(props: Props) {
       value,
       chipValue,
       type,
+      page,
     });
   }
 

@@ -12,4 +12,5 @@ export interface ChipProps {
   value: string;
   chipValue: string;
   type: FormType;
+  page?: number;
 }

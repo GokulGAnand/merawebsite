@@ -32,6 +32,7 @@ export default function RtoOptions({ search }: { search: string }) {
               chipValue={opt.label}
               text={opt.label}
               type='rto'
+              page={2}
             />
           );
         })}

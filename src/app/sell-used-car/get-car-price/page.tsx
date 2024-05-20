@@ -3,7 +3,7 @@ import FormChips from '@/components/form/chips/FormChips';
 
 export default function GetCarPricePage() {
   return (
-    <div className='flex justify-center'>
+    <div className='flex flex-col justify-center'>
       <SellCarForm />
     </div>
   );
