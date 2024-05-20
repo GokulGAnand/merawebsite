@@ -1,19 +1,20 @@
 'use client';
 import React, { useState } from 'react';
 import SearchWithHeader from '../car/SearchWithHeader';
-import AllBrands from '../car/all-options/AllBrands';
+import DataOpts from '../car/options/DataOpts';
+import { years } from '@/data/years';
 
-export default function SelectBrand() {
+export default function SelectYear() {
   const [search, setSearch] = useState('');
   return (
     <>
       <SearchWithHeader
-        heading='Select your car brand'
+        heading='Select the car manufacturing year'
         setSearch={setSearch}
-        searchPlaceHolder='Search your brand'
+        searchPlaceHolder='Search your year'
       />
       <div className='mt-14 flex flex-col gap-4'>
-        <AllBrands search={search} />
+        <DataOpts btnType='year' data={years} search={search} page={3} />
       </div>
     </>
   );

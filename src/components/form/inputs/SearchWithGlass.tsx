@@ -3,14 +3,15 @@ import { AiOutlineSearch } from 'react-icons/ai';
 
 interface Props {
   setState: React.Dispatch<SetStateAction<string>>;
+  searchPlaceHolder: string;
 }
 
 export default function SearchWithGlass(props: Props) {
-  const { setState } = props;
+  const { setState, searchPlaceHolder } = props;
   return (
     <div className='w-full flex relative'>
       <input
-        placeholder='Search your brand'
+        placeholder={searchPlaceHolder}
         className=' rounded-md border border-solid border-formInputBorder py-3 w-full'
         onChange={(e) => setState(e.target.value)}
       />

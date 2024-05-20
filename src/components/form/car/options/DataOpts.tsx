@@ -1,20 +1,30 @@
 'use client';
-import React, { useEffect, useState } from 'react';
 import ButtonOption from '../ButtonOption';
 import clsx from 'clsx';
 import { filterByText } from '@/utils/filter-by-string';
-import { rto } from '@/data/rto';
 
-export default function RtoOptions({ search }: { search: string }) {
+interface DataType {
+  label: string;
+  value: string;
+}
+
+interface DataOptsProps {
+  search: string;
+  data: DataType[];
+  btnType: string;
+  page: number;
+}
+
+export default function DataOpts(props: DataOptsProps) {
+  const { search, data, btnType, page } = props;
   const isSearch = search !== '';
-
   const options = isSearch
     ? filterByText({
-        array: rto ?? [],
+        array: data ?? [],
         text: search,
         key: 'value',
       })
-    : rto;
+    : data;
 
   return (
     options && (
@@ -31,8 +41,8 @@ export default function RtoOptions({ search }: { search: string }) {
               value={opt.value}
               chipValue={opt.label}
               text={opt.label}
-              type='rto'
-              page={2}
+              type={btnType}
+              page={page}
             />
           );
         })}

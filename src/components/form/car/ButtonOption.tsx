@@ -15,7 +15,6 @@ interface Props {
 export default function ButtonOption(props: Props) {
   const { text, imgSrc, chipValue, value, type, page } = props;
   const { incrementPage, addBrand, addChip, chips } = useFormStore();
-
   function handleBtn() {
     addBrand(value);
     addChip({

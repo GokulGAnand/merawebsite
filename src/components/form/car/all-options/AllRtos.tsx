@@ -1,7 +1,7 @@
 import React from 'react';
-import BrandOptions from '../options/BrandOptions';
 import FormSideHeading from '../../components/FormSideHeading';
-import RtoOptions from '../options/RtoOptions';
+import DataOpts from '../options/DataOpts';
+import { rto } from '@/data/rto';
 
 interface Props {
   search: string;
@@ -13,7 +13,7 @@ export default function AllRtos(props: Props) {
     <>
       <FormSideHeading text={`All RTO’s`} />
       <div>
-        <RtoOptions search={search} />
+        <DataOpts btnType={'rto'} data={rto} search={search} page={2} />
       </div>
     </>
   );
