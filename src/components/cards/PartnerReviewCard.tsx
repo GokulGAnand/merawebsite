@@ -11,7 +11,7 @@ interface PartnerProps {
 export default function PartnerReviewCard(props: PartnerProps) {
   const { icon, rating, partner, comments } = props;
   return (
-    <div className='flex flex-col w-1/3 gap-3 p-6 rounded-2xl border border-solid border-serviceCardBorder shadow-[34.854px_29.62px_48.34px_0px_rgba(51,102,255,0.05)]    '>
+    <div className='flex flex-col sm:w-3/4 gap-3 p-6 rounded-2xl border border-solid border-serviceCardBorder shadow-[34.854px_29.62px_48.34px_0px_rgba(51,102,255,0.05)]    '>
       <div className='flex justify-between'>
         <div>{icon}</div>
         <div>

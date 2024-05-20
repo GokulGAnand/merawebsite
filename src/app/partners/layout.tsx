@@ -4,6 +4,7 @@ import '@/styles/colors.css';
 import SectionBlock from '@/components/SectionBlock';
 import BannerWithVector from '@/components/banner/common/BannerWithVector';
 import MeraPartnersBanner from 'public/images/MeraPartners/MeraPartnersBanner.png';
+import MeraPartnersMobileBanner from 'public/images/MeraPartners/MeraPartnersMobileBanner.png';
 import RightBannerVector from 'public/images/MeraPartners/RightBannerVector.png';
 
 export const metadata: Metadata = {
@@ -23,7 +24,7 @@ export default function MeraPartnersLayout({
           heading=''
           subHeading=''
           srcPath={MeraPartnersBanner}
-          srcMobile={MeraPartnersBanner}
+          srcMobile={MeraPartnersMobileBanner}
           srcVector={RightBannerVector}
         />
         {children}

@@ -27,18 +27,18 @@ const AutoplaySlider = () => {
         </div>
       </div>
 
-      <Marquee>
-        <div className='flex gap-x-6 pt-10'>
+      <div>
+        <div className='flex gap-x-6 pt-10 justify-center'>
           {Logos.map((logo) => {
-            const { label, image } = logo;
+            const { label, icon } = logo;
             return (
               <div className='items-contain justify-center' key={label}>
-                <Image alt={label} src={image} height={72} width={128} />
+                {icon}
               </div>
             );
           })}
         </div>
-      </Marquee>
+      </div>
     </div>
   );
 };
