@@ -11,9 +11,17 @@ export default function AllModels(props: Props) {
   const { search } = props;
   return (
     <>
-      <FormSideHeading text={'Popular Model’s'} />
-      <div>
-        <ModelOptions search={search} />
+      <div className='flex flex-col gap-4'>
+        <FormSideHeading text={'Popular Models'} />
+        <div>
+          <ModelOptions search={search} />
+        </div>
+      </div>
+      <div className='flex flex-col gap-4 mt-10'>
+        <FormSideHeading text={'All Models'} />
+        <div>
+          <ModelOptions showAll search={search} />
+        </div>
       </div>
     </>
   );

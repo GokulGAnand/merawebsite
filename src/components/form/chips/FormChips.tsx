@@ -16,7 +16,7 @@ export default function FormChips(props: FormChipProps) {
   return (
     <button
       onClick={handleFormChip}
-      className='justify-center flex px-2 py-2 text-xs leading-5 font-medium rounded-md bg-white cursor-pointer'
+      className='justify-center flex px-2 py-2 text-xs text-headerLinkColor leading-5 font-medium rounded-md bg-white cursor-pointer'
     >
       {label}
     </button>

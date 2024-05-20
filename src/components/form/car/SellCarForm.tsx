@@ -7,14 +7,16 @@ import SelectRto from '../select/SelectRto';
 import SelectYear from '../select/SelectYear';
 import FormChipGroup from '../chips/FormChipGroup';
 import SelectModel from '../select/SelectModel';
+import SelectVariant from '../select/SelectVariant';
 
-type SlideIndex = 1 | 2 | 3 | 4;
+type SlideIndex = 1 | 2 | 3 | 4 | 5;
 
 const slides = {
   1: <SelectBrand />,
   2: <SelectRto />,
   3: <SelectYear />,
   4: <SelectModel />,
+  5: <SelectVariant />,
 };
 
 export default function SellCarForm() {
