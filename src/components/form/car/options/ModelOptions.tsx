@@ -80,11 +80,11 @@ export default function ModelOptions({
           return (
             <ButtonOption
               key={model.id}
-              value={model.display_name}
+              value={model.id}
               chipValue={model.display_name}
               text={model.display_name}
               type='model'
-              page={4}
+              page={5}
             />
           );
         },

@@ -1,5 +1,4 @@
 import React from 'react';
-import BrandOptions from '../options/BrandOptions';
 import FormSideHeading from '../../components/FormSideHeading';
 import ModelOptions from '../options/ModelOptions';
 
