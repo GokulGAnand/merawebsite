@@ -15,7 +15,8 @@ interface Props {
 
 export default function ButtonOption(props: Props) {
   const { text, imgSrc, chipValue, value, type, page, stopNavigation } = props;
-  const { incrementPage, addChip, chips, addSelection } = useFormStore();
+  const { incrementPage, addChip, chips, addSelection, removeWrongValues } =
+    useFormStore();
   function handleBtn() {
     if (stopNavigation) {
       addSelection({
@@ -29,6 +30,9 @@ export default function ButtonOption(props: Props) {
         chipValue,
         type,
         page,
+      });
+      removeWrongValues({
+        type,
       });
       incrementPage();
     }

@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
-import { ChipProps, Chips, SelectionProps } from './type';
+import { ChipProps, Chips, FormType, SelectionProps } from './type';
 
 interface FormState {
   page: number;
@@ -81,6 +81,23 @@ export const useFormStore = create<FormState | any>(
         set(() => ({
           makeID: id,
         })),
+
+      // Remove Wrong Value
+      removeWrongValues: ({ type }: { type: FormType }) =>
+        set((state: { selections: SelectionProps[]; chips: Chips[] }) => {
+          if (type === 'make') {
+            const updatedChips = state.chips?.filter(
+              (chip) => chip.type !== 'variant',
+            );
+            const updated = updatedChips?.filter(
+              (chip) => chip.type !== 'model',
+            );
+
+            return { selections: [], chips: updated };
+          } else {
+            return state;
+          }
+        }),
     }),
     {
       name: 'mera:sell',
