@@ -1,4 +1,4 @@
-export type FormType = 'make';
+export type FormType = 'make' | 'fuel' | 'transmission' | 'variant' | 'model';
 
 export interface Chips {
   type: FormType;
@@ -11,6 +11,12 @@ export interface Chips {
 export interface ChipProps {
   value: string;
   chipValue: string;
+  type: FormType;
+  page?: number;
+}
+
+export interface SelectionProps {
+  value: string;
   type: FormType;
   page?: number;
 }

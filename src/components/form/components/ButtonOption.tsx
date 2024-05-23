@@ -10,20 +10,28 @@ interface Props {
   text?: string;
   imgSrc?: string;
   page?: number;
+  stopNavigation?: boolean;
 }
 
 export default function ButtonOption(props: Props) {
-  const { text, imgSrc, chipValue, value, type, page } = props;
-  const { incrementPage, addBrand, addChip, chips } = useFormStore();
+  const { text, imgSrc, chipValue, value, type, page, stopNavigation } = props;
+  const { incrementPage, addChip, chips, addSelection } = useFormStore();
   function handleBtn() {
-    addBrand(value);
-    addChip({
-      value,
-      chipValue,
-      type,
-      page,
-    });
-    incrementPage();
+    if (stopNavigation) {
+      addSelection({
+        value,
+        type,
+        page,
+      });
+    } else {
+      addChip({
+        value,
+        chipValue,
+        type,
+        page,
+      });
+      incrementPage();
+    }
   }
 
   const curr = chips?.find((chip: { value: string }) => chip.value === value);

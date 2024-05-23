@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from 'react';
-import SearchWithHeader from '../car/SearchWithHeader';
+import SearchWithHeader from '../components/SearchWithHeader';
 import AllBrands from '../car/all-options/AllBrands';
 
 export default function SelectBrand() {

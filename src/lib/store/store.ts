@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
-import { ChipProps, Chips } from './type';
+import { ChipProps, Chips, SelectionProps } from './type';
 
 interface FormState {
   page: number;
@@ -33,6 +33,39 @@ export const useFormStore = create<FormState | any>(
             };
           }
         }),
+      // data Without Chip
+      selections: [],
+      addSelection: ({ value, type, page }: SelectionProps) => {
+        set((state: { selections: SelectionProps[] }) => {
+          const existingIndex = state?.selections?.findIndex(
+            (opt) => opt.type === type,
+          );
+          if (existingIndex !== -1) {
+            const updatedSelection = [...state.selections];
+            updatedSelection[existingIndex] = { value, type, page };
+            return { selections: updatedSelection };
+          } else {
+            return {
+              selections: [...state.selections, { value, type, page }],
+            };
+          }
+        });
+      },
+      removeSelection: ({ type }: { type: string }) => {
+        set((state: { selections: SelectionProps[]; chips: Chips[] }) => {
+          let updatedSelections = state.selections.filter(
+            (opt) => opt.type !== type,
+          );
+          if (type === 'fuel') {
+            updatedSelections = updatedSelections.filter(
+              (opt) => opt.type !== 'transmission',
+            );
+          }
+
+          return { selections: updatedSelections };
+        });
+      },
+
       // Page
       page: 1,
       switchPage: (pageNumber: number) => set(() => ({ page: pageNumber })),

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import SearchWithHeader from '../car/SearchWithHeader';
+import SearchWithHeader from '../components/SearchWithHeader';
 import AllModels from '../car/all-options/AllModels';
 
 export default function SelectModel() {

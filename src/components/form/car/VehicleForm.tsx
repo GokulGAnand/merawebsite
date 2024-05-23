@@ -1,6 +1,6 @@
 import React from 'react';
 import SearchBar from './SearchBar';
-import OrSection from './OrSection';
+import OrSection from '../components/OrSection';
 import { SideHeading } from '../components/SideHeading';
 import BrandOptions from './options/BrandOptions';
 import GreyBtn from '../components/GreyBtn';

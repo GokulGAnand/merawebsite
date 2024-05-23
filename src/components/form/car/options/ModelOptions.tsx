@@ -1,6 +1,6 @@
 'use client';
 import React, { useEffect, useState } from 'react';
-import ButtonOption from '../ButtonOption';
+import ButtonOption from '../../components/ButtonOption';
 import clsx from 'clsx';
 import { filterByText } from '@/utils/filter-by-string';
 import { useFormStore } from '@/lib/store/store';
@@ -68,7 +68,7 @@ export default function ModelOptions({
     <div
       className={clsx(
         `grid justify-between gap-5`,
-        showAll ? 'lg:grid-cols-5' : 'lg:grid-cols-6 grid-cols-3',
+        showAll ? 'lg:grid-cols-3' : 'lg:grid-cols-4 grid-cols-3',
       )}
     >
       {filteredOpts?.map(
@@ -84,7 +84,7 @@ export default function ModelOptions({
               chipValue={model.display_name}
               text={model.display_name}
               type='model'
-              page={5}
+              page={4}
             />
           );
         },
