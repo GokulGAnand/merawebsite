@@ -7,8 +7,6 @@ interface FormState {
   switchPage: () => void;
   incrementPage: () => void;
   decrementPage: () => void;
-  makeID: string;
-  addBrand: (id: string) => void;
   chips: Chips[] | [];
   addChip: ({ value, chipValue, type, page }: ChipProps) => void;
 }
@@ -75,12 +73,10 @@ export const useFormStore = create<FormState | any>(
         set((state: { page: number }) => ({
           page: Number(state.page) > 1 ? Number(state.page) - 1 : 1,
         })),
-      // Brand
-      makeID: '',
-      addBrand: (id: string) =>
-        set(() => ({
-          makeID: id,
-        })),
+
+      // Phone Number
+      phone: '',
+      setPhone: (phoneNumber: string) => set(() => ({ phone: phoneNumber })),
 
       // Remove Wrong Value
       removeWrongValues: ({ type }: { type: FormType }) =>

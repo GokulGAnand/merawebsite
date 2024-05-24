@@ -2,6 +2,7 @@
 import ButtonOption from '../../components/ButtonOption';
 import clsx from 'clsx';
 import { filterByText } from '@/utils/filter-by-string';
+import { Key } from 'react';
 
 interface DataType {
   label: string;
@@ -9,15 +10,17 @@ interface DataType {
 }
 
 interface DataOptsProps {
-  search: string;
   data: DataType[];
   btnType: string;
   page: number;
+  search?: string;
+  gridCols?: number;
+  valueKey?: Key;
 }
 
 export default function DataOpts(props: DataOptsProps) {
-  const { search, data, btnType, page } = props;
-  const isSearch = search !== '';
+  const { search, data, btnType, page, gridCols, valueKey } = props;
+  const isSearch = search && search !== '';
   const options = isSearch
     ? filterByText({
         array: data ?? [],
@@ -31,21 +34,24 @@ export default function DataOpts(props: DataOptsProps) {
       <div
         className={clsx(
           `grid justify-between gap-5`,
-          'lg:grid-cols-4 grid-cols-3',
+          gridCols ? `lg:grid-cols-${gridCols}` : 'lg:grid-cols-4',
+          ' grid-cols-3',
         )}
       >
-        {options?.map((opt: { label: string; value: string }) => {
-          return (
-            <ButtonOption
-              key={opt.label}
-              value={opt.value}
-              chipValue={opt.label}
-              text={opt.label}
-              type={btnType}
-              page={page}
-            />
-          );
-        })}
+        {options?.map(
+          (opt: { label: string; value: string; [key: string]: string }) => {
+            return (
+              <ButtonOption
+                key={opt.label}
+                value={opt.value}
+                chipValue={valueKey ? opt[String(valueKey)] : opt.label}
+                text={opt.label}
+                type={btnType}
+                page={page}
+              />
+            );
+          },
+        )}
       </div>
     )
   );
