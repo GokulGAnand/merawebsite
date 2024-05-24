@@ -1,7 +1,9 @@
 import { useFormStore } from '@/lib/store/store';
 import clsx from 'clsx';
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 import React from 'react';
+import { getPriceRoute } from '../car/SearchBar';
 
 interface Props {
   value: string;
@@ -11,12 +13,29 @@ interface Props {
   imgSrc?: string;
   page?: number;
   stopNavigation?: boolean;
+  isStarterForm?: boolean;
 }
 
 export default function ButtonOption(props: Props) {
-  const { text, imgSrc, chipValue, value, type, page, stopNavigation } = props;
-  const { incrementPage, addChip, chips, addSelection, removeWrongValues } =
-    useFormStore();
+  const {
+    text,
+    imgSrc,
+    chipValue,
+    value,
+    type,
+    page,
+    stopNavigation,
+    isStarterForm,
+  } = props;
+  const {
+    incrementPage,
+    addChip,
+    chips,
+    addSelection,
+    removeWrongValues,
+    switchPage,
+  } = useFormStore();
+  const router = useRouter();
   function handleBtn() {
     if (stopNavigation) {
       addSelection({
@@ -34,7 +53,8 @@ export default function ButtonOption(props: Props) {
       removeWrongValues({
         type,
       });
-      incrementPage();
+      isStarterForm ? switchPage(2) : incrementPage();
+      isStarterForm && router.push(getPriceRoute);
     }
   }
 

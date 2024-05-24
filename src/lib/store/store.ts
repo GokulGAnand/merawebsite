@@ -9,6 +9,7 @@ interface FormState {
   decrementPage: () => void;
   chips: Chips[] | [];
   addChip: ({ value, chipValue, type, page }: ChipProps) => void;
+  clearAll: () => void;
 }
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -94,6 +95,8 @@ export const useFormStore = create<FormState | any>(
             return state;
           }
         }),
+
+      clearAll: () => set(() => ({ chips: [], selections: [], phone: '' })),
     }),
     {
       name: 'mera:sell',

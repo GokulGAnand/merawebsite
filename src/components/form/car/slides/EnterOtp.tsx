@@ -5,7 +5,7 @@ import OtpInput from 'react-otp-input';
 export const EnterOtp = () => {
   const [otp, setOtp] = useState('');
   const [countdown, setCountdown] = useState(30);
-  const { phone, decrementPage, incrementPage } = useFormStore();
+  const { phone, decrementPage, incrementPage, clearAll } = useFormStore();
   const countdownRunning = countdown > 0;
 
   function handleEdit() {
@@ -31,6 +31,7 @@ export const EnterOtp = () => {
     setOtp(otpNumber);
     if (otpNumber.length === 4) {
       incrementPage();
+      clearAll();
     }
   }
 

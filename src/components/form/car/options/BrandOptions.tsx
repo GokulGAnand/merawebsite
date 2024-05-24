@@ -32,9 +32,11 @@ async function getData() {
 export default function BrandOptions({
   showAll,
   search,
+  isStarterForm,
 }: {
   search: string;
   showAll?: boolean;
+  isStarterForm?: boolean;
 }) {
   const [data, setData] = useState<DataProps>();
 
@@ -49,7 +51,7 @@ export default function BrandOptions({
   const brands = showAll ? data?.results : data?.popular?.slice(0, 6);
   const options = isSearch
     ? filterByText({
-        array: brands ?? [],
+        array: data?.results ?? [],
         text: search,
         key: 'display_name',
       })
@@ -80,6 +82,7 @@ export default function BrandOptions({
               chipValue={brand.display_name}
               type='make'
               page={1}
+              isStarterForm
             />
           );
         },
