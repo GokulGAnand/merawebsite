@@ -40,6 +40,7 @@ const slides = {
       valueKey='chipValue'
       heading='Select the Kilometers driven of your car'
       page={7}
+      gridCols={3}
     />
   ),
   8: (

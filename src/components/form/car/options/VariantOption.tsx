@@ -33,11 +33,11 @@ export default function VariantOptions() {
   const year = chips?.find((item: { type: string }) => item.type === 'year');
 
   useEffect(() => {
-    const response = getData(model.value, year.value);
+    const response = getData(model?.value, year?.value);
     response.then((res) => {
       return setData(res);
     });
-  }, [model.value, year.value]);
+  }, [model?.value, year?.value]);
   const varients = data?.results ?? [];
   const fuelVarients = extractValuesByKey(varients, 'fuel_type');
   const options = transformStringsToObjects(fuelVarients);
