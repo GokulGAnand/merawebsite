@@ -11,7 +11,7 @@ export default function SelectModel() {
         setSearch={setSearch}
         searchPlaceHolder='Search your model'
       />
-      <div className='mt-14 flex flex-col gap-4'>
+      <div className='mt-4 lg:mt-14 flex flex-col gap-4'>
         <AllModels search={search} />
       </div>
     </>

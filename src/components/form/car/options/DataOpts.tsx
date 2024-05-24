@@ -25,7 +25,7 @@ export default function DataOpts(props: DataOptsProps) {
     ? filterByText({
         array: data ?? [],
         text: search,
-        key: 'value',
+        key: 'label',
       })
     : data;
 
@@ -35,7 +35,7 @@ export default function DataOpts(props: DataOptsProps) {
         className={clsx(
           `grid justify-between gap-5`,
           gridCols ? `lg:grid-cols-${gridCols}` : 'lg:grid-cols-4',
-          ' grid-cols-3',
+          ' grid-cols-2',
         )}
       >
         {options?.map(

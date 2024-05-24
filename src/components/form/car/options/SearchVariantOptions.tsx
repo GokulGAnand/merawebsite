@@ -1,6 +1,9 @@
+import { useState } from 'react';
 import ButtonOption from '../../components/ButtonOption';
 import FormSideHeading from '../../components/FormSideHeading';
+import SearchWithGlass from '../../inputs/SearchWithGlass';
 import { Options } from './type';
+import { filterByText } from '@/utils/filter-by-string';
 
 interface Props {
   varients: Options[];
@@ -8,13 +11,28 @@ interface Props {
 
 export const SearchVariantOptions = (props: Props) => {
   const { varients } = props;
+  const [search, setSearch] = useState('');
+  const isSearch = search && search !== '';
+  const options = isSearch
+    ? filterByText({
+        array: varients ?? [],
+        text: search,
+        key: 'display_name',
+      })
+    : varients;
   return (
     <div className='flex flex-col gap-4'>
-      <div>
+      <div className='flex flex-col gap-3 lg:gap-6'>
         <FormSideHeading text={'Select Variant'} />
+        <SearchWithGlass
+          searchPlaceHolder='Search your variant'
+          setState={setSearch}
+        />
       </div>
-      <div className={`grid justify-between gap-5 lg:grid-cols-3`}>
-        {varients?.map((option: Options) => {
+      <div
+        className={`grid justify-between gap-5 grid-cols-2 lg:grid-cols-3 lg:mt-7`}
+      >
+        {options?.map((option: Options) => {
           return (
             <ButtonOption
               key={option.display_name}

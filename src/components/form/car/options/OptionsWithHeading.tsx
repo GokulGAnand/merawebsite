@@ -15,7 +15,7 @@ export const OptionsWithHeading = (props: Props) => {
       <div>
         <FormSideHeading text={heading} />
       </div>
-      <div className={`grid justify-between gap-5 lg:grid-cols-3`}>
+      <div className={`grid justify-between gap-5 grid-cols-2 lg:grid-cols-3`}>
         {options?.map((option: { value: string; label: string }) => {
           return (
             <ButtonOption

@@ -68,7 +68,7 @@ export default function ModelOptions({
     <div
       className={clsx(
         `grid justify-between gap-5`,
-        showAll ? 'lg:grid-cols-3' : 'lg:grid-cols-4 grid-cols-3',
+        showAll ? 'lg:grid-cols-3 grid-cols-2' : 'lg:grid-cols-4 grid-cols-2',
       )}
     >
       {filteredOpts?.map(

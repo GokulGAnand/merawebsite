@@ -65,7 +65,7 @@ export default function BrandOptions({
     <div
       className={clsx(
         `grid justify-between gap-5`,
-        showAll ? 'lg:grid-cols-5' : 'lg:grid-cols-6 grid-cols-3',
+        showAll ? 'lg:grid-cols-5 grid-cols-3' : 'lg:grid-cols-6 grid-cols-3',
       )}
     >
       {filteredOpts?.map(

@@ -16,7 +16,7 @@ export default function AllModels(props: Props) {
           <ModelOptions search={search} />
         </div>
       </div>
-      <div className='flex flex-col gap-4 mt-10'>
+      <div className='flex flex-col gap-4 mt-4 lg:mt-10'>
         <FormSideHeading text={'All Models'} />
         <div>
           <ModelOptions showAll search={search} />

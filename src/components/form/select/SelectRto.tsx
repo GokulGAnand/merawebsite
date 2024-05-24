@@ -12,7 +12,7 @@ export default function SelectRto() {
         setSearch={setSearch}
         searchPlaceHolder='Search your RTO'
       />
-      <div className='mt-14 flex flex-col gap-4'>
+      <div className='mt-4 lg:mt-14 flex flex-col gap-4'>
         <AllRtos search={search} />
       </div>
     </>

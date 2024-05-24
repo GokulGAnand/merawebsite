@@ -12,7 +12,7 @@ export default function SelectBrand() {
         setSearch={setSearch}
         searchPlaceHolder='Search your brand'
       />
-      <div className='mt-14 flex flex-col gap-4'>
+      <div className='mt-4 lg:mt-14 flex flex-col gap-4'>
         <AllBrands search={search} />
       </div>
     </>

@@ -12,7 +12,7 @@ export default function AllBrands(props: Props) {
     <>
       <FormSideHeading text='All Brands' />
       <div>
-        <BrandOptions search={search} showAll />
+        <BrandOptions search={search} showAll isStarterForm />
       </div>
     </>
   );

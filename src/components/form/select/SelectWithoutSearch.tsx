@@ -13,7 +13,7 @@ export default function SelectWithoutSearch(props: Props) {
   const { heading, btnType, data, page, gridCols, valueKey } = props;
   return (
     <>
-      <div className='text-stepsText text-lg leading-normal mb-4 mt-6 font-medium'>
+      <div className='text-stepsText text-sm lg:text-lg leading-normal mt-3 lg:mb-4 lg:mt-6 font-medium'>
         {heading}
       </div>
       <div className='mt-14 flex flex-col gap-4'>
