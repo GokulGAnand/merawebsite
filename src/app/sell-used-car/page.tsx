@@ -1,12 +1,9 @@
 import VectorContainer from '@/components/containers/VectorContainer';
 import VehicleForm from '@/components/form/car/VehicleForm';
-import HeaderWithBranding from '@/components/headers/HeaderWithBranding';
 import HowItWorks from '@/components/strips/HowItWorks';
-import Faq from '@/components/strips/Faq';
 import Image from 'next/image';
 import React from 'react';
 import SellUsedCars from '~/images/SellUsedCars/SellUsedCar.png';
-import MostSearched from '@/components/strips/MostSearched';
 import SellUsedHeading from '@/components/headers/SellUsedHeading';
 
 export default function SellUsedCar() {
@@ -31,8 +28,8 @@ export default function SellUsedCar() {
       <div className='mt-12 '>
         <HowItWorks />
       </div>
-      <Faq />
-      <MostSearched />
+      {/* <Faq />
+      <MostSearched /> */}
     </div>
   );
 }
