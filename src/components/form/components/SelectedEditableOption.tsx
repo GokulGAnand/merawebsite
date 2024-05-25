@@ -21,7 +21,7 @@ export default function SelectedEditableOption(props: Props) {
   return (
     <button
       className={clsx(
-        'bg-btnselect px-5 py-3 flex flex-shrink-0 rounded-md gap-2 cursor-pointer text-headerLinkColor justify-between align-middle items-center',
+        'bg-btnselect px-5 py-3 text-sm flex flex-shrink-0 rounded-md gap-2 cursor-pointer text-headerLinkColor justify-between align-middle items-center',
       )}
     >
       {text}
