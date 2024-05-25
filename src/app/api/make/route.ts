@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { NextRequest } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
 import { MAKE } from '../endpoints';
 
 const GET = async (req: NextRequest) => {
@@ -11,10 +11,10 @@ const GET = async (req: NextRequest) => {
         'Cache-Control': 'max-age=3600', // Cache header for optimization
       },
     });
-    return Response.json(response.data);
+    return NextResponse.json(response.data);
   } catch (error) {
     console.error('Error fetching data:', error);
-    return Response.json({ error: 'Error fetching data' }, { status: 500 });
+    return NextResponse.json({ error: 'Error fetching data' }, { status: 500 });
   }
 };
 
