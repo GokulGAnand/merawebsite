@@ -16,7 +16,7 @@ export default function SellUsedCar() {
         </VectorContainer>
       </div>
 
-      <div className='flex justify-center -mt-32 lg:-mt-56'>
+      <div className='flex justify-center -mt-20 lg:-mt-56'>
         <Image
           src={SellUsedCars}
           alt='Sell Used Car'

@@ -13,6 +13,13 @@ export default function FormSlideControl(props: FormSlideControlProps) {
   const { count } = props;
   const store = useFormStore();
   const disable = count === store.page;
+
+  function handleBack() {
+    if (disable) {
+      return;
+    }
+    store.decrementPage();
+  }
   return (
     <div className='flex justify-between items-center'>
       <div>
@@ -23,7 +30,7 @@ export default function FormSlideControl(props: FormSlideControlProps) {
               ? 'text-greyBtn cursor-not-allowed'
               : 'text-stepsText  cursor-pointer',
           )}
-          onClick={store.decrementPage}
+          onClick={handleBack}
         />
       </div>
       <div>
