@@ -4,6 +4,8 @@ import ButtonOption from '../../components/ButtonOption';
 import clsx from 'clsx';
 import { filterByText } from '@/utils/filter-by-string';
 import { useFormStore } from '@/lib/store/store';
+import axios from 'axios';
+import { LoadingDots } from '@/components/loaders/LoadingDots';
 
 interface DataProps {
   popular: {
@@ -17,21 +19,21 @@ interface DataProps {
 }
 
 async function getData(makeID: string) {
-  const params = new URLSearchParams({
-    popular_count: '3',
+  const filterParams = {
+    popular_count: 3,
     make_id: makeID,
-    page: '1',
-    page_size: '100',
-    is_public: 'true',
+    page: 1,
+    page_size: 100,
+    is_public: true,
     fields: 'id,name,display_name,is_usable,logo',
-    remove_from_other: 'true',
+    remove_from_other: true,
     city_name: 'mumbai',
     make_year: '2022',
+  };
+  const response = axios.get('/api/model', {
+    params: filterParams,
   });
-  const res = await fetch(
-    `https://api.spinny.com/v3/api/catalogue/model-list?${params.toString()}`,
-  );
-  return res.json();
+  return response;
 }
 
 export default function ModelOptions({
@@ -47,7 +49,7 @@ export default function ModelOptions({
   useEffect(() => {
     const response = getData(make.value);
     response.then((res) => {
-      return setData(res);
+      return setData(res.data);
     });
   }, [make.value]);
 
@@ -91,6 +93,6 @@ export default function ModelOptions({
       )}
     </div>
   ) : (
-    <></>
+    <LoadingDots />
   );
 }

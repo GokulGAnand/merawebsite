@@ -6,24 +6,26 @@ import { extractValuesByKey } from '@/utils/extract-values-by-key';
 import { transformStringsToObjects } from '@/utils/transform-string-to-objects';
 import { OptionsWithHeading } from './OptionsWithHeading';
 import { SearchVariantOptions } from './SearchVariantOptions';
+import axios from 'axios';
+import { LoadingDots } from '@/components/loaders/LoadingDots';
 
 interface DataProps {
   results: Options[];
 }
 
 async function getData(modelID: string, year: string) {
-  const params = new URLSearchParams({
+  const filterParams = {
     model: modelID,
     make_year: year,
-    page_size: '100',
-    page: '1',
-    is_public: 'true',
-    sell_page_filter: 'true',
+    page_size: 100,
+    page: 1,
+    is_public: true,
+    sell_page_filter: true,
+  };
+  const response = axios.get('/api/variant', {
+    params: filterParams,
   });
-  const res = await fetch(
-    `https://api.spinny.com/v3/api/catalogue/variant-list?${params.toString()}`,
-  );
-  return res.json();
+  return response;
 }
 
 export default function VariantOptions() {
@@ -35,9 +37,10 @@ export default function VariantOptions() {
   useEffect(() => {
     const response = getData(model?.value, year?.value);
     response.then((res) => {
-      return setData(res);
+      return setData(res.data);
     });
   }, [model?.value, year?.value]);
+
   const varients = data?.results ?? [];
   const fuelVarients = extractValuesByKey(varients, 'fuel_type');
   const options = transformStringsToObjects(fuelVarients);
@@ -92,6 +95,6 @@ export default function VariantOptions() {
       )}
     </>
   ) : (
-    <>Loading...</>
+    <LoadingDots />
   );
 }

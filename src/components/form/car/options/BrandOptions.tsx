@@ -4,6 +4,7 @@ import ButtonOption from '../../components/ButtonOption';
 import clsx from 'clsx';
 import { filterByText } from '@/utils/filter-by-string';
 import axios from 'axios';
+import { LoadingDots } from '@/components/loaders/LoadingDots';
 
 interface DataProps {
   popular: {
@@ -20,12 +21,9 @@ async function getData() {
   const filterParams = {
     popular_count: 11,
   };
-  const response = axios.get(
-    'https://api.spinny.com/v3/api/catalogue/make-list',
-    {
-      params: filterParams,
-    },
-  );
+  const response = axios.get('/api/make', {
+    params: filterParams,
+  });
   return response;
 }
 
@@ -89,6 +87,6 @@ export default function BrandOptions({
       )}
     </div>
   ) : (
-    <></>
+    <LoadingDots />
   );
 }
