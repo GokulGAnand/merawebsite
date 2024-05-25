@@ -3,7 +3,7 @@ import VehicleForm from '@/components/form/car/VehicleForm';
 import HowItWorks from '@/components/strips/HowItWorks';
 import Image from 'next/image';
 import React from 'react';
-import SellUsedCars from '~/images/SellUsedCars/SellUsedCar.png';
+import SellUsedCars from '~/images/SellUsedCars/SellUsedCar.webp';
 import SellUsedHeading from '@/components/headers/SellUsedHeading';
 
 export default function SellUsedCar() {
@@ -16,7 +16,7 @@ export default function SellUsedCar() {
         </VectorContainer>
       </div>
 
-      <div className='flex justify-center -mt-32 lg:-mt-72'>
+      <div className='flex justify-center -mt-32 lg:-mt-56'>
         <Image
           src={SellUsedCars}
           alt='Sell Used Car'

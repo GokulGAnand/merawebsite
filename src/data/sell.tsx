@@ -1,5 +1,6 @@
 import SellOne from '~/images/SellUsedCars/SellOne.webp';
 import SellTwo from '~/images/SellUsedCars/SellTwo.webp';
+import SellThree from '~/images/SellUsedCars/SellThree.webp';
 
 export const sell = [
   {
@@ -17,6 +18,6 @@ export const sell = [
   {
     heading: 'Instant payment into your bank account',
     subHeading: 'Complete the sale and get a 100% transparent deal',
-    image: SellOne,
+    image: SellThree,
   },
 ];

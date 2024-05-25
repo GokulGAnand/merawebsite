@@ -64,7 +64,7 @@ export default function ButtonOption(props: Props) {
     <button
       onClick={handleBtn}
       className={clsx(
-        'flex flex-shrink-0  rounded-md cursor-pointer text-headerLinkColor justify-center align-middle',
+        'flex flex-shrink-0 rounded-md cursor-pointer text-headerLinkColor text-sm font-medium justify-center align-middle',
         imgSrc ? 'px-3 py-5' : 'px-2 py-4',
         selected ? 'bg-btnselect' : 'bg-formButton',
       )}
