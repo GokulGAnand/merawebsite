@@ -12,8 +12,8 @@ const Pricing = () => {
           subHeading='Sell your car the more money way, in three easy steps'
         />
       </div>
-      <div className='flex flex-col items-center mb-8'>
-        <div className='flex flex-row items-center mt-16 mb-8 w-full lg:w-[88%] xl:w-[90%]'>
+      <div className='flex flex-col items-center w-full lg:pt-16 pt-5'>
+        <div className='flex flex-col lg:flex-row w-[80%] lg:w-[85%] justify-between'>
           {PricingPlans.map((plan) => (
             <PricingCard
               key={plan.id}
