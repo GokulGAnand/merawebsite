@@ -17,7 +17,7 @@ const BannerWithVector = (props: BannerWithVectorProps) => {
   return (
     <div className='hero h-auto xl:h-[586px] bg-opacity-90 relative'>
       <>
-        <div className='relative h-full w-full bg-gradient-to-r from-[#53BDE5] to-[#2B6FB7] bg-opacity-90 z-10 opacity-90 py-48 lg:py-56'></div>
+        <div className='relative h-full w-full bg-gradient-to-r from-[#53BDE5] to-[#2B6FB7] bg-opacity-90 z-10 opacity-90 py-48 lg:py-72'></div>
         <div className='flex w-full h-auto absolute z-20'>
           <div className='flex-col h-full'>
             {srcVector && (

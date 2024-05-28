@@ -4,7 +4,7 @@ import MeraVector from '~/svg/MeraCarsVector.svg';
 const BannerHeader = () => {
   return (
     <div className='flex justify-center'>
-      <div className='flex-col w-full pt-9 lg:pt-16'>
+      <div className='flex-col w-11/12 lg:w-[55%] pt-9 lg:pt-16'>
         <div className='flex justify-center'>
           <div className='bg-bannerChipColor h-9 rounded-3xl flex align-middle justify-center place-items-center max-w-sm'>
             <ul className='list-none'>
@@ -24,7 +24,7 @@ const BannerHeader = () => {
               <div className='mr-6 lg:flex justify-end hidden'>
                 <MeraVector width={67} height={15} />
               </div>
-              <div>Selling Your Car? We are Buying!</div>
+              <div>Are you a Car Dealer? Join Us and Increase Your Revenue</div>
             </div>
           </div>
         </div>
