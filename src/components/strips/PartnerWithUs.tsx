@@ -9,7 +9,7 @@ const PartnerWithUs = () => {
       <div className='flex flex-col justify-center'>
         <HeaderWithBranding
           heading='Why partner with us'
-          subHeading='Sell your car the more money way, in three easy steps'
+          subHeading='Get access to high-quality used cars at the best prices'
         />
       </div>
       <div className='w-full flex justify-center'>

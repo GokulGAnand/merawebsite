@@ -4,6 +4,8 @@ import '@/styles/colors.css';
 import SectionBlock from '@/components/SectionBlock';
 import BannerWithVector from '@/components/banner/common/BannerWithVector';
 import InspectionBanner from '~/images/MeraPartners/InspectionBanner.png';
+import InspectionBannerMobile from '~/images/MeraPartners/InspectionMobileBanner.png';
+import RightBannerVector from 'public/images/MeraPartners/RightBannerVector.png';
 
 export const metadata: Metadata = {
   title: 'Inspection',
@@ -18,12 +20,14 @@ export default function MeraPartnersLayout({
   return (
     <>
       <SectionBlock>
-        {/* <BannerWithVector
+        <BannerWithVector
           heading=''
-          subHeading=''
+          subHeading='Schedule a comprehensive car inspection'
           srcPath={InspectionBanner}
-          srcMobile={InspectionBanner}
-        /> */}
+          srcMobile={InspectionBannerMobile}
+          srcVector={RightBannerVector}
+          isInspection
+        />
         {children}
       </SectionBlock>
     </>

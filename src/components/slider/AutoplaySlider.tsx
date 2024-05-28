@@ -6,7 +6,7 @@ import Divider from '../utils/Divider';
 
 const AutoplaySlider = () => {
   return (
-    <div>
+    <div className='overflow-x-clip'>
       <div className='flex items-center justify-center'>
         <div className='flex w-[100%] lg:w-[88%] xl:w-[85%] pt-24 gap-x-5'>
           <Divider className='flex-grow border-t-2 border-partnerDividerColor' />
@@ -28,7 +28,7 @@ const AutoplaySlider = () => {
       </div>
 
       <div>
-        <div className='flex gap-x-6 pt-10 justify-center'>
+        <div className='flex w-full gap-x-6 pt-10 justify-center'>
           {Logos.map((logo) => {
             const { label, icon } = logo;
             return (

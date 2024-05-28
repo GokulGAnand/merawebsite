@@ -17,7 +17,7 @@ export default function Partners() {
         <PartnerWithUs />
         <DownloadMeraPartners />
         <PartnerFeedBack />
-        {/* <AutoplaySlider /> */}
+        <AutoplaySlider />
         <MeraPartners />
       </section>
     </main>

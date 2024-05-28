@@ -21,8 +21,8 @@ export default function MeraPartnersLayout({
     <>
       <SectionBlock>
         <BannerWithVector
-          heading=''
-          subHeading=''
+          heading='World of used cars in India'
+          subHeading='Are you a Car Dealer? Join Us and Increase Your Revenue'
           srcPath={MeraPartnersBanner}
           srcMobile={MeraPartnersMobileBanner}
           srcVector={RightBannerVector}
