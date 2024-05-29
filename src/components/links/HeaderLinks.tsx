@@ -8,7 +8,7 @@ export default function HeaderLinks() {
   const path = usePathname();
   return (
     <div className='hidden lg:flex gap-[1vw]'>
-      {/* {headerLinks.map((option) => {
+      {headerLinks.map((option) => {
         const isActive = option.route === path;
         return (
           <div key={option.label} className={`xl:px-5 flex  `}>
@@ -22,7 +22,7 @@ export default function HeaderLinks() {
             </Link>
           </div>
         );
-      })} */}
+      })}
     </div>
   );
 }

@@ -2,7 +2,7 @@
 import React from 'react';
 import { Accordion, AccordionItem as Item } from '@szhsin/react-accordion';
 import ChevronDown from '~/svg/ChevronDown.svg';
-import { faqs } from '@/data/faqs';
+import { FaqType, faqs } from '@/data/faqs';
 
 const AccordionItem = ({
   header,
@@ -40,7 +40,7 @@ const AccordionItem = ({
   />
 );
 
-export default function Faq() {
+export default function Faq({ faqs }: { faqs: FaqType[] }) {
   return (
     <div className='  border-t bg-accordionBody mt-10  mb-24 '>
       <Accordion transition transitionTimeout={200}>

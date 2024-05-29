@@ -1,3 +1,9 @@
+export interface FaqType {
+  id: number;
+  que: string;
+  ans: string;
+}
+
 export const faqs = [
   {
     id: -7,

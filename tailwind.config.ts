@@ -44,6 +44,18 @@ export default {
         copyRightText: '#E0E0E0',
         mobileSidebarBorder: 'rgba(0, 0, 0, 0.08);',
         callButtonBg: 'rgba(13, 61, 229, 0.1)',
+        formBg: '#F4FAFF',
+        formInputBorder: '#DCDCDC',
+        formButton: '#F6F6F6',
+        greyBtn: '#E9F2FA',
+        searchInputIcon: '#908F93',
+        btnselect: '#BFDCFA',
+      },
+      backgroundImage: {
+        carFormGradient: 'linear-gradient(90deg, #53BDE5 0%, #2B6FB7 45.5%)',
+      },
+      boxShadow: {
+        carFormShadow: '8px 9px 26px 13px rgba(255, 255, 255, 0.18)',
         partnerDividerColor: '#EDEDED',
         aboutDividerColor: '#D9D9D9',
       },

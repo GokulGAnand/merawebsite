@@ -1,45 +1,38 @@
 import { StaticImport } from 'next/dist/shared/lib/get-img-props';
 import Image from 'next/image';
 import React from 'react';
-import StepOne from '~/svg/StepOne.svg';
+import StepsInDetail from '../utils/StepsInDetail';
 
 interface Props {
   index: number;
   heading: string;
   subHeading: string;
   img: string | StaticImport;
+  isSecondary?: boolean;
 }
 
 export default function ServiceCard(props: Props) {
-  const { img, heading, subHeading, index } = props;
+  const { img, heading, subHeading, index, isSecondary } = props;
+  const normalStyle =
+    'flex-col border-serviceCardBorder border border-solid shadow-[-20px_17px_30px_0px_rgba(51,102,255,0.05)] rounded-3xl';
   return (
-    <div className=' flex  flex-col md:flex-row lg:flex-col max-w-sm  md:max-w-full lg:max-w-sm border-serviceCardBorder border border-solid shadow-[-20px_17px_30px_0px_rgba(51,102,255,0.05)]  rounded-3xl '>
+    <div
+      className={` flex  md:flex-row lg:flex-col max-w-sm  md:max-w-full lg:max-w-sm ${isSecondary ? '' : normalStyle}`}
+    >
       <div className='flex justify-center p-[3.5%] w-full '>
         <Image
           src={img}
           alt='Image'
-          className='rounded-tl-xl rounded-tr-xl object-contain w-full  '
+          className={`${isSecondary ? '' : 'rounded-tl-xl rounded-tr-xl'} object-contain w-full`}
           loading='lazy'
         />
       </div>
-      <div className='flex flex-col lg:p-0  md:p-[3.5%] '>
-        <div className='flex gap-1 px-[3.5%] pt-2 align-middle '>
-          <div className='flex gap-2 justify-center align-middle items-center'>
-            <div className='flex flex-col'>
-              <StepOne height={17} width={52} />
-              <div className='flex justify-center   '>
-                <p className='text-white  -mt-4 text-xs'>STEP {index}</p>
-              </div>
-            </div>
-            <div className='text-xl md:text-2xl lg:text-xl xl:text-2xl font-bold text-headerLinkColor'>
-              {heading}
-            </div>
-          </div>
-        </div>
-        <div className=' px-[3.5%] flex pt-3 pb-7 text-sm text-headerLinkColor leading-normal font-normal '>
-          {subHeading}
-        </div>
-      </div>
+      <StepsInDetail
+        index={index}
+        heading={heading}
+        subHeading={subHeading}
+        isSecondary={isSecondary}
+      />
     </div>
   );
 }
