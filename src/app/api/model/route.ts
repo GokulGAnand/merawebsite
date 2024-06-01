@@ -1,6 +1,5 @@
 import axios from 'axios';
 import { NextRequest, NextResponse } from 'next/server';
-import { Params } from '../type';
 import { MODEL } from '../endpoints';
 
 const GET = async (req: NextRequest) => {
