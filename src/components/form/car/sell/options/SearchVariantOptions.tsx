@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import ButtonOption from '../../components/ButtonOption';
-import FormSideHeading from '../../components/FormSideHeading';
-import SearchWithGlass from '../../inputs/SearchWithGlass';
+import ButtonOption from '../../../components/ButtonOption';
+import FormSideHeading from '../../../components/FormSideHeading';
+import SearchWithGlass from '../../../inputs/SearchWithGlass';
 import { Options } from './type';
 import { filterByText } from '@/utils/filter-by-string';
 

@@ -1,5 +1,5 @@
 'use client';
-import ButtonOption from '../../components/ButtonOption';
+import ButtonOption from '../../../components/ButtonOption';
 import clsx from 'clsx';
 import { filterByText } from '@/utils/filter-by-string';
 import { Key } from 'react';

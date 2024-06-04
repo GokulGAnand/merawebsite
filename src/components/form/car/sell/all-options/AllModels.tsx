@@ -1,5 +1,5 @@
 import React from 'react';
-import FormSideHeading from '../../components/FormSideHeading';
+import FormSideHeading from '../../../components/FormSideHeading';
 import ModelOptions from '../options/ModelOptions';
 
 interface Props {

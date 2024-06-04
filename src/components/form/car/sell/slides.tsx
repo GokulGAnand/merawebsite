@@ -1,17 +1,17 @@
 import { ownership } from '@/data/ownership';
-import SelectBrand from '../../select/SelectBrand';
-import SelectModel from '../../select/SelectModel';
-import SelectRto from '../../select/SelectRto';
-import SelectVariant from '../../select/SelectVariant';
-import SelectWithoutSearch from '../../select/SelectWithoutSearch';
-import SelectYear from '../../select/SelectYear';
+import SelectBrand from './select/SelectBrand';
+import SelectModel from './select/SelectModel';
+import SelectRto from './select/SelectRto';
+import SelectVariant from './select/SelectVariant';
+import SelectWithoutSearch from './select/SelectWithoutSearch';
+import SelectYear from './select/SelectYear';
 import { kilometers } from '@/data/kilometers';
 import { whenToSell } from '@/data/whenToSell';
 import { EnterPhone } from '../slides/EnterPhone';
 import { EnterOtp } from '../slides/EnterOtp';
 import { SuccessSlide } from '../slides/SuccessSlide';
 
-export type SlideIndex = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8;
+export type SlideIndex = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11;
 
 export const slides = {
   1: <SelectBrand />,

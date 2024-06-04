@@ -1,7 +1,7 @@
 'use client';
 import React, { useState } from 'react';
-import SearchWithHeader from '../components/SearchWithHeader';
-import AllRtos from '../car/all-options/AllRtos';
+import SearchWithHeader from '../../../components/SearchWithHeader';
+import AllRtos from '../all-options/AllRtos';
 
 export default function SelectRto() {
   const [search, setSearch] = useState('');

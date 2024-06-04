@@ -1,4 +1,4 @@
-import DataOpts from '../car/options/DataOpts';
+import DataOpts from '../options/DataOpts';
 
 interface Props {
   heading: string;

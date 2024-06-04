@@ -1,7 +1,7 @@
 'use client';
 import React, { useState } from 'react';
-import SearchWithHeader from '../components/SearchWithHeader';
-import DataOpts from '../car/options/DataOpts';
+import SearchWithHeader from '../../../components/SearchWithHeader';
+import DataOpts from '../options/DataOpts';
 import { years } from '@/data/years';
 
 export default function SelectYear() {

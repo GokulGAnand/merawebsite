@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import SearchWithHeader from '../components/SearchWithHeader';
-import AllModels from '../car/all-options/AllModels';
+import SearchWithHeader from '../../../components/SearchWithHeader';
+import AllModels from '../all-options/AllModels';
 
 export default function SelectModel() {
   const [search, setSearch] = useState('');

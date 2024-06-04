@@ -2,7 +2,7 @@
 import FormSlideControl from '../components/FormSlideControl';
 import FormChipGroup from '../chips/FormChipGroup';
 import { ChipProps } from '@/lib/store/type';
-import { SlideIndex } from './options/slides';
+import { SlideIndex } from './sell/slides';
 
 interface Slide {
   [index: number]: React.JSX.Element;

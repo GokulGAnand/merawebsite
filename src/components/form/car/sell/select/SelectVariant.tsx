@@ -1,6 +1,6 @@
 import { useFormStore } from '@/lib/store/store';
-import AllVariants from '../car/all-options/AllVariants';
-import SelectedEditableOption from '../components/SelectedEditableOption';
+import AllVariants from '../all-options/AllVariants';
+import SelectedEditableOption from '../../../components/SelectedEditableOption';
 import { capitaliseFirstLetter } from '@/utils/capitalise-first-letter';
 
 export default function SelectVariant() {

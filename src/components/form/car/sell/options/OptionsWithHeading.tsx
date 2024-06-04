@@ -1,5 +1,5 @@
-import ButtonOption from '../../components/ButtonOption';
-import FormSideHeading from '../../components/FormSideHeading';
+import ButtonOption from '../../../components/ButtonOption';
+import FormSideHeading from '../../../components/FormSideHeading';
 
 interface Props {
   heading: string;

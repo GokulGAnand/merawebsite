@@ -1,7 +1,7 @@
 'use client';
 import React, { useState } from 'react';
-import SearchWithHeader from '../components/SearchWithHeader';
-import AllBrands from '../car/all-options/AllBrands';
+import SearchWithHeader from '../../../components/SearchWithHeader';
+import AllBrands from '../all-options/AllBrands';
 
 export default function SelectBrand() {
   const [search, setSearch] = useState('');
