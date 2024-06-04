@@ -12,21 +12,27 @@ interface SellCarProps {
   page: number;
   chips: ChipProps[];
   slides: Slide;
+  decrementPage: () => void;
+  switchPage: () => void;
 }
 
 export default function SellCarForm(props: SellCarProps) {
-  const { page, chips, slides } = props;
+  const { page, chips, slides, decrementPage, switchPage } = props;
   const slideCount = Object.keys(slides).length;
   return (
     <div className='flex flex-col my-20 mx-4'>
       <div className='flex flex-wrap gap-1 max-w-3xl w-full mb-4 mx-auto'>
-        <FormChipGroup chips={chips} />
+        <FormChipGroup chips={chips} switchPage={switchPage} />
       </div>
       <div
         className={`bg-white rounded-lg px-4 lg:px-8  py-7 shadow-carFormShadow flex flex-col w-full max-w-3xl min-h-[495px] max-h-[495px] overflow-y-auto  mx-auto custom-scroll`}
       >
         <div className='flex flex-col'>
-          <FormSlideControl count={slideCount} />
+          <FormSlideControl
+            count={slideCount}
+            page={page}
+            decrementPage={decrementPage}
+          />
           {slides[page as SlideIndex]}
         </div>
       </div>

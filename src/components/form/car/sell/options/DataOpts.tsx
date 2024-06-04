@@ -16,10 +16,21 @@ interface DataOptsProps {
   search?: string;
   gridCols?: number;
   valueKey?: Key;
+  isSell?: boolean;
+  isInspection?: boolean;
 }
 
 export default function DataOpts(props: DataOptsProps) {
-  const { search, data, btnType, page, gridCols, valueKey } = props;
+  const {
+    search,
+    data,
+    btnType,
+    page,
+    gridCols,
+    valueKey,
+    isSell,
+    isInspection,
+  } = props;
   const isSearch = search && search !== '';
   const options = isSearch
     ? filterByText({
@@ -48,6 +59,8 @@ export default function DataOpts(props: DataOptsProps) {
                 text={opt.label}
                 type={btnType}
                 page={page}
+                isSell={Boolean(isSell)}
+                isInspection={Boolean(isInspection)}
               />
             );
           },

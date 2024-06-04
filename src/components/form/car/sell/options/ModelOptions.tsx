@@ -87,6 +87,7 @@ export default function ModelOptions({
               text={model.display_name}
               type='model'
               page={4}
+              isSell
             />
           );
         },

@@ -50,6 +50,8 @@ export default {
         greyBtn: '#E9F2FA',
         searchInputIcon: '#908F93',
         btnselect: '#BFDCFA',
+        textInputGrey: '#F7F7F7',
+        textInputPlaceholderGrey: '#8E8E8E',
       },
       backgroundImage: {
         carFormGradient: 'linear-gradient(90deg, #53BDE5 0%, #2B6FB7 45.5%)',

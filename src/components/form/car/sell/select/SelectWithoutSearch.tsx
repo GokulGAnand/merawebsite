@@ -7,10 +7,21 @@ interface Props {
   btnType: string;
   gridCols?: number;
   valueKey?: string;
+  isSell?: boolean;
+  isInspection?: boolean;
 }
 
 export default function SelectWithoutSearch(props: Props) {
-  const { heading, btnType, data, page, gridCols, valueKey } = props;
+  const {
+    heading,
+    btnType,
+    data,
+    page,
+    gridCols,
+    valueKey,
+    isSell,
+    isInspection,
+  } = props;
   return (
     <>
       <div className='text-stepsText text-sm lg:text-lg leading-normal mt-3 lg:mb-4 lg:mt-6 font-medium'>
@@ -23,6 +34,8 @@ export default function SelectWithoutSearch(props: Props) {
           page={page}
           gridCols={gridCols}
           valueKey={valueKey}
+          isSell={Boolean(isSell)}
+          isInspection={Boolean(isInspection)}
         />
       </div>
     </>

@@ -13,7 +13,7 @@ export default function AllRtos(props: Props) {
     <>
       <FormSideHeading text={`All RTO’s`} />
       <div>
-        <DataOpts btnType={'rto'} data={rto} search={search} page={2} />
+        <DataOpts btnType={'rto'} data={rto} search={search} page={2} isSell />
       </div>
     </>
   );

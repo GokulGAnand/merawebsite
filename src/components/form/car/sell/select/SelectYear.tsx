@@ -14,7 +14,7 @@ export default function SelectYear() {
         searchPlaceHolder='Search your year'
       />
       <div className='mt-4 lg:mt-14 flex flex-col gap-4'>
-        <DataOpts btnType='year' data={years} search={search} page={3} />
+        <DataOpts btnType='year' data={years} search={search} page={3} isSell />
       </div>
     </>
   );

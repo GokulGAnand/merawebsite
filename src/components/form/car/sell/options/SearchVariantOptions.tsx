@@ -41,6 +41,7 @@ export const SearchVariantOptions = (props: Props) => {
               text={option.display_name}
               page={5}
               type='variant'
+              isSell
             />
           );
         })}
