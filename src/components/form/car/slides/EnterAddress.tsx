@@ -2,13 +2,23 @@ import { useState } from 'react';
 import { AddressInput } from '../../inputs/AddressInput';
 import { NxtButton } from '../../components/NextButton';
 import { useInspectionStore } from '@/lib/store/inspection-store';
+import DropdownInput from '../../inputs/DropdownInput';
+import SelectInput from '../../inputs/DropdownInput';
+import { districts } from '@/data/districts';
 
 export const EnterAddress = () => {
-  const [addressOne, setAddressOne] = useState('');
-  const [addressTwo, setAddressTwo] = useState('');
-  const [district, setDistrict] = useState('');
-  const [pin, setPin] = useState('');
-  const { addChip, incrementPage } = useInspectionStore();
+  const {
+    addChip,
+    incrementPage,
+    addressOne,
+    addressTwo,
+    setAddressOne,
+    setAddressTwo,
+    district,
+    setDistrict,
+    pin,
+    setPin,
+  } = useInspectionStore();
 
   function handleNext() {
     addChip({
@@ -37,10 +47,10 @@ export const EnterAddress = () => {
           placeholder='Address Line 2'
         />
         <div className='flex lg:flex-row flex-col gap-4'>
-          <AddressInput
+          <SelectInput
+            options={districts}
             value={district}
-            onChange={(e) => setDistrict(e)}
-            placeholder='District'
+            handleChange={(e) => setDistrict(e.target.value)}
           />
           <AddressInput
             value={pin}

@@ -1,11 +1,17 @@
-import { useFormStore } from '@/lib/store/store';
 import { useEffect, useState } from 'react';
 import OtpInput from 'react-otp-input';
 
-export const EnterOtp = () => {
+interface Props {
+  phone: string;
+  decrementPage: () => void;
+  incrementPage: () => void;
+  clearAll: () => void;
+}
+
+export const EnterOtp = (props: Props) => {
+  const { clearAll, decrementPage, incrementPage, phone } = props;
   const [otp, setOtp] = useState('');
   const [countdown, setCountdown] = useState(30);
-  const { phone, decrementPage, incrementPage, clearAll } = useFormStore();
   const countdownRunning = countdown > 0;
 
   function handleEdit() {

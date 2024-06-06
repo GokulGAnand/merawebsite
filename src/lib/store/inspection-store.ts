@@ -79,8 +79,37 @@ export const useInspectionStore = create<FormState | any>(
       phone: '',
       setPhone: (phoneNumber: string) => set(() => ({ phone: phoneNumber })),
 
+      // Address
+      addressOne: '',
+      setAddressOne: (text: string) => set(() => ({ addressOne: text })),
+      addressTwo: '',
+      setAddressTwo: (text: string) => set(() => ({ addressTwo: text })),
+      district: '',
+      setDistrict: (text: string) => set(() => ({ district: text })),
+      pin: '',
+      setPin: (text: string) => set(() => ({ pin: text })),
+
+      // Date
+      date: new Date(),
+      setDate: (dateInput: Date | null) => set(() => ({ date: dateInput })),
+
+      // Get Updates on Mobile
+      isChecked: false,
+      setIsChecked: (checked: boolean) => set(() => ({ isChecked: checked })),
+
       // Clear All
-      clearAll: () => set(() => ({ chips: [], selections: [], phone: '' })),
+      clearAll: () =>
+        set(() => ({
+          chips: [],
+          selections: [],
+          phone: '',
+          isChecked: false,
+          date: new Date(),
+          addressOne: '',
+          addressTwo: '',
+          district: '',
+          pin: '',
+        })),
     }),
     {
       name: 'mera:inspection',
