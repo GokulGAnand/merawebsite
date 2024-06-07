@@ -42,7 +42,7 @@ export const EnterPhone = (props: Props) => {
       <div className='text-stepsText text-lg leading-normal mb-4 mt-6 font-medium'>
         {heading}
       </div>
-      <div className='grid grid-cols-[3fr_2fr] gap-5 mt-9'>
+      <div className='grid grid-rows-1 lg:grid-cols-[3fr_2fr] gap-5 mt-9'>
         <TextField
           value={phone}
           onChange={handleChange}
