@@ -6,6 +6,8 @@ import BannerWithVector from '@/components/banner/common/BannerWithVector';
 import InspectionBanner from '~/images/MeraPartners/InspectionBanner.png';
 import InspectionBannerMobile from '~/images/MeraPartners/InspectionMobileBanner.png';
 import RightBannerVector from 'public/images/MeraPartners/RightBannerVector.png';
+import HeaderWithBranding from '@/components/headers/HeaderWithBranding';
+import Heading from '@/components/headers/Heading';
 
 export const metadata: Metadata = {
   title: 'Inspection',

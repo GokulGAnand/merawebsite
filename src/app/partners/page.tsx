@@ -1,6 +1,6 @@
 import AutoplaySlider from '@/components/slider/AutoplaySlider';
 import DownloadMeraPartners from '@/components/strips/DownloadMeraPartners';
-import DownloadPartners from '@/components/strips/DownloadPartners';
+import HowItWorks from '@/components/strips/HowItWorksPartners';
 import MeraPartners from '@/components/strips/MeraPartners';
 import { PartnerFeedBack } from '@/components/strips/PartnerFeedback';
 import PartnerWithUs from '@/components/strips/PartnerWithUs';
@@ -16,6 +16,7 @@ export default function Partners() {
       <section>
         <PartnerWithUs />
         <DownloadMeraPartners />
+        <HowItWorks />
         <PartnerFeedBack />
         <AutoplaySlider />
         <MeraPartners />

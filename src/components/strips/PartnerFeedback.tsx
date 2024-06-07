@@ -4,7 +4,7 @@ import React from 'react';
 
 export const PartnerFeedBack = () => {
   return (
-    <div className='flex flex-col justify-center mt-24'>
+    <div className='flex flex-col justify-center'>
       <HeaderWithBranding
         heading='Our Partner Feedback'
         subHeading='See what our happy customers say about MeraCars'

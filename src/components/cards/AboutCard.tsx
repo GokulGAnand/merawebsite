@@ -21,7 +21,7 @@ export const AboutCard = () => {
         </div>
       </div>
       <div className='flex pr-2'>
-        <Divider className=' flex-grow border-t border-aboutDividerColor' />
+        <Divider />
       </div>
       <div className='flex'>
         <div className='flex flex-col md:flex-row md:gap-x-8 gap-y-4'>

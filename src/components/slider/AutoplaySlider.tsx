@@ -1,7 +1,6 @@
 import { Logos } from '@/data/logos';
 import Image from 'next/image';
 import React from 'react';
-import Marquee from 'react-fast-marquee';
 import Divider from '../utils/Divider';
 
 const AutoplaySlider = () => {

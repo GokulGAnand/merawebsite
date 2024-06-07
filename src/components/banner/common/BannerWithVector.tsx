@@ -18,12 +18,17 @@ const BannerWithVector = (props: BannerWithVectorProps) => {
   const { heading, subHeading, srcPath, srcMobile, srcVector, isInspection } =
     props;
   return (
-    <div className='hero h-auto xl:h-[586px] bg-opacity-90 relative'>
+    <div
+      className={clsx(
+        'hero bg-opacity-90 relative',
+        isInspection ? 'xl:h-[550px]' : 'xl:h-[650px]',
+      )}
+    >
       <>
         <div
           className={clsx(
-            'relative h-full w-full bg-gradient-to-r from-[#53BDE5] to-[#2B6FB7] bg-opacity-90 z-10 opacity-90',
-            isInspection ? 'py-44 lg:py-60' : 'py-52 lg:py-72',
+            'relative h-full w-full bg-gradient-to-r from-[#53BDE5] to-[#2B6FB7] bg-opacity-90 z-10 opacity-90 ',
+            isInspection ? 'py-44 lg:py-52' : 'py-52 lg:py-72',
           )}
         ></div>
         <div className='flex w-full h-auto absolute z-20'>
@@ -72,7 +77,7 @@ const BannerWithVector = (props: BannerWithVectorProps) => {
             <Image
               src={srcMobile}
               alt='Banner Mobile'
-              className='object-fill h-full w-full flex sm:hidden'
+              className='object-fill h-full  w-full flex sm:hidden'
             />
           )}
         </div>

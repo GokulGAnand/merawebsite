@@ -8,6 +8,7 @@ export default {
     extend: {
       fontFamily: {
         primary: ['var(--font-dm-sans)', ...defaultTheme.fontFamily.sans],
+        roboto: ['Roboto', 'sans-serif'],
       },
       colors: {
         primary: {
