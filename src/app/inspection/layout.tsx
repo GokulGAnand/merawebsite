@@ -25,6 +25,8 @@ export default function MeraPartnersLayout({
         <BannerWithVector
           heading=''
           subHeading='Schedule a comprehensive car inspection'
+          splitHeadingFirstPart='Schedule a comprehensive'
+          splitHeadingSecondPart='car inspection'
           srcPath={InspectionBanner}
           srcMobile={InspectionBannerMobile}
           srcVector={RightBannerVector}

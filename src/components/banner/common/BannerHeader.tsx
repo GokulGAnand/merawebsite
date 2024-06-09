@@ -5,11 +5,19 @@ import MeraVector from '~/svg/MeraCarsVector.svg';
 interface BannerProps {
   heading: string;
   subHeading: string;
+  splitHeadingFirstPart?: string;
+  splitHeadingSecondPart?: string;
   isInspection?: boolean;
 }
 
 const BannerHeader = (props: BannerProps) => {
-  const { heading, subHeading, isInspection } = props;
+  const {
+    heading,
+    subHeading,
+    splitHeadingFirstPart,
+    splitHeadingSecondPart,
+    isInspection,
+  } = props;
   return (
     <div className='flex justify-center'>
       <div
@@ -54,7 +62,15 @@ const BannerHeader = (props: BannerProps) => {
               >
                 <MeraVector width={67} height={15} />
               </div>
-              <div className=''>{subHeading}</div>
+              <div className={clsx(isInspection ? 'hidden lg:flex' : 'flex')}>
+                {subHeading}
+              </div>
+              <div className='flex lg:hidden justify-center '>
+                {splitHeadingFirstPart}
+              </div>
+              <div className='flex lg:hidden justify-center'>
+                {splitHeadingSecondPart}
+              </div>
             </div>
           </div>
         </div>

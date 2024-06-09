@@ -7,6 +7,8 @@ import clsx from 'clsx';
 interface BannerWithVectorProps {
   heading: string;
   subHeading: string;
+  splitHeadingFirstPart?: string;
+  splitHeadingSecondPart?: string;
   image?: React.ReactNode;
   srcPath?: StaticImageData;
   srcMobile?: StaticImageData;
@@ -15,8 +17,16 @@ interface BannerWithVectorProps {
 }
 
 const BannerWithVector = (props: BannerWithVectorProps) => {
-  const { heading, subHeading, srcPath, srcMobile, srcVector, isInspection } =
-    props;
+  const {
+    heading,
+    subHeading,
+    splitHeadingFirstPart,
+    splitHeadingSecondPart,
+    srcPath,
+    srcMobile,
+    srcVector,
+    isInspection,
+  } = props;
   return (
     <div
       className={clsx(
@@ -56,6 +66,8 @@ const BannerWithVector = (props: BannerWithVectorProps) => {
             <BannerHeader
               heading={heading}
               subHeading={subHeading}
+              splitHeadingFirstPart={splitHeadingFirstPart}
+              splitHeadingSecondPart={splitHeadingSecondPart}
               isInspection
             />
           </div>
