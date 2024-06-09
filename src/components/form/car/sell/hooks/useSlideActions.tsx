@@ -1,13 +1,17 @@
 import { useSellCar } from '@/lib/services/sell/post';
 import { useFormStore } from '@/lib/store/store';
 
+const chipValue = ['make', 'model', 'variant'];
+
 export const useSlideActions = () => {
   const sell = useSellCar();
   const { chips, selections, phone } = useFormStore();
   const valueCollection = [...chips, ...selections];
 
   const carData = valueCollection.reduce((acc, item) => {
-    acc[item.type] = item.value;
+    acc[item.type] = chipValue.includes(item.type)
+      ? item.chipValue
+      : item.value;
     return acc;
   }, {});
 
