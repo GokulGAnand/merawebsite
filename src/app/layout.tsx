@@ -11,6 +11,7 @@ import { ThemeModeScript } from 'flowbite-react';
 
 import { siteConfig } from '@/constant/config';
 import dynamic from 'next/dynamic';
+import ReactQueryProvider from '@/utils/react-query-provider';
 
 // !STARTERCONF Change these default meta
 // !STARTERCONF Look at @/constant/config to change them
@@ -74,7 +75,7 @@ export default function RootLayout({
       </head>
       <body>
         <Header />
-        {children}
+        <ReactQueryProvider>{children}</ReactQueryProvider>
         <Footer />
       </body>
     </html>

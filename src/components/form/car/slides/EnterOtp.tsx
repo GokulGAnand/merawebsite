@@ -1,3 +1,7 @@
+import ErrorBox from '@/components/utils/ErrorBox';
+import { getOtp } from '@/lib/services/otp/get-otp';
+import { useVerifyOtp, verifyOtp } from '@/lib/services/otp/verify-opt';
+import { errorMessageParser } from '@/utils/error';
 import { useEffect, useState } from 'react';
 import OtpInput from 'react-otp-input';
 
@@ -6,13 +10,18 @@ interface Props {
   decrementPage: () => void;
   incrementPage: () => void;
   clearAll: () => void;
+  handleVerifySuccess?: () => void;
 }
 
 export const EnterOtp = (props: Props) => {
-  const { clearAll, decrementPage, incrementPage, phone } = props;
+  const { clearAll, decrementPage, incrementPage, phone, handleVerifySuccess } =
+    props;
   const [otp, setOtp] = useState('');
   const [countdown, setCountdown] = useState(30);
+  const [error, setError] = useState<string | null>(null);
   const countdownRunning = countdown > 0;
+
+  const verify = useVerifyOtp();
 
   function handleEdit() {
     decrementPage();
@@ -27,17 +36,41 @@ export const EnterOtp = (props: Props) => {
     }
   });
 
-  function resendOtp() {
+  async function resendOtp() {
+    let error = false;
     if (countdown === 0) {
-      setCountdown(30);
+      await getOtp(Number(phone))
+        .then(() => {
+          setError(null);
+        })
+        .catch((err) => {
+          setError(errorMessageParser(err));
+          error = true;
+        });
+      !error && setCountdown(30);
     }
   }
 
   function handleOtp(otpNumber: string) {
     setOtp(otpNumber);
     if (otpNumber.length === 4) {
-      incrementPage();
-      clearAll();
+      verify.mutate(
+        {
+          opt: Number(otpNumber),
+          phone: Number(phone),
+        },
+        {
+          onSuccess: () => {
+            handleVerifySuccess && handleVerifySuccess();
+            incrementPage();
+            clearAll();
+            setError(null);
+          },
+          onError: (err) => {
+            setError(errorMessageParser(err));
+          },
+        },
+      );
     }
   }
 
@@ -85,6 +118,7 @@ export const EnterOtp = (props: Props) => {
       >
         {countdownRunning ? `Resend OTP in ${countdown} seconds` : 'Resend OTP'}
       </div>
+      {error && <ErrorBox error={error} />}
     </div>
   );
 };

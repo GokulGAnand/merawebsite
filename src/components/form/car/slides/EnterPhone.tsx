@@ -1,8 +1,9 @@
 import { SetStateAction, useState } from 'react';
 import { TextField } from '../../inputs/TextField';
 import { FormButton } from '@/components/buttons/FormButton';
-import { useFormStore } from '@/lib/store/store';
 import { CheckBox } from '../../inputs/Checkbox';
+import { getOtp } from '@/lib/services/otp/get-otp';
+import { errorMessageParser } from '@/utils/error';
 
 interface Props {
   heading: string;
@@ -30,13 +31,24 @@ export const EnterPhone = (props: Props) => {
     setError('');
   }
 
-  function handleClick() {
+  async function handleClick() {
+    let isError = false;
     if (/^\d{10}$/.test(phone)) {
-      incrementPage();
+      await getOtp(Number(phone))
+        .then((res) => {
+          isError = false;
+          setError('');
+        })
+        .catch((err) => {
+          isError = true;
+          setError(errorMessageParser(err));
+        });
+      !isError && incrementPage();
     } else {
       setError('Please enter a valid 10-digit mobile number.');
     }
   }
+
   return (
     <div>
       <div className='text-stepsText text-lg leading-normal mb-4 mt-6 font-medium'>

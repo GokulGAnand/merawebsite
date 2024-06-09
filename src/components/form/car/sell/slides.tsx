@@ -11,12 +11,15 @@ import { EnterPhone } from '../slides/EnterPhone';
 import { EnterOtp } from '../slides/EnterOtp';
 import { SuccessSlide } from '../slides/SuccessSlide';
 import { useFormStore } from '@/lib/store/store';
+import { useSlideActions } from './hooks/useSlideActions';
 
 export type SlideIndex = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11;
 
 export const useGetSlides = () => {
   const { phone, setPhone, incrementPage, decrementPage, clearAll } =
     useFormStore();
+  const { handleOtpVerifySuccess } = useSlideActions();
+
   return {
     1: <SelectBrand />,
     2: <SelectRto />,
@@ -64,6 +67,7 @@ export const useGetSlides = () => {
         decrementPage={decrementPage}
         incrementPage={incrementPage}
         phone={phone}
+        handleVerifySuccess={handleOtpVerifySuccess}
       />
     ),
     11: (
