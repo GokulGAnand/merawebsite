@@ -21,9 +21,12 @@ export default function SelectInput(props: DropdownProps) {
         value={value}
         onChange={handleChange}
       >
-        <option disabled>Select your district</option>
         {options.map((option) => {
-          return <option key={option.value}>{option.label}</option>;
+          return (
+            <option disabled={option.value === null} key={option.value}>
+              {option.label}
+            </option>
+          );
         })}
       </select>
     </div>
