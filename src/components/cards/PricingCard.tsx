@@ -1,31 +1,19 @@
 import React from 'react';
 import Button from '@/components/buttons/Button';
 import { GrFormNextLink } from 'react-icons/gr';
+import { arrayOutputType } from 'zod';
 
 interface PricingProps {
   icon: React.ReactNode;
   id: number;
   title: string;
   amount: string;
-  row_1_content: string;
-  row_2_content: string;
-  row_3_content: string;
-  row_4_content: string;
+  row_content: string[];
   action_content: string;
 }
 
 const PricingCard = (props: PricingProps) => {
-  const {
-    id,
-    title,
-    amount,
-    icon,
-    row_1_content,
-    row_2_content,
-    row_3_content,
-    row_4_content,
-    action_content,
-  } = props;
+  const { id, title, amount, icon, row_content, action_content } = props;
 
   const isComingSoon = action_content === 'Coming soon';
 
@@ -42,12 +30,15 @@ const PricingCard = (props: PricingProps) => {
                   <h3 className='mb-2 text-sm font-medium text-whiteButtonText'>
                     {title}
                   </h3>
-                  <p className='font-light text-gray-500 sm:text-lg dark:text-gray-400'></p>
+                  <p className='font-light sm:text-lg'></p>
                   <div className='flex items-center mb-6 gap-2'>
-                    <span className='text:lg md:text-4xl font-bold font-roboto'>
+                    <span className='text:lg md:text-4xl font-bold justify-start  text-headerLinkColor '>
                       {amount}
                     </span>
-                    <span className='text-gray-500 dark:text-gray-400 text-sm font-medium'>
+                    <span className='text:lg md:text-4xl font-bold font-roboto justify-start  text-headerLinkColor'>
+                      ₹
+                    </span>
+                    <span className='text-subHeadingColor text-sm font-medium'>
                       per Month
                     </span>
                   </div>
@@ -56,28 +47,23 @@ const PricingCard = (props: PricingProps) => {
                     role='list'
                     className='mb-8 space-y-4 text-left text-sm font-normal'
                   >
-                    <li className='flex items-center space-x-3'>
-                      <div className='flex-shrink-0 w-5 h-5'>{icon}</div>
-                      <span>{row_1_content}</span>
-                    </li>
-                    <li className='flex items-center space-x-3'>
-                      <div className='flex-shrink-0 w-5 h-5'>{icon}</div>
-                      <span>{row_2_content}</span>
-                    </li>
-                    <li className='flex items-center space-x-3'>
-                      <div className='flex-shrink-0 w-5 h-5'>{icon}</div>
-                      <span>{row_3_content}</span>
-                    </li>
-                    <li className='flex items-center space-x-3'>
-                      <div className='flex-shrink-0 w-5 h-5'>{icon}</div>
-                      <span className='lg:inline-block'>{row_4_content}</span>
-                    </li>
+                    {row_content.map((row_item, index) => (
+                      <li
+                        key={index}
+                        className='flex items-center text-subHeadingColor'
+                      >
+                        <div className='flex-shrink-0 w-5 h-5 flex items-center justify-start'>
+                          {icon}
+                        </div>
+                        <span>{row_item}</span>
+                      </li>
+                    ))}
                   </ul>
 
                   <div className=' flex items-center pt-3 pb-6'>
                     <Button
                       variant='primary'
-                      className='absolute font-bold justify-center flex rounded-lg w-60'
+                      className='absolute font-bold justify-center flex rounded-lg w-60 h-11'
                       rightIcon={GrFormNextLink}
                     >
                       {action_content}

@@ -13,7 +13,7 @@ const Pricing = () => {
         />
       </div>
       <div className='flex flex-col items-center w-full lg:pt-16 pt-5'>
-        <div className='flex flex-col lg:flex-row w-full lg:w-[85%] justify-between'>
+        <div className='flex flex-col lg:flex-row w-full lg:w-[85%] justify-between items-center'>
           {PricingPlans.map((plan) => (
             <PricingCard
               key={plan.id}
@@ -21,10 +21,7 @@ const Pricing = () => {
               icon={plan.icon}
               title={plan.title}
               amount={plan.amount}
-              row_1_content={plan.row_1_content}
-              row_2_content={plan.row_2_content}
-              row_3_content={plan.row_3_content}
-              row_4_content={plan.row_4_content}
+              row_content={plan.row_content}
               action_content={plan.action_content}
             />
           ))}

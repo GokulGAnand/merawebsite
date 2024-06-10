@@ -2,10 +2,6 @@ import { Metadata } from 'next';
 import * as React from 'react';
 import '@/styles/colors.css';
 import SectionBlock from '@/components/SectionBlock';
-import BannerWithVector from '@/components/banner/common/BannerWithVector';
-import MeraPartnersBanner from 'public/images/MeraPartners/MeraPartnersBanner.png';
-import MeraPartnersMobileBanner from 'public/images/MeraPartners/MeraPartnersMobileBanner.png';
-import RightBannerVector from 'public/images/MeraPartners/RightBannerVector.png';
 
 export const metadata: Metadata = {
   title: 'MeraPartners',
@@ -19,16 +15,7 @@ export default function MeraPartnersLayout({
 }) {
   return (
     <>
-      <SectionBlock>
-        <BannerWithVector
-          heading='World of used cars in India'
-          subHeading='Are you a Car Dealer? Join Us and Increase Your Revenue'
-          srcPath={MeraPartnersBanner}
-          srcMobile={MeraPartnersMobileBanner}
-          srcVector={RightBannerVector}
-        />
-        {children}
-      </SectionBlock>
+      <SectionBlock>{children}</SectionBlock>
     </>
   );
 }
