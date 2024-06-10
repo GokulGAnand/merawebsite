@@ -14,21 +14,19 @@ interface DropdownProps {
 export default function SelectInput(props: DropdownProps) {
   const { value, handleChange, options } = props;
   return (
-    <div className='w-full h-max flex '>
-      <select
-        className='select border-none border-formInputBorder w-full h-full
-      bg-textInputGrey placeholder-textInputPlaceholderGrey border-0  rounded-md '
-        value={value}
-        onChange={handleChange}
-      >
-        {options.map((option) => {
-          return (
-            <option disabled={option.value === null} key={option.value}>
-              {option.label}
-            </option>
-          );
-        })}
-      </select>
-    </div>
+    <select
+      className='select border-none border-formInputBorder w-full h-full
+      bg-textInputGrey placeholder-textInputPlaceholderGrey border-0 p-4 rounded-md '
+      value={value}
+      onChange={handleChange}
+    >
+      {options.map((option) => {
+        return (
+          <option disabled={option.value === null} key={option.value}>
+            {option.label}
+          </option>
+        );
+      })}
+    </select>
   );
 }

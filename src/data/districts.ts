@@ -1,5 +1,5 @@
 export const districts = [
-  { label: 'Select your district', value: null },
+  { label: 'Select your district', value: '' },
   { label: 'Thiruvananthapuram', value: 'thiruvananthapuram' },
   { label: 'Kollam', value: 'kollam' },
   { label: 'Pathanamthitta', value: 'pathanamthitta' },
