@@ -3,17 +3,26 @@ import { useFormStore } from '@/lib/store/store';
 
 const chipValue = ['make', 'model', 'variant'];
 
-export const useSlideActions = () => {
-  const sell = useSellCar();
-  const { chips, selections, phone } = useFormStore();
-  const valueCollection = [...chips, ...selections];
-
-  const carData = valueCollection.reduce((acc, item) => {
-    acc[item.type] = chipValue.includes(item.type)
+export const deriveCarData = (
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  collection: any[],
+  chipValues?: string[],
+) => {
+  return collection.reduce((acc, item) => {
+    acc[item.type] = chipValues?.includes(item.type)
       ? item.chipValue
       : item.value;
     return acc;
   }, {});
+};
+
+export const useSlideActions = () => {
+  // OTP VERIFY SUCCESS - SELL CAR
+  const sell = useSellCar();
+  const { chips, selections, phone } = useFormStore();
+  const valueCollection = [...chips, ...selections];
+
+  const carData = deriveCarData(valueCollection, chipValue);
 
   const handleOtpVerifySuccess = () => {
     sell.mutate({

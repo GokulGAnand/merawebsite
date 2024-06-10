@@ -11,11 +11,22 @@ interface Props {
   incrementPage: () => void;
   clearAll: () => void;
   handleVerifySuccess?: () => void;
+  isInspection?: boolean;
+  handleInspectionOtp?: (otp: number) => void;
+  apiError?: string;
 }
 
 export const EnterOtp = (props: Props) => {
-  const { clearAll, decrementPage, incrementPage, phone, handleVerifySuccess } =
-    props;
+  const {
+    clearAll,
+    decrementPage,
+    incrementPage,
+    phone,
+    handleVerifySuccess,
+    isInspection,
+    handleInspectionOtp,
+    apiError,
+  } = props;
   const [otp, setOtp] = useState('');
   const [countdown, setCountdown] = useState(30);
   const [error, setError] = useState<string | null>(null);
@@ -54,25 +65,31 @@ export const EnterOtp = (props: Props) => {
   function handleOtp(otpNumber: string) {
     setOtp(otpNumber);
     if (otpNumber.length === 4) {
-      verify.mutate(
-        {
-          opt: Number(otpNumber),
-          phone: Number(phone),
-        },
-        {
-          onSuccess: () => {
-            handleVerifySuccess && handleVerifySuccess();
-            incrementPage();
-            clearAll();
-            setError(null);
+      if (isInspection) {
+        handleInspectionOtp && handleInspectionOtp(Number(otpNumber));
+      } else {
+        verify.mutate(
+          {
+            opt: Number(otpNumber),
+            phone: Number(phone),
           },
-          onError: (err) => {
-            setError(errorMessageParser(err));
+          {
+            onSuccess: () => {
+              handleVerifySuccess && handleVerifySuccess();
+              incrementPage();
+              clearAll();
+              setError(null);
+            },
+            onError: (err) => {
+              setError(errorMessageParser(err));
+            },
           },
-        },
-      );
+        );
+      }
     }
   }
+
+  const errorMsg = error || apiError;
 
   return (
     <div>
@@ -118,7 +135,7 @@ export const EnterOtp = (props: Props) => {
       >
         {countdownRunning ? `Resend OTP in ${countdown} seconds` : 'Resend OTP'}
       </div>
-      {error && <ErrorBox error={error} />}
+      {errorMsg && <ErrorBox error={errorMsg} />}
     </div>
   );
 };

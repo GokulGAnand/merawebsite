@@ -16,7 +16,7 @@ export const EnterTime = () => {
     addChip({
       page: 3,
       chipValue: format(date ?? '', 'dd MMMM hh:mm'),
-      value: 'Time',
+      value: date,
       type: 'time',
     });
     incrementPage();

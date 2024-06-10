@@ -8,6 +8,7 @@ import { useInspectionStore } from '@/lib/store/inspection-store';
 import OrderSummary from '../slides/OrderSummary';
 import { order } from '@/data/order';
 import { SuccessSlide } from '../slides/SuccessSlide';
+import { useSlideActions } from './hooks/useSlideActions';
 
 export type SlideIndex = 1 | 2 | 3;
 
@@ -18,13 +19,14 @@ export const useGetSlides = () => {
     setPhone,
     isChecked,
     setIsChecked,
-    clearAll,
     decrementPage,
   } = useInspectionStore();
 
+  const { handleInspectionOtp, apiError, handlePaymentOrder } =
+    useSlideActions();
+
   function handlePay() {
-    incrementPage();
-    clearAll();
+    handlePaymentOrder();
   }
 
   return {
@@ -56,6 +58,9 @@ export const useGetSlides = () => {
         incrementPage={incrementPage}
         phone={phone}
         clearAll={() => console.log('')}
+        isInspection
+        handleInspectionOtp={handleInspectionOtp}
+        apiError={apiError as string}
       />
     ),
     6: <OrderSummary order={order} handleSubmit={handlePay} />,
