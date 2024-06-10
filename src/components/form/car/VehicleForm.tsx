@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import SearchBar, { getPriceRoute } from './SearchBar';
 import OrSection from '../components/OrSection';
 import { SideHeading } from '../components/SideHeading';
-import BrandOptions from './options/BrandOptions';
+import BrandOptions from './sell/options/BrandOptions';
 import GreyBtn from '../components/GreyBtn';
 import { useFormStore } from '@/lib/store/store';
 

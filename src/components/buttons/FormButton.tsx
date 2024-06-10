@@ -11,7 +11,7 @@ export const FormButton = (props: FormBtnProps) => {
   return (
     <button
       onClick={handleClick}
-      className='bg-whiteButtonText text-center content-center rounded-md text-white w-full font-semibold text-md leading-4'
+      className='bg-whiteButtonText flex justify-center min-h-10 items-center text-center content-center rounded-md text-white w-full font-semibold text-md leading-4'
     >
       {btnText}
     </button>

@@ -7,18 +7,19 @@ import { IoMdArrowBack } from 'react-icons/io';
 
 interface FormSlideControlProps {
   count: number;
+  page: number;
+  decrementPage: () => void;
 }
 
 export default function FormSlideControl(props: FormSlideControlProps) {
-  const { count } = props;
-  const store = useFormStore();
-  const disable = count === store.page;
+  const { count, page, decrementPage } = props;
+  const disable = count === page;
 
   function handleBack() {
     if (disable) {
       return;
     }
-    store.decrementPage();
+    decrementPage();
   }
   return (
     <div className='flex justify-between items-center'>
@@ -34,7 +35,7 @@ export default function FormSlideControl(props: FormSlideControlProps) {
         />
       </div>
       <div>
-        <CircularProgress page={store.page} count={count} />
+        <CircularProgress page={page} count={count} />
       </div>
     </div>
   );

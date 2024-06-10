@@ -6,10 +6,11 @@ import { sortByDesiredOrder } from '@/utils/sort-by-order';
 
 interface Props {
   chips: ChipProps[];
+  switchPage: () => void;
 }
 
 export default function FormChipGroup(props: Props) {
-  const { chips } = props;
+  const { chips, switchPage } = props;
   const sortedChips = sortByDesiredOrder({
     data: chips,
     desiredOrder: [
@@ -34,6 +35,7 @@ export default function FormChipGroup(props: Props) {
               <FormChips
                 label={capitaliseFirstLetter(chip.chipValue ?? '') ?? ''}
                 page={chip.page}
+                switchPage={switchPage}
               />
             </div>
           );

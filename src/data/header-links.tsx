@@ -11,8 +11,8 @@ export const headerLinks = [
   //   label: 'MeraPartners',
   //   route: '/mera',
   // },
-  // {
-  //   label: 'Car Inspection',
-  //   route: '/car',
-  // },
+  {
+    label: 'Car Inspection',
+    route: '/inspection',
+  },
 ];

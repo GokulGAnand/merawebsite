@@ -3,7 +3,8 @@ import clsx from 'clsx';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import React from 'react';
-import { getPriceRoute } from '../car/SearchBar';
+import { handleSellBtn } from '@/lib/functions/sell/sell-btn-fn';
+import { useInspectionStore } from '@/lib/store/inspection-store';
 
 interface Props {
   value: string;
@@ -14,6 +15,8 @@ interface Props {
   page?: number;
   stopNavigation?: boolean;
   isStarterForm?: boolean;
+  isSell?: boolean;
+  isInspection?: boolean;
 }
 
 export default function ButtonOption(props: Props) {
@@ -26,6 +29,8 @@ export default function ButtonOption(props: Props) {
     page,
     stopNavigation,
     isStarterForm,
+    isSell,
+    isInspection,
   } = props;
   const {
     incrementPage,
@@ -35,31 +40,53 @@ export default function ButtonOption(props: Props) {
     removeWrongValues,
     switchPage,
   } = useFormStore();
+
+  const {
+    chips: inspectionChips,
+    addChip: addInspectionChip,
+    incrementPage: incrementInspectionPage,
+  } = useInspectionStore();
+
   const router = useRouter();
   function handleBtn() {
-    if (stopNavigation) {
-      addSelection({
-        value,
-        type,
-        page,
-      });
-    } else {
-      addChip({
-        value,
-        chipValue,
-        type,
-        page,
-      });
-      removeWrongValues({
-        type,
-      });
-      isStarterForm ? switchPage(2) : incrementPage();
-      isStarterForm && router.push(getPriceRoute);
+    const btnData = { value, type, page };
+
+    switch (true) {
+      case stopNavigation:
+        addSelection(btnData);
+        break;
+
+      case isSell:
+        handleSellBtn({
+          addChip,
+          btnData,
+          chipValue,
+          incrementPage,
+          isStarterForm,
+          removeWrongValues,
+          router,
+          switchPage,
+        });
+        break;
+
+      case isInspection:
+        addInspectionChip({ ...btnData, chipValue });
+        incrementInspectionPage();
+        break;
+
+      default:
+        addChip({ ...btnData, chipValue });
+        incrementPage();
+        break;
     }
   }
 
-  const curr = chips?.find((chip: { value: string }) => chip.value === value);
+  const chipsSet = isInspection ? inspectionChips : chips;
+  const curr = chipsSet?.find(
+    (chip: { value: string }) => chip.value === value,
+  );
   const selected = curr?.value === value;
+
   return (
     <button
       onClick={handleBtn}
