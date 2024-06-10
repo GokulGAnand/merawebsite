@@ -1,7 +1,6 @@
 import React from 'react';
 import Button from '@/components/buttons/Button';
 import { GrFormNextLink } from 'react-icons/gr';
-import { arrayOutputType } from 'zod';
 
 interface PricingProps {
   icon: React.ReactNode;

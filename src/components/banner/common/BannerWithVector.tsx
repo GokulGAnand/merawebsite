@@ -1,4 +1,3 @@
-import HeaderWithBranding from '@/components/headers/HeaderWithBranding';
 import React from 'react';
 import Image, { StaticImageData } from 'next/image';
 import BannerHeader from './BannerHeader';
