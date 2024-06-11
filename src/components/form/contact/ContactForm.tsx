@@ -3,6 +3,9 @@
 import React from 'react';
 import { useFormStore } from '@/lib/store/useFormStore';
 import Socials from '@/components/links/Socials';
+import HeaderWithBranding from '@/components/headers/HeaderWithBranding';
+import Button from '@/components/buttons/Button';
+import { GrFormNextLink } from 'react-icons/gr';
 
 const ContactForm: React.FC = () => {
   const { name, email, message, setName, setEmail, setMessage, resetForm } =
@@ -10,70 +13,99 @@ const ContactForm: React.FC = () => {
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    // Handle form submission logic here
+
     console.log({ name, email, message });
     resetForm();
   };
 
   return (
-    <div className='flex flex-col md:flex-row'>
-      <div className='md:w-1/2 p-2'>
-        <h2 className='text-2xl font-bold mb-4'>Let's Talk</h2>
-        <p className='mb-4'>
-          Have some big idea or brand to develop and need help? Then reach out
-          we'd love to hear about your project and provide help.
-        </p>
-        <p className='font-semibold mb-2'>Email</p>
-        <p className='mb-4'>meracars@gmail.com</p>
-        <p className='font-semibold mb-2'>Socials</p>
-      </div>
-      <div className='md:w-1/2 p-2'>
-        <form onSubmit={handleSubmit} className='space-y-4'>
-          <div>
-            <label htmlFor='name' className='block font-semibold mb-2'>
-              Name
-            </label>
-            <input
-              id='name'
-              type='text'
-              className='w-full p-2 border border-gray-300 rounded-lg'
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              required
-            />
+    <div className='flex flex-col justify-center w-[96%] lg:w-[88%] xl:w-[85%] gap-2 pt-9 md:pt-20'>
+      <div className='flex flex-col md:flex-row gap-11 lg:gap-36'>
+        <div className='md:w-2/5 p-2'>
+          <HeaderWithBranding isStart heading={`Let's Talk`} subHeading='' />
+          <div className='text-headerLinkColor text-sm font-normal pt-2'>
+            Have some big idea or brand to develop and need help? Then reach out
+            we'd love to hear about your project and provide help.
           </div>
-          <div>
-            <label htmlFor='email' className='block font-semibold mb-2'>
-              Email
-            </label>
-            <input
-              id='email'
-              type='email'
-              className='w-full p-2 border border-gray-300 rounded-lg'
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              required
-            />
+          <p className='text-stepsText text-lg font-medium pt-6 md:pt-9'>
+            Email
+          </p>
+          <p className='text-headerLinkColor text-sm font-normal pt-2'>
+            meracars@gmail.com
+          </p>
+          <p className='text-stepsText text-lg font-medium pt-9 md:pt-11'>
+            Socials
+          </p>
+          <div className='flex pt-2'>
+            <Socials notFooter />
           </div>
-          <div>
-            <label htmlFor='message' className='block font-semibold mb-2'>
-              Message
-            </label>
-            <textarea
-              id='message'
-              className='w-full p-2 border border-gray-300 rounded-lg'
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-              required
-            ></textarea>
-          </div>
-          <button
-            type='submit'
-            className='w-full bg-blue-500 text-white p-2 rounded-lg hover:bg-blue-600'
-          >
-            Submit
-          </button>
-        </form>
+        </div>
+        <div className='md:w-1/2 p-2'>
+          <form onSubmit={handleSubmit} className='space-y-4'>
+            <div>
+              <label
+                htmlFor='name'
+                className='text-stepsText font-medium text-sm'
+              >
+                Name
+              </label>
+              <div className='pt-4'>
+                <input
+                  id='name'
+                  type='text'
+                  className='w-full p-2 border-contactFormBackgroundColor bg-contactFormBackgroundColor rounded-lg pt-4'
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  required
+                />
+              </div>
+            </div>
+            <div>
+              <label
+                htmlFor='email'
+                className='text-stepsText font-medium text-sm pt-8'
+              >
+                Email
+              </label>
+              <div className='pt-4'>
+                <input
+                  id='email'
+                  type='email'
+                  className='w-full p-2 border-contactFormBackgroundColor bg-contactFormBackgroundColor rounded-lg pt-4'
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
+                />
+              </div>
+            </div>
+            <div>
+              <label
+                htmlFor='message'
+                className='text-stepsText font-medium text-sm pt-8'
+              >
+                Message
+              </label>
+              <div className='pt-4'>
+                <textarea
+                  id='message'
+                  className='w-full p-2 border-contactFormBackgroundColor bg-contactFormBackgroundColor rounded-lg h-40'
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                  required
+                ></textarea>
+              </div>
+            </div>
+            <div className='pt-9'>
+              <Button
+                type='submit'
+                className='w-full bg-bannerChipText text-white p-2 rounded-lg justify-center h-16'
+                rightIcon={GrFormNextLink}
+              >
+                Submit
+              </Button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   );

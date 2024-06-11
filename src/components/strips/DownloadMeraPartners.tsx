@@ -3,6 +3,7 @@ import Image from 'next/image';
 import SectionBlock from '@/components/SectionBlock';
 import ToyCarBanner from '~/images/MeraPartners/ToyCarBanner.png';
 import ToyCarBannerMobile from '~/images/MeraPartners/ToyCarBannerMobile.png';
+import ToyCarBannerTab from '~/images/MeraPartners/ToyCarBannerTab.png';
 import NextImage from '@/components/NextImage';
 import DownloadPartners from './DownloadPartners';
 import { PackageX } from 'lucide-react';
@@ -22,6 +23,12 @@ export default function DownloadMeraPartners() {
           layout='fill'
           alt='background pattern'
           className='flex lg:hidden'
+        />
+        <NextImage
+          src={ToyCarBannerTab}
+          layout='fill'
+          alt='background pattern'
+          className='hidden md:flex lg:hidden'
         />
         <DownloadPartners />
       </div>

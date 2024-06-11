@@ -3,8 +3,9 @@ import * as React from 'react';
 import '@/styles/colors.css';
 import PageBanner from '@/components/banner/common/PageBanner';
 import SectionBlock from '@/components/SectionBlock';
-import Banner from 'public/images/AboutUs/AboutBanner.png';
+import Banner from 'public/images/ContactUs/ContactUsBanner.jpg';
 import AboutBannerMobile from 'public/images/AboutUs/AboutBannerMobile.png';
+import ToyBannerTab from 'public/images/MeraPartners/ToyCarBannerTab.png';
 
 export const metadata: Metadata = {
   title: 'Contact us',

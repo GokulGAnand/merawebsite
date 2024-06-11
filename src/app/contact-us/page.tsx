@@ -10,7 +10,7 @@ export default function AboutPage() {
         <title>About us</title>
       </Head>
       <section>
-        {/* <ContactContent/> */}
+        <ContactContent />
         <Faq />
       </section>
     </main>

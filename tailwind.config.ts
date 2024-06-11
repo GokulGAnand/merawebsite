@@ -55,6 +55,7 @@ export default {
         textInputPlaceholderGrey: '#8E8E8E',
         checkboxBorder: '#3398FF',
         orderSummary: '#575757',
+        contactFormBackgroundColor: '#F2F2F2',
       },
       backgroundImage: {
         carFormGradient: 'linear-gradient(90deg, #53BDE5 0%, #2B6FB7 45.5%)',
