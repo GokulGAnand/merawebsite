@@ -1,7 +1,7 @@
 import React from 'react';
 import HeaderWithBranding from '../headers/HeaderWithBranding';
 import PricingCard from '../cards/PricingCard';
-import { PricingPlans } from '@/data/pricing-plans';
+import { pricingPlans } from '@/data/pricing-plans';
 
 const Pricing = () => {
   return (
@@ -14,15 +14,15 @@ const Pricing = () => {
       </div>
       <div className='flex flex-col items-center w-full lg:pt-16 pt-5'>
         <div className='flex flex-col lg:flex-row w-full lg:w-[85%] justify-between items-center'>
-          {PricingPlans.map((plan) => (
+          {pricingPlans.map((plan) => (
             <PricingCard
               key={plan.id}
               id={plan.id}
               icon={plan.icon}
               title={plan.title}
               amount={plan.amount}
-              row_content={plan.row_content}
-              action_content={plan.action_content}
+              rowContent={plan.rowContent}
+              actionContent={plan.actionContent}
             />
           ))}
         </div>

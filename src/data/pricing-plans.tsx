@@ -1,43 +1,43 @@
 import CheckIcon from '~/svg/CheckIcon.svg';
 
-export const PricingPlans = [
+export const pricingPlans = [
   {
     id: 1,
     title: 'Basic',
     amount: '1299',
     icon: <CheckIcon width={14} height={14} />,
-    row_content: [
+    rowContent: [
       'Digital Report',
       '140+ Checkpoints',
       'Access to all modules',
       'Access to all modules',
     ],
-    action_content: 'Schedule',
+    actionContent: 'Schedule',
   },
   {
     id: 2,
     title: 'Basic',
     amount: '1299',
     icon: <CheckIcon width={14} height={14} />,
-    row_content: [
+    rowContent: [
       'Digital Report',
       '140+ Checkpoints',
       'Access to all modules',
       'Access to all modules',
     ],
-    action_content: 'Coming soon',
+    actionContent: 'Coming soon',
   },
   {
     id: 3,
     title: 'Basic',
     amount: '1299',
     icon: <CheckIcon width={14} height={14} />,
-    row_content: [
+    rowContent: [
       'Digital Report',
       '140+ Checkpoints',
       'Access to all modules',
       'Access to all modules',
     ],
-    action_content: 'Coming soon',
+    actionContent: 'Coming soon',
   },
 ];

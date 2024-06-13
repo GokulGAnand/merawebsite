@@ -95,10 +95,10 @@ const ContactForm: React.FC = () => {
                 ></textarea>
               </div>
             </div>
-            <div className='pt-9'>
+            <div className='pt-5'>
               <Button
                 type='submit'
-                className='w-full bg-bannerChipText text-white p-2 rounded-lg justify-center h-16'
+                className='w-full bg-bannerChipText p-2 text-white rounded-lg justify-center h-16'
                 rightIcon={GrFormNextLink}
               >
                 Submit

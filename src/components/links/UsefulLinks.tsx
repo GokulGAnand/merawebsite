@@ -10,7 +10,7 @@ export default function UsefulLinks() {
           About
         </Link>
 
-        <Link className='text-sm' href='/contact-us'>
+        <Link className='text-sm' href='/'>
           Contact us
         </Link>
 
