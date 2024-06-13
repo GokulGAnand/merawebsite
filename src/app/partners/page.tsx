@@ -10,6 +10,7 @@ import RightBannerVector from 'public/images/MeraPartners/RightBannerVector.png'
 
 import Head from 'next/head';
 import * as React from 'react';
+import Faq from '@/components/strips/Faq';
 
 export default function Partners() {
   return (

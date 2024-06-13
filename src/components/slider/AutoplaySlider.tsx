@@ -5,10 +5,10 @@ import Divider from '../utils/Divider';
 
 const AutoplaySlider = () => {
   return (
-    <div className='overflow-x-clip'>
+    <div className='overflow-x-clip pb-24'>
       <div className='flex items-center justify-center'>
         <div className='flex w-[100%] lg:w-[88%] xl:w-[85%] pt-24 gap-x-5'>
-          <Divider className='flex-grow border-t-2 border-partnerDividerColor' />
+          <Divider />
           <div className='flex'>
             <div className='bg-bannerChipColor h-9 rounded-3xl flex align-middle place-items-center max-w-sm '>
               <ul className='list-none'>
@@ -22,7 +22,7 @@ const AutoplaySlider = () => {
               </ul>
             </div>
           </div>
-          <Divider className='flex-grow border-t-2 border-partnerDividerColor' />
+          <Divider />
         </div>
       </div>
 
