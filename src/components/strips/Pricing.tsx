@@ -23,6 +23,7 @@ const Pricing = () => {
               amount={plan.amount}
               rowContent={plan.rowContent}
               actionContent={plan.actionContent}
+              isDisabled={plan.isDisabled}
             />
           ))}
         </div>

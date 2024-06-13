@@ -1,5 +1,4 @@
-import { Logos } from '@/data/logos';
-import Image from 'next/image';
+import { logos } from '@/data/logos';
 import React from 'react';
 import Divider from '../utils/Divider';
 
@@ -28,7 +27,7 @@ const AutoplaySlider = () => {
 
       <div>
         <div className='flex w-full gap-x-6 pt-10 justify-center'>
-          {Logos.map((logo) => {
+          {logos.map((logo) => {
             const { label, icon } = logo;
             return (
               <div className='items-contain justify-center' key={label}>

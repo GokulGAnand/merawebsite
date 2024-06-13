@@ -15,7 +15,7 @@ export interface PartnerReviews {
   comments: string;
 }
 
-export const MeraPartners = [
+export const meraPartners = [
   {
     content: 'Only Perfect Quality Cars Available',
     image: PerfectQualityCars,
@@ -30,7 +30,7 @@ export const MeraPartners = [
   },
 ];
 
-export const PartnerReviews: PartnerReviews[] = [
+export const partnerReviews: PartnerReviews[] = [
   {
     icon: <Floyd width={60} height={60} />,
     rating: 5,
@@ -54,14 +54,14 @@ export const PartnerReviews: PartnerReviews[] = [
   },
 ];
 
-export const DownloadPartner = {
+export const downloadPartner = {
   header: 'Make your dealership a success',
   main_header: 'MeraPartners, Join Now!',
   content:
     'Join our trusted network of car dealers and access high-quality used cars with complete inspection reports from our certified inspectors.',
 };
 
-export const DownloadButton = [
+export const downloadButton = [
   {
     label: 'Playstore Button',
     icon: <PlayStoreButton width={144} height={33} />,
@@ -72,7 +72,7 @@ export const DownloadButton = [
   },
 ];
 
-export const Services = [
+export const services = [
   {
     heading: 'Free car expert inspection',
     subHeading:

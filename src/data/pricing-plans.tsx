@@ -13,6 +13,7 @@ export const pricingPlans = [
       'Access to all modules',
     ],
     actionContent: 'Schedule',
+    isDisabled: false,
   },
   {
     id: 2,
@@ -26,6 +27,7 @@ export const pricingPlans = [
       'Access to all modules',
     ],
     actionContent: 'Coming soon',
+    isDisabled: true,
   },
   {
     id: 3,
@@ -39,5 +41,6 @@ export const pricingPlans = [
       'Access to all modules',
     ],
     actionContent: 'Coming soon',
+    isDisabled: true,
   },
 ];

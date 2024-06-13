@@ -1,5 +1,5 @@
 'use client';
-import { PartnerReviews } from '@/data/partner';
+import { partnerReviews } from '@/data/partner';
 import PartnerReviewCard from '../cards/PartnerReviewCard';
 
 export default function PartnerFeedCarousel({
@@ -14,7 +14,7 @@ export default function PartnerFeedCarousel({
 
   return (
     <div>
-      {PartnerReviews.slice(start, end).map((review) => {
+      {partnerReviews.slice(start, end).map((review) => {
         const { icon, rating, partner, comments } = review;
         return (
           <div className='pt-16' key={partner}>

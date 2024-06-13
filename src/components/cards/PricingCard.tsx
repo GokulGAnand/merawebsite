@@ -1,7 +1,6 @@
 import React from 'react';
 import Button from '@/components/buttons/Button';
 import { GrFormNextLink } from 'react-icons/gr';
-import clsx from 'clsx';
 
 interface PricingProps {
   icon: React.ReactNode;
@@ -10,16 +9,16 @@ interface PricingProps {
   amount: string;
   rowContent: string[];
   actionContent: string;
+  isDisabled?: boolean;
 }
 
 const PricingCard = (props: PricingProps) => {
-  const { id, title, amount, icon, rowContent, actionContent } = props;
-
-  const isComingSoon = actionContent === 'Coming soon';
+  const { id, title, amount, icon, rowContent, actionContent, isDisabled } =
+    props;
 
   return (
     <div
-      className={`mb-18 md:mb-18 lg:mb-0 ${isComingSoon ? 'filter opacity-50 hidden lg:block' : ''}`}
+      className={`mb-18 md:mb-18 lg:mb-0 ${isDisabled ? 'filter opacity-50 hidden lg:block' : ''}`}
     >
       <section className='bg-white'>
         <div className='max-w-screen-xl'>
@@ -63,28 +62,14 @@ const PricingCard = (props: PricingProps) => {
                   </ul>
 
                   <div className=' flex items-center pt-3 pb-6'>
-                    {isComingSoon && (
-                      <Button
-                        variant='primary'
-                        className={clsx(
-                          'absolute font-bold justify-center flex rounded-lg w-60 h-12',
-                          isComingSoon ? '' : '',
-                        )}
-                        rightIcon={GrFormNextLink}
-                        disabled
-                      >
-                        {actionContent}
-                      </Button>
-                    )}
-                    {!isComingSoon && (
-                      <Button
-                        variant='primary'
-                        className='absolute font-bold justify-center flex rounded-lg w-60 h-12'
-                        rightIcon={GrFormNextLink}
-                      >
-                        {actionContent}
-                      </Button>
-                    )}
+                    <Button
+                      variant='primary'
+                      className='absolute font-bold justify-center flex rounded-lg w-60 h-12'
+                      rightIcon={GrFormNextLink}
+                      disabled={isDisabled}
+                    >
+                      {actionContent}
+                    </Button>
                   </div>
                 </div>
               </div>

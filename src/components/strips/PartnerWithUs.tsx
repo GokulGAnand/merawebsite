@@ -1,6 +1,6 @@
 import React from 'react';
 import HeaderWithBranding from '../headers/HeaderWithBranding';
-import { MeraPartners } from '@/data/partner';
+import { meraPartners } from '@/data/partner';
 import Image from 'next/image';
 
 const PartnerWithUs = () => {
@@ -14,7 +14,7 @@ const PartnerWithUs = () => {
       </div>
       <div className='w-full flex justify-center'>
         <div className='grid grid-cols-1 lg:grid-cols-3 lg:gap-9 gap-5 my-12 w-[80%] lg:w-[88%] xl:w-[85%] justify-items-center'>
-          {MeraPartners.map((cardItem) => {
+          {meraPartners.map((cardItem) => {
             const { content, image } = cardItem;
             return (
               <div
