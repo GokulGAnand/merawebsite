@@ -21,7 +21,7 @@ const PricingCard = (props: PricingProps) => {
 
   const router = useRouter();
 
-  const getCarInspection = (link: string) => {
+  const handleClick = (link: string) => {
     router.push(link);
   };
 
@@ -75,7 +75,7 @@ const PricingCard = (props: PricingProps) => {
                       variant='primary'
                       className='absolute font-bold justify-center flex rounded-lg w-60 h-12'
                       rightIcon={GrFormNextLink}
-                      onClick={() => link && getCarInspection(link)}
+                      onClick={() => link && handleClick(link)}
                       disabled={isDisabled}
                     >
                       {actionContent}

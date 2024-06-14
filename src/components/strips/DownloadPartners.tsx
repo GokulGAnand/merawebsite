@@ -9,7 +9,7 @@ type downloadLink = string;
 export default function DownloadPartners() {
   const router = useRouter();
 
-  const downloadApp = (link: downloadLink) => {
+  const handleClick = (link: downloadLink) => {
     router.push(link);
   };
 
@@ -36,7 +36,7 @@ export default function DownloadPartners() {
               key={index}
               variant='light'
               className='font-bold text-center flex justify-center rounded-lg min-w-36 min-h-12 max-w-52 max-h-16'
-              onClick={() => downloadApp(buttonContent.link)}
+              onClick={() => handleClick(buttonContent.link)}
             >
               {buttonContent.icon}
             </Button>
