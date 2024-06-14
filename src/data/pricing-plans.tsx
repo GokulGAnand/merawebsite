@@ -13,6 +13,7 @@ export const pricingPlans = [
       'Access to all modules',
     ],
     actionContent: 'Schedule',
+    link: '/inspection/get-car-inspection',
     isDisabled: false,
   },
   {
@@ -27,6 +28,7 @@ export const pricingPlans = [
       'Access to all modules',
     ],
     actionContent: 'Coming soon',
+    link: '/',
     isDisabled: true,
   },
   {
@@ -41,6 +43,7 @@ export const pricingPlans = [
       'Access to all modules',
     ],
     actionContent: 'Coming soon',
+    link: '/',
     isDisabled: true,
   },
 ];

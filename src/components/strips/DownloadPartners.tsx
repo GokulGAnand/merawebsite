@@ -1,7 +1,8 @@
 'use client';
 import { useRouter } from 'next/navigation';
 import Button from '@/components/buttons/Button';
-import { downloadButton, downloadPartner } from '@/data/partner';
+import { downloadPartner } from '@/data/partner';
+import { downloadButton } from '@/data/download-partner';
 
 type downloadLink = string;
 

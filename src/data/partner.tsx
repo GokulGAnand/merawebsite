@@ -2,8 +2,6 @@ import PerfectQualityCars from '~/images/MeraPartners/PerfectQualityCars.png';
 import TransparentBidding from '~/images/Merapartners/TransparentBidding.png';
 import HassleFreePayment from '~/images/Merapartners/HassleFreePayment.png';
 import Floyd from '~/images/MeraPartners/Partners/FloydMiles.svg';
-import PlayStoreButton from '~/svg/PlayStoreVector.svg';
-import AppStoreButton from '~/svg/AppStoreVector.svg';
 import PlaceYourBid from '~/images/MeraPartners/PlaceYourBid.webp';
 import DealClosed from '~/images/MeraPartners/DealClosed.webp';
 import CarDelivered from '~/images/MeraPartners/CarDelivered.webp';
@@ -60,19 +58,6 @@ export const downloadPartner = {
   content:
     'Join our trusted network of car dealers and access high-quality used cars with complete inspection reports from our certified inspectors.',
 };
-
-export const downloadButton = [
-  {
-    label: 'Playstore Button',
-    icon: <PlayStoreButton width={144} height={33} />,
-    link: 'https://play.google.com/store/apps/details?id=com.meracars.mera_partners&hl=en',
-  },
-  {
-    label: 'App store button',
-    icon: <AppStoreButton width={144} height={33} />,
-    link: '/',
-  },
-];
 
 export const services = [
   {

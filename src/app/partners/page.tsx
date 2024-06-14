@@ -7,10 +7,8 @@ import BannerWithVector from '@/components/banner/common/BannerWithVector';
 import MeraPartnersBanner from 'public/images/MeraPartners/MeraPartnersBanner.png';
 import MeraPartnersMobileBanner from 'public/images/MeraPartners/MeraPartnersMobileBanner.png';
 import RightBannerVector from 'public/images/MeraPartners/RightBannerVector.png';
-
 import Head from 'next/head';
 import * as React from 'react';
-import Faq from '@/components/strips/Faq';
 
 export default function Partners() {
   return (

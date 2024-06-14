@@ -11,17 +11,18 @@ interface PricingProps {
   amount: string;
   rowContent: string[];
   actionContent: string;
+  link?: string;
   isDisabled?: boolean;
 }
 
 const PricingCard = (props: PricingProps) => {
-  const { id, title, amount, icon, rowContent, actionContent, isDisabled } =
+  const { title, amount, icon, rowContent, actionContent, isDisabled, link } =
     props;
 
   const router = useRouter();
 
-  const getCarInspection = () => {
-    router.push('/inspection/get-car-inspection');
+  const getCarInspection = (link: string) => {
+    router.push(link);
   };
 
   return (
@@ -74,7 +75,7 @@ const PricingCard = (props: PricingProps) => {
                       variant='primary'
                       className='absolute font-bold justify-center flex rounded-lg w-60 h-12'
                       rightIcon={GrFormNextLink}
-                      onClick={getCarInspection}
+                      onClick={() => link && getCarInspection(link)}
                       disabled={isDisabled}
                     >
                       {actionContent}

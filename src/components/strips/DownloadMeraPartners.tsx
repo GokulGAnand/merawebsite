@@ -1,12 +1,10 @@
 'use client';
-import Image from 'next/image';
 import SectionBlock from '@/components/SectionBlock';
 import ToyCarBanner from '~/images/MeraPartners/ToyCarBanner.png';
 import ToyCarBannerMobile from '~/images/MeraPartners/ToyCarBannerMobile.png';
 import ToyCarBannerTab from '~/images/MeraPartners/ToyCarBannerTab.png';
 import NextImage from '@/components/NextImage';
 import DownloadPartners from './DownloadPartners';
-import { PackageX } from 'lucide-react';
 
 export default function DownloadMeraPartners() {
   return (
