@@ -1,7 +1,17 @@
+'use client';
+import { useRouter } from 'next/navigation';
 import Button from '@/components/buttons/Button';
 import { downloadButton, downloadPartner } from '@/data/partner';
 
+type downloadLink = string;
+
 export default function DownloadPartners() {
+  const router = useRouter();
+
+  const downloadApp = (link: downloadLink) => {
+    router.push(link);
+  };
+
   return (
     <div className='z-0 flex w-[595px] justify-between'>
       <div className='flex w-full flex-col items-start'>
@@ -25,6 +35,7 @@ export default function DownloadPartners() {
               key={index}
               variant='light'
               className='font-bold text-center flex justify-center rounded-lg min-w-36 min-h-12 max-w-52 max-h-16'
+              onClick={() => downloadApp(buttonContent.link)}
             >
               {buttonContent.icon}
             </Button>

@@ -1,4 +1,6 @@
+'use client';
 import React from 'react';
+import { useRouter } from 'next/navigation';
 import Button from '@/components/buttons/Button';
 import { GrFormNextLink } from 'react-icons/gr';
 
@@ -15,6 +17,12 @@ interface PricingProps {
 const PricingCard = (props: PricingProps) => {
   const { id, title, amount, icon, rowContent, actionContent, isDisabled } =
     props;
+
+  const router = useRouter();
+
+  const getCarInspection = () => {
+    router.push('/inspection/get-car-inspection');
+  };
 
   return (
     <div
@@ -66,6 +74,7 @@ const PricingCard = (props: PricingProps) => {
                       variant='primary'
                       className='absolute font-bold justify-center flex rounded-lg w-60 h-12'
                       rightIcon={GrFormNextLink}
+                      onClick={getCarInspection}
                       disabled={isDisabled}
                     >
                       {actionContent}
