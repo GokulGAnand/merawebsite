@@ -24,7 +24,7 @@ export default function Partners() {
           srcMobile={MeraPartnersMobileBanner}
           srcVector={RightBannerVector}
         />
-        <PartnerWithUs />
+        {/* <PartnerWithUs /> */}
         <DownloadMeraPartners />
         <HowItWorks />
         <PartnerFeedBack />
