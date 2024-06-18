@@ -93,7 +93,6 @@ export const useSlideActions = () => {
       },
     );
   };
-  console.log(inspection, 'inspection');
   return {
     handleInspectionOtp,
     apiError: inspection.error,

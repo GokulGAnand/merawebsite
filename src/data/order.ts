@@ -1,14 +1,10 @@
 export const order = [
   {
-    item: 'Regular inspection',
-    value: '50000',
+    item: 'Inspection Service',
+    value: '899',
   },
   {
-    item: 'Tax',
-    value: '500',
-  },
-  {
-    item: 'Gst',
-    value: '50',
+    item: 'GST',
+    value: '161.82',
   },
 ];
