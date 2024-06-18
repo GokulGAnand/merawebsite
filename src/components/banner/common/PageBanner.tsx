@@ -8,10 +8,11 @@ interface PageBannerProps {
   image?: React.ReactNode;
   srcPath?: StaticImageData;
   srcMobile?: StaticImageData;
+  srcTab?: StaticImageData;
 }
 
 const PageBanner = (props: PageBannerProps) => {
-  const { heading, subHeading, srcPath, srcMobile } = props;
+  const { heading, subHeading, srcPath, srcMobile, srcTab } = props;
   return (
     <div className='hero min-h-[300px] bg-gradient-to-r from-[#53BDE5] to-[#2B6FB7] bg-opacity-90 relative'>
       <>
@@ -27,8 +28,15 @@ const PageBanner = (props: PageBannerProps) => {
           {srcMobile && (
             <Image
               src={srcMobile}
-              alt='Banner'
+              alt='Banner Mobile'
               className='object-fill h-full w-full lg:hidden flex'
+            />
+          )}
+          {srcTab && (
+            <Image
+              src={srcTab}
+              alt='Banner Tab'
+              className='object-fill h-full w-full  hidden md:flex lg:hidden'
             />
           )}
         </div>

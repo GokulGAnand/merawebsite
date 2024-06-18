@@ -3,12 +3,12 @@ import { useFormStore } from '@/lib/store/store';
 
 interface FormChipProps {
   label: string;
+  switchPage: (page?: number) => void;
   page?: number;
 }
 
 export default function FormChips(props: FormChipProps) {
-  const { label, page } = props;
-  const { switchPage } = useFormStore();
+  const { label, page, switchPage } = props;
 
   function handleFormChip() {
     switchPage(page);

@@ -6,7 +6,7 @@ export const AboutCard = () => {
   const Overview = about;
 
   return (
-    <div className='mt-24 lg:mb-36 mr:44 lg:w-2/5'>
+    <div className='mt-24 lg:mb-36 mr:44 lg:w-1/2'>
       <div>
         <p className='text-left text-base font-bold text-bannerChipText'>
           • About the Company
@@ -20,7 +20,7 @@ export const AboutCard = () => {
           {Overview.content}
         </div>
       </div>
-      <div>
+      <div className='flex pr-2'>
         <Divider />
       </div>
       <div className='flex'>

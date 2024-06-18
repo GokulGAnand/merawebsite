@@ -7,12 +7,12 @@ export const headerLinks = [
     label: 'Sell Your Car',
     route: '/sell-used-car',
   },
-  // {
-  //   label: 'MeraPartners',
-  //   route: '/mera',
-  // },
-  // {
-  //   label: 'Car Inspection',
-  //   route: '/car',
-  // },
+  {
+    label: 'MeraPartners',
+    route: '/partners',
+  },
+  {
+    label: 'Car Inspection',
+    route: '/inspection',
+  },
 ];

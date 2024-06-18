@@ -148,3 +148,8 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+/* Date Picker  */
+.react-datepicker-wrapper {
+  width: 100%;
+}

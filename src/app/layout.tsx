@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import { DM_Sans } from 'next/font/google';
 import * as React from 'react';
+import Script from 'next/script';
 
 import '@/styles/globals.css';
 // !STARTERCONF This is for demo purposes, remove @/styles/colors.css import immediately
@@ -11,6 +12,7 @@ import { ThemeModeScript } from 'flowbite-react';
 
 import { siteConfig } from '@/constant/config';
 import dynamic from 'next/dynamic';
+import ReactQueryProvider from '@/utils/react-query-provider';
 
 // !STARTERCONF Change these default meta
 // !STARTERCONF Look at @/constant/config to change them
@@ -71,10 +73,14 @@ export default function RootLayout({
     <html lang='en' className={`${DMSANS.variable} font-sans`}>
       <head>
         <ThemeModeScript />
+        <Script
+          src='https://checkout.razorpay.com/v1/checkout.js'
+          strategy='afterInteractive'
+        />
       </head>
       <body>
         <Header />
-        {children}
+        <ReactQueryProvider>{children}</ReactQueryProvider>
         <Footer />
       </body>
     </html>
