@@ -1,7 +1,5 @@
 import React from 'react';
 import HeaderWithBranding from '../headers/HeaderWithBranding';
-import { meraPartners } from '@/data/partner';
-import Image from 'next/image';
 
 const PartnerWithUs = () => {
   return (
@@ -12,7 +10,7 @@ const PartnerWithUs = () => {
           subHeading='Get access to high-quality used cars at the best prices'
         />
       </div>
-      <div className='w-full flex justify-center'>
+      {/* <div className='w-full flex justify-center'>
         <div className='grid grid-cols-1 lg:grid-cols-3 lg:gap-9 gap-5 my-12 w-[80%] lg:w-[88%] xl:w-[85%] justify-items-center'>
           {meraPartners.map((cardItem) => {
             const { content, image } = cardItem;
@@ -33,7 +31,7 @@ const PartnerWithUs = () => {
             );
           })}
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

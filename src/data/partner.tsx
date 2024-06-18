@@ -1,6 +1,3 @@
-import PerfectQualityCars from '~/images/MeraPartners/PerfectQualityCars.png';
-import TransparentBidding from '~/images/Merapartners/TransparentBidding.png';
-import HassleFreePayment from '~/images/Merapartners/HassleFreePayment.png';
 import Floyd from '~/images/MeraPartners/Partners/FloydMiles.svg';
 import PlaceYourBid from '~/images/MeraPartners/PlaceYourBid.webp';
 import DealClosed from '~/images/MeraPartners/DealClosed.webp';
@@ -13,20 +10,20 @@ export interface PartnerReviews {
   comments: string;
 }
 
-export const meraPartners = [
-  {
-    content: 'Only Perfect Quality Cars Available',
-    image: PerfectQualityCars,
-  },
-  {
-    content: '100% Transparent Bidding Process',
-    image: TransparentBidding,
-  },
-  {
-    content: 'Hassle Free Delivery And Payment',
-    image: HassleFreePayment,
-  },
-];
+// export const meraPartners = [
+//   {
+//     content: 'Only Perfect Quality Cars Available',
+//     image: PerfectQualityCars,
+//   },
+//   {
+//     content: '100% Transparent Bidding Process',
+//     image: TransparentBidding,
+//   },
+//   {
+//     content: 'Hassle Free Delivery And Payment',
+//     image: HassleFreePayment,
+//   },
+// ];
 
 export const partnerReviews: PartnerReviews[] = [
   {
