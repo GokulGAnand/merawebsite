@@ -1,8 +1,3 @@
-import AutoplaySlider from '@/components/slider/AutoplaySlider';
-import DownloadMeraPartners from '@/components/strips/DownloadMeraPartners';
-import HowItWorks from '@/components/strips/HowItWorksPartners';
-import { PartnerFeedBack } from '@/components/strips/PartnerFeedback';
-import PartnerWithUs from '@/components/strips/PartnerWithUs';
 import BannerWithVector from '@/components/banner/common/BannerWithVector';
 import MeraPartnersBanner from 'public/images/MeraPartners/MeraPartnersBanner.png';
 import MeraPartnersMobileBanner from 'public/images/MeraPartners/MeraPartnersMobileBanner.png';
@@ -25,10 +20,10 @@ export default function Partners() {
           srcVector={RightBannerVector}
         />
         {/* <PartnerWithUs /> */}
-        <DownloadMeraPartners />
+        {/* <DownloadMeraPartners />
         <HowItWorks />
         <PartnerFeedBack />
-        <AutoplaySlider />
+        <AutoplaySlider /> */}
       </section>
     </main>
   );
