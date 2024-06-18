@@ -13,6 +13,7 @@ interface Props {
   getUpdates?: boolean;
   isChecked?: boolean;
   setIsChecked?: React.Dispatch<SetStateAction<boolean>>;
+  isDisabledBtn?: boolean;
 }
 
 export const EnterPhone = (props: Props) => {
@@ -24,6 +25,7 @@ export const EnterPhone = (props: Props) => {
     incrementPage,
     phone,
     setPhone,
+    isDisabledBtn,
   } = props;
   const [error, setError] = useState('');
   function handleChange(e: string) {
@@ -60,7 +62,11 @@ export const EnterPhone = (props: Props) => {
           onChange={handleChange}
           placeholder='Enter mobile no.'
         />
-        <FormButton btnText='Get OTP' onClick={handleClick} />
+        <FormButton
+          btnText='Get OTP'
+          isDisabled={isDisabledBtn}
+          onClick={handleClick}
+        />
       </div>
       <div>
         {error && <span className='text-red-500 text-sm mt-1'>{error}</span>}

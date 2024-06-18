@@ -50,6 +50,7 @@ export const useGetSlides = () => {
         getUpdates
         isChecked={isChecked}
         setIsChecked={setIsChecked}
+        isDisabledBtn={!isChecked}
       />
     ),
     5: (
