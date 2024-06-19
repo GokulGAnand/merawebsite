@@ -4,20 +4,20 @@ import SellThree from '~/images/SellUsedCars/SellThree.webp';
 
 export const sell = [
   {
-    heading: 'Free car expert inspection',
+    heading: 'Pre-Sale & Purchase ',
     subHeading:
-      'Our experts will come to your location and perfectly evaluate your car.',
+      'Detailed reports for pre-sale and purchase inspections to ensure you get the best deal.',
     image: SellOne,
   },
   {
-    heading: 'Receive the best price for your car',
-    subHeading:
-      'Get the best market price for your car based on the inspection report.',
+    heading: 'Warranty Assessment',
+    subHeading: `Get a complete inspection report to validate your car's warranty coverage.`,
     image: SellTwo,
   },
   {
     heading: 'Instant payment into your bank account',
-    subHeading: 'Complete the sale and get a 100% transparent deal',
+    subHeading:
+      'Keep your car safe and reliable with MeraCar’s routine checkup reports.',
     image: SellThree,
   },
 ];

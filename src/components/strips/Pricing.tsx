@@ -8,8 +8,8 @@ const Pricing = () => {
     <div className='py-16 lg:pt-20 lg:pb-32 flex flex-col justify-center items-center w-full'>
       <div className='flex flex-col justify-center'>
         <HeaderWithBranding
-          heading='Pick a right plan'
-          subHeading='Sell your car the more money way, in three easy steps'
+          heading='Choose the right plan'
+          subHeading='Get a paid certified car inspection report quickly, tailored to your needs.'
         />
       </div>
       <div className='flex flex-col items-center w-full lg:pt-16 pt-5'>
