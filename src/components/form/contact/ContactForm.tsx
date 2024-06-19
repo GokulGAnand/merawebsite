@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { useFormStore } from '@/lib/store/useFormStore';
+import { useContactStore } from '@/lib/store/contact-store';
 import Socials from '@/components/links/Socials';
 import HeaderWithBranding from '@/components/headers/HeaderWithBranding';
 import Button from '@/components/buttons/Button';
@@ -10,7 +10,7 @@ import { ContactInput } from '../inputs/ContactInput';
 
 const ContactForm: React.FC = () => {
   const { name, email, message, setName, setEmail, setMessage, resetForm } =
-    useFormStore();
+    useContactStore();
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -45,17 +45,20 @@ const ContactForm: React.FC = () => {
           <form onSubmit={handleSubmit} className='space-y-4'>
             <ContactInput
               value={name}
-              onChange={(e) => setName(e)}
+              onChange={setName}
+              required
               label='Name'
             />
             <ContactInput
               value={email}
-              onChange={(e) => setEmail(e)}
+              onChange={setEmail}
+              required
               label='Email'
             />
             <ContactInput
               value={message}
-              onChange={(e) => setMessage(e)}
+              onChange={setMessage}
+              required
               isMessage
               label='Message'
             />

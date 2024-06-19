@@ -1,4 +1,4 @@
-import { create } from 'zustand';
+import create from 'zustand';
 
 interface FormState {
   name: string;
@@ -10,7 +10,7 @@ interface FormState {
   resetForm: () => void;
 }
 
-export const useFormStore = create<FormState>((set) => ({
+export const useContactStore = create<FormState>((set) => ({
   name: '',
   email: '',
   message: '',
