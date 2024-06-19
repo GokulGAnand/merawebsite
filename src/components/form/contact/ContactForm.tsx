@@ -6,6 +6,7 @@ import Socials from '@/components/links/Socials';
 import HeaderWithBranding from '@/components/headers/HeaderWithBranding';
 import Button from '@/components/buttons/Button';
 import { GrFormNextLink } from 'react-icons/gr';
+import { ContactInput } from '../inputs/ContactInput';
 
 const ContactForm: React.FC = () => {
   const { name, email, message, setName, setEmail, setMessage, resetForm } =
@@ -42,59 +43,22 @@ const ContactForm: React.FC = () => {
         </div>
         <div className='md:w-1/2 p-2'>
           <form onSubmit={handleSubmit} className='space-y-4'>
-            <div>
-              <label
-                htmlFor='name'
-                className='text-stepsText font-medium text-sm'
-              >
-                Name
-              </label>
-              <div className='pt-4'>
-                <input
-                  id='name'
-                  type='text'
-                  className='w-full p-2 border-contactFormBackgroundColor bg-contactFormBackgroundColor rounded-lg pt-4'
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
-                  required
-                />
-              </div>
-            </div>
-            <div>
-              <label
-                htmlFor='email'
-                className='text-stepsText font-medium text-sm pt-8'
-              >
-                Email
-              </label>
-              <div className='pt-4'>
-                <input
-                  id='email'
-                  type='email'
-                  className='w-full p-2 border-contactFormBackgroundColor bg-contactFormBackgroundColor rounded-lg pt-4'
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  required
-                />
-              </div>
-            </div>
-            <div>
-              <label
-                htmlFor='message'
-                className='text-stepsText font-medium text-sm pt-8'
-              >
-                Message
-              </label>
-              <div className='pt-4'>
-                <textarea
-                  id='message'
-                  className='w-full p-2 border-contactFormBackgroundColor bg-contactFormBackgroundColor rounded-lg h-40'
-                  value={message}
-                  onChange={(e) => setMessage(e.target.value)}
-                  required
-                ></textarea>
-              </div>
-            </div>
+            <ContactInput
+              value={name}
+              onChange={(e) => setName(e)}
+              label='Name'
+            />
+            <ContactInput
+              value={email}
+              onChange={(e) => setEmail(e)}
+              label='Email'
+            />
+            <ContactInput
+              value={message}
+              onChange={(e) => setMessage(e)}
+              isMessage
+              label='Message'
+            />
             <div className='pt-5'>
               <Button
                 type='submit'
