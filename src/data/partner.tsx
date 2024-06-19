@@ -1,7 +1,10 @@
-import Floyd from '~/images/MeraPartners/Partners/FloydMiles.svg';
-import PlaceYourBid from '~/images/MeraPartners/PlaceYourBid.webp';
-import DealClosed from '~/images/MeraPartners/DealClosed.webp';
-import CarDelivered from '~/images/MeraPartners/CarDelivered.webp';
+import Floyd from '../../public/images/MeraPartners/FloydMiles.svg';
+import PlaceYourBid from '../../public/images/MeraPartners/PlaceYourBid.webp';
+import DealClosed from '../../public/images/MeraPartners/DealClosed.webp';
+import CarDelivered from '../../public/images/MeraPartners/CarDelivered.webp';
+import PerfectQualityCars from '../../public/images/MeraPartners/PerfectQualityCars.png';
+import TransparentBidding from '../../public/images/MeraPartners/TransparentBidding.png';
+import HassleFreePayment from '../../public/images/MeraPartners/HassleFreePayment.png';
 
 export interface PartnerReviews {
   icon: JSX.Element;
@@ -10,20 +13,20 @@ export interface PartnerReviews {
   comments: string;
 }
 
-// export const meraPartners = [
-//   {
-//     content: 'Only Perfect Quality Cars Available',
-//     image: PerfectQualityCars,
-//   },
-//   {
-//     content: '100% Transparent Bidding Process',
-//     image: TransparentBidding,
-//   },
-//   {
-//     content: 'Hassle Free Delivery And Payment',
-//     image: HassleFreePayment,
-//   },
-// ];
+export const meraPartners = [
+  {
+    content: 'Only Perfect Quality Cars Available',
+    image: PerfectQualityCars,
+  },
+  {
+    content: '100% Transparent Bidding Process',
+    image: TransparentBidding,
+  },
+  {
+    content: 'Hassle Free Delivery And Payment',
+    image: HassleFreePayment,
+  },
+];
 
 export const partnerReviews: PartnerReviews[] = [
   {
