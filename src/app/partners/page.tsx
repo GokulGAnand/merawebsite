@@ -6,9 +6,9 @@ import Head from 'next/head';
 import * as React from 'react';
 import PartnerWithUs from '@/components/strips/PartnerWithUs';
 import DownloadMeraPartners from '@/components/strips/DownloadMeraPartners';
-import HowItWorks from '@/components/strips/HowItWorks';
 import { PartnerFeedBack } from '@/components/strips/PartnerFeedback';
 import AutoplaySlider from '@/components/slider/AutoplaySlider';
+import HowItWorks from '@/components/strips/HowItWorks';
 
 export default function Partners() {
   return (
@@ -26,7 +26,7 @@ export default function Partners() {
         />
         <PartnerWithUs />
         <DownloadMeraPartners />
-        <HowItWorks />
+        <HowItWorks isPartner />
         <PartnerFeedBack />
         <AutoplaySlider />
       </section>

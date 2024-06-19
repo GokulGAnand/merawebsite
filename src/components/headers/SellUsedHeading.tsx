@@ -7,14 +7,14 @@ export default function SellUsedHeading() {
     <div>
       <div className='hidden lg:flex mt-20 mb-5 justify-center'>
         <HeaderWithBranding
-          heading={`Selling a car? We're buying!`}
+          heading={`Sell your car for more money`}
           subHeading=''
           isBannerHead
         />
       </div>
       <div className='flex flex-col lg:hidden justify-center my-8'>
-        <HeaderWithBranding heading={`Selling a car?`} isBannerHead />
-        <Heading heading={`We're buying!`} isWhite />
+        <HeaderWithBranding heading={`Sell your car`} isBannerHead />
+        <Heading heading={`for more money`} isWhite />
       </div>
     </div>
   );

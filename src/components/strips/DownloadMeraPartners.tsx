@@ -8,7 +8,7 @@ import DownloadPartners from './DownloadPartners';
 
 export default function DownloadMeraPartners() {
   return (
-    <SectionBlock className='last:pb-0 mt-10 pb-12 lg:pb-40'>
+    <SectionBlock className='last:pb-0 mt-10 pb-12 lg:pb-44'>
       <div className='relative flex w-full overflow-hidden bg-gray-100  pt-10 pb-48 md:pt-8 px-[6%] md:px-[6.15%] lg:px-[7%] xl:px-[7.25%] md:py-96 lg:py-8 xl:py-16'>
         <NextImage
           src={ToyCarBanner}

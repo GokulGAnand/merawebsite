@@ -25,7 +25,7 @@ export default function Partners() {
           isInspection
         />
         <Pricing />
-        <HowItWorks />
+        <HowItWorks isInspection />
       </section>
     </main>
   );
