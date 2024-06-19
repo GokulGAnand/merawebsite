@@ -1,4 +1,4 @@
-import Floyd from '../../public/images/MeraPartners/Partners/FloydMiles.svg';
+import Floyd from '../../public/images/MeraPartners/FloydMiles.svg';
 import PlaceYourBid from '../../public/images/MeraPartners/PlaceYourBid.webp';
 import DealClosed from '../../public/images/MeraPartners/DealClosed.webp';
 import CarDelivered from '../../public/images/MeraPartners/CarDelivered.webp';
