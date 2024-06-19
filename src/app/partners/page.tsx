@@ -4,6 +4,7 @@ import MeraPartnersMobileBanner from 'public/images/MeraPartners/MeraPartnersMob
 import RightBannerVector from 'public/images/MeraPartners/RightBannerVector.png';
 import Head from 'next/head';
 import * as React from 'react';
+import PartnerWithUs from '@/components/strips/PartnerWithUs';
 
 export default function Partners() {
   return (
@@ -19,7 +20,7 @@ export default function Partners() {
           srcMobile={MeraPartnersMobileBanner}
           srcVector={RightBannerVector}
         />
-        {/* <PartnerWithUs /> */}
+        <PartnerWithUs />
         {/* <DownloadMeraPartners />
         <HowItWorks />
         <PartnerFeedBack />

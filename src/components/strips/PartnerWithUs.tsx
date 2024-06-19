@@ -1,5 +1,7 @@
 import React from 'react';
 import HeaderWithBranding from '../headers/HeaderWithBranding';
+import { meraPartners } from '@/data/partner';
+import Image from 'next/image';
 
 const PartnerWithUs = () => {
   return (
@@ -10,7 +12,7 @@ const PartnerWithUs = () => {
           subHeading='Get access to high-quality used cars at the best prices'
         />
       </div>
-      {/* <div className='w-full flex justify-center'>
+      <div className='w-full flex justify-center'>
         <div className='grid grid-cols-1 lg:grid-cols-3 lg:gap-9 gap-5 my-12 w-[80%] lg:w-[88%] xl:w-[85%] justify-items-center'>
           {meraPartners.map((cardItem) => {
             const { content, image } = cardItem;
@@ -20,7 +22,7 @@ const PartnerWithUs = () => {
                 className='relative flex flex-col md:flex-row lg:flex-col max-w-sm p-5 border-serviceCardBorder border border-solid shadow-[-20px_17px_30px_0px_rgba(51,102,255,0.05)] rounded-3xl'
               >
                 <div className='rounded-lg overflow-hidden'>
-                  <Image src={image} alt={content} />
+                  <Image layout='responsive' src={image} alt={content} />
                   <div className='absolute inset-0 flex justify-center items-center px-12'>
                     <span className='text-white text-sm lg:text-2xl font-bold text-center'>
                       {content}
@@ -31,7 +33,7 @@ const PartnerWithUs = () => {
             );
           })}
         </div>
-      </div> */}
+      </div>
     </div>
   );
 };
