@@ -5,8 +5,8 @@ import { pricingPlans } from '@/data/pricing-plans';
 
 const Pricing = () => {
   return (
-    <div className='py-16 lg:pt-20 lg:pb-32 flex flex-col justify-center items-center w-full'>
-      <div className='flex flex-col justify-center'>
+    <div className='py-16 lg:pb-32 flex flex-col justify-center items-center w-full'>
+      <div className='flex flex-col justify-center lg:pt-10'>
         <HeaderWithBranding
           heading='Pick a right plan'
           subHeading='Get a paid certified car inspection report quickly, tailored to your needs.'
