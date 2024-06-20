@@ -34,14 +34,12 @@ export const Header = () => {
             </div>
           </div>
           <div className='hidden lg:flex '>
-            <Link href={`tel:${contactNum}`}>
-              <Button
-                variant='outline'
-                className='flex flex-shrink-0 rounded-lg font-semibold py-3 px-6 text-center'
-              >
-                Call us at {contactNum}
-              </Button>
-            </Link>
+            <Button
+              variant='outline'
+              className=' flex flex-shrink-0 rounded-lg font-semibold py-3 px-6 text-center'
+            >
+              Call us at {contactNum}
+            </Button>
           </div>
           <SellCarButton />
         </div>

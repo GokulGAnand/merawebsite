@@ -39,11 +39,9 @@ export default function HamburgerMenu() {
             </div>
             <SidebarLinks />
           </div>
-          <a href={`tel:${contactNum}`} className='no-underline'>
-            <div className='bg-bannerChipColor h-[11vh] flex text-center font-bold justify-center align-middle place-items-center cursor-pointer'>
-              Call us at {contactNum}
-            </div>
-          </a>
+          <div className='bg-bannerChipColor h-[11vh] flex text-center font-bold justify-center align-middle place-items-center '>
+            Call us at {contactNum}
+          </div>
         </ul>
       </div>
     </div>
