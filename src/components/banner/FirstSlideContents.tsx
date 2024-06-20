@@ -38,7 +38,7 @@ export const FirstSlideContents = () => {
             RC transfer.
           </p>
         </div>
-        <div className='flex gap-3 mt-8'>
+        <div className='flex flex-col md:flex-row w-2/3 md:w-full gap-3 mt-8'>
           <Button
             variant='primary'
             className='font-bold min-w-40 lg:min-w-48 min-h-16 justify-center rounded-xl'
