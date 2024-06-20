@@ -12,7 +12,7 @@ export const Header = () => {
   return (
     <div
       className={
-        'h-20 w-full fixed top-0 right-0 z-50 bg-white flex flex-wrap justify-center align-middle place-items-center shadow-md'
+        'h-20 w-full fixed top-0 right-0 z-[100] bg-white flex flex-wrap justify-center align-middle place-items-center shadow-md'
       }
     >
       <div className=' w-[90%] lg:w-[88%] xl:w-[85%] flex justify-center'>
