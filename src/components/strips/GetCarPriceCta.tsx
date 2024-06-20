@@ -6,8 +6,15 @@ import ToyCarBannerMobile from '~/images/ToyCarMobileBanner.png';
 import Button from '@/components/buttons/Button';
 import { GrFormNextLink } from 'react-icons/gr';
 import NextImage from '@/components/NextImage';
+import { useRouter } from 'next/navigation';
+
+type downloadLink = string;
 
 const CallToAction = () => {
+  const router = useRouter();
+  const handleClick = (link: downloadLink) => {
+    router.push(link);
+  };
   return (
     <SectionBlock className='last:pb-0 mt-10'>
       <div className='relative flex w-full overflow-hidden  bg-gray-100  pt-10 pb-48 md:pt-8 px-[6%] md:px-[6.15%] lg:px-[7%]  xl:px-[7.25%] lg:py-24'>
@@ -45,6 +52,7 @@ const CallToAction = () => {
                 variant='light'
                 className='font-bold text-center flex justify-center rounded-lg min-w-48 min-h-16  '
                 rightIcon={GrFormNextLink}
+                onClick={() => handleClick('/sell-used-car')}
               >
                 Get Car Price
               </Button>
