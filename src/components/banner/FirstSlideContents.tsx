@@ -1,8 +1,16 @@
 import Button from '@/components/buttons/Button';
+import { slideButton, SlideButtonType } from '@/data/home-buttons';
+import { useRouter } from 'next/navigation';
 
 import MeraVector from '~/svg/MeraCarsVector.svg';
 
+type downloadLink = string;
+
 export const FirstSlideContents = () => {
+  const router = useRouter();
+  const handleClick = (link: downloadLink) => {
+    router.push(link);
+  };
   return (
     <div className='w-full flex justify-center '>
       <div className='w-[90%] lg:w-[88%] xl:w-[85%] py-24 flex flex-col justify-center'>
@@ -38,19 +46,17 @@ export const FirstSlideContents = () => {
             RC transfer.
           </p>
         </div>
-        <div className='flex flex-col md:flex-row w-2/3 md:w-full gap-3 mt-8'>
-          <Button
-            variant='primary'
-            className='font-bold min-w-40 lg:min-w-48 min-h-16 justify-center rounded-xl'
-          >
-            Sell Your Car
-          </Button>
-          <Button
-            variant='light'
-            className='font-bold min-w-40 lg:min-w-48 min-h-16 justify-center rounded-xl'
-          >
-            Contact Us
-          </Button>
+        <div className='flex gap-3 mt-8'>
+          {slideButton.map((buttonContent: SlideButtonType) => (
+            <Button
+              key={buttonContent.link}
+              variant={buttonContent.variant}
+              className='font-bold min-w-40 lg:min-w-48 min-h-16 justify-center rounded-xl'
+              onClick={() => handleClick(buttonContent.link)}
+            >
+              {buttonContent.label}
+            </Button>
+          ))}
         </div>
       </div>
     </div>
