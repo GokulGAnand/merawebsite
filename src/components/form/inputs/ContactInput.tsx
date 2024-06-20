@@ -5,7 +5,7 @@ interface Props {
   value: string;
   onChange: (value: string) => void;
   label: string;
-  isMessage?: boolean;
+  isTextArea?: boolean;
   required?: boolean;
 }
 
@@ -13,7 +13,7 @@ export const ContactInput: React.FC<Props> = ({
   value,
   onChange,
   label,
-  isMessage,
+  isTextArea,
   required,
 }) => {
   const handleChange = (
@@ -28,8 +28,8 @@ export const ContactInput: React.FC<Props> = ({
         {label}
       </label>
 
-      <div className={clsx(isMessage ? '' : 'pb-8')}>
-        {isMessage ? (
+      <div className={clsx(isTextArea ? '' : 'pb-8')}>
+        {isTextArea ? (
           <textarea
             id='message'
             className='w-full p-2 border-contactFormBackgroundColor bg-contactFormBackgroundColor rounded-lg h-40'
@@ -44,7 +44,7 @@ export const ContactInput: React.FC<Props> = ({
             required={required}
             className={clsx(
               'w-full p-2 border-contactFormBackgroundColor bg-contactFormBackgroundColor rounded-lg',
-              isMessage ? 'h-40' : 'pt-4',
+              isTextArea ? 'h-40' : 'pt-4',
             )}
           />
         )}

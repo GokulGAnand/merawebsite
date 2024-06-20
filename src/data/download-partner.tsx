@@ -10,6 +10,6 @@ export const downloadButton = [
   {
     label: 'App store button',
     icon: <AppStoreButton width={144} height={33} />,
-    link: '/',
+    link: 'https://apps.apple.com/in/app/mera-partners/id6502856774',
   },
 ];
