@@ -46,7 +46,7 @@ export const FirstSlideContents = () => {
             RC transfer.
           </p>
         </div>
-        <div className='flex gap-3 mt-8'>
+        <div className='flex flex-col md:flex-row w-2/3 md:w-full gap-3 mt-8'>
           {slideButton.map((buttonContent: SlideButtonType) => (
             <Button
               key={buttonContent.link}
