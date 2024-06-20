@@ -82,7 +82,7 @@ export const useSlideActions = () => {
   const handlePaymentOrder = () => {
     payment.mutate(
       {
-        amount: 50000,
+        amount: 1060.82,
         sellerMobileNumber: phone,
       },
       {
