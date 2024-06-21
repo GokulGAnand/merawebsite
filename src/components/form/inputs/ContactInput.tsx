@@ -43,8 +43,8 @@ export const ContactInput: React.FC<Props> = ({
             onChange={handleChange}
             required={required}
             className={clsx(
-              'w-full p-2 border-contactFormBackgroundColor bg-contactFormBackgroundColor rounded-lg',
-              isTextArea ? 'h-40' : 'pt-4',
+              'w-full p-2 border-contactFormBackgroundColor bg-contactFormBackgroundColor rounded-lg self-stretch',
+              isTextArea ? 'h-40' : 'py-4',
             )}
           />
         )}
