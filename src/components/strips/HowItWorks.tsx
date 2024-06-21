@@ -1,24 +1,31 @@
 import React from 'react';
 import HeaderWithBranding from '../headers/HeaderWithBranding';
 import ServiceCard from '../cards/ServiceCard';
-import { sell } from '@/data/sell';
-import { inspection } from '@/data/inspection';
-import { howItWorksHeaderData } from '@/data/how-it-works';
-import { services } from '@/data/partner';
+import { StaticImageData } from 'next/image';
 
+interface HeaderData {
+  heading: string;
+  subHeading: string;
+}
+interface ServiceData {
+  heading: string;
+  subHeading: string;
+  image: StaticImageData;
+}
 interface props {
   isInspection?: boolean;
   isPartner?: boolean;
+  data?: ServiceData[];
+  headerData?: HeaderData;
 }
 
 export default function HowItWorks(props: props) {
-  const { isInspection, isPartner } = props;
-  const data = isInspection ? inspection : isPartner ? services : sell;
-  const headerData = isInspection
-    ? howItWorksHeaderData.inspection
-    : isPartner
-      ? howItWorksHeaderData.partner
-      : howItWorksHeaderData.sell;
+  const {
+    isInspection,
+    isPartner,
+    data = [],
+    headerData = { heading: '', subHeading: '' },
+  } = props;
   return (
     <>
       <HeaderWithBranding

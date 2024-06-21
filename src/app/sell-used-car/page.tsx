@@ -5,8 +5,12 @@ import Image from 'next/image';
 import React from 'react';
 import SellUsedCars from '~/images/SellUsedCars/SellUsedCar.webp';
 import SellUsedHeading from '@/components/headers/SellUsedHeading';
+import { sell } from '@/data/sell';
+import { howItWorksHeaderData } from '@/data/how-it-works';
 
 export default function SellUsedCar() {
+  const data = sell;
+  const headerData = howItWorksHeaderData.sell;
   return (
     <div className='flex flex-col'>
       <div className='bg-gradient-to-r from-[#53BDE5] to-[#2B6FB7] min-h-[836px]'>
@@ -26,7 +30,7 @@ export default function SellUsedCar() {
       </div>
 
       <div className='mt-12 '>
-        <HowItWorks />
+        <HowItWorks data={data} headerData={headerData} />
       </div>
       {/* <Faq />
       <MostSearched /> */}
