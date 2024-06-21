@@ -1,7 +1,6 @@
 'use client';
 
-import React from 'react';
-import { useContactStore } from '@/lib/store/contact-store';
+import React, { useState } from 'react';
 import Socials from '@/components/links/Socials';
 import HeaderWithBranding from '@/components/headers/HeaderWithBranding';
 import Button from '@/components/buttons/Button';
@@ -9,14 +8,17 @@ import { GrFormNextLink } from 'react-icons/gr';
 import { ContactInput } from '../inputs/ContactInput';
 
 const ContactForm: React.FC = () => {
-  const { name, email, message, setName, setEmail, setMessage, resetForm } =
-    useContactStore();
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
     console.log({ name, email, message });
-    resetForm();
+    setName('');
+    setEmail('');
+    setMessage('');
   };
 
   return (
@@ -59,7 +61,7 @@ const ContactForm: React.FC = () => {
               value={message}
               onChange={setMessage}
               required
-              isMessage
+              isTextArea
               label='Message'
             />
             <div className='pt-5'>

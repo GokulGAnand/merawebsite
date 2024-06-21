@@ -9,8 +9,13 @@ import DownloadMeraPartners from '@/components/strips/DownloadMeraPartners';
 import { PartnerFeedBack } from '@/components/strips/PartnerFeedback';
 import AutoplaySlider from '@/components/slider/AutoplaySlider';
 import HowItWorks from '@/components/strips/HowItWorks';
+import { services } from '@/data/partner';
+import { howItWorksHeaderData } from '@/data/how-it-works';
 
 export default function Partners() {
+  const data = services;
+  const headerData = howItWorksHeaderData.partner;
+
   return (
     <main>
       <Head>
@@ -26,7 +31,7 @@ export default function Partners() {
         />
         <PartnerWithUs />
         <DownloadMeraPartners />
-        <HowItWorks isPartner />
+        <HowItWorks data={data} headerData={headerData} isPartner />
         <PartnerFeedBack />
         <AutoplaySlider />
       </section>

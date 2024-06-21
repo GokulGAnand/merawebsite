@@ -6,8 +6,13 @@ import * as React from 'react';
 import InspectionBanner from '~/images/MeraPartners/InspectionBanner.png';
 import InspectionBannerMobile from '~/images/MeraPartners/InspectionMobileBanner.png';
 import RightBannerVector from 'public/images/MeraPartners/RightBannerVector.png';
+import { howItWorksHeaderData } from '@/data/how-it-works';
+import { inspection } from '@/data/inspection';
 
-export default function Partners() {
+export default function Inspection() {
+  const data = inspection;
+  const headerData = howItWorksHeaderData.inspection;
+
   return (
     <main>
       <Head>
@@ -25,7 +30,7 @@ export default function Partners() {
           isInspection
         />
         <Pricing />
-        <HowItWorks isInspection />
+        <HowItWorks data={data} headerData={headerData} isInspection />
       </section>
     </main>
   );
