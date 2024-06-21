@@ -60,7 +60,7 @@ const BannerWithVector = (props: BannerWithVectorProps) => {
         </div>
       </div>
       <div className='flex flex-col'>
-        {isInspection && (
+        {isInspection ? (
           <div className='z-40'>
             <BannerHeader
               heading={heading}
@@ -70,8 +70,7 @@ const BannerWithVector = (props: BannerWithVectorProps) => {
               isInspection
             />
           </div>
-        )}
-        {!isInspection && (
+        ) : (
           <div className=' z-40'>
             <BannerHeader heading={heading} subHeading={subHeading} />
           </div>
