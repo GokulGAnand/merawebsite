@@ -32,8 +32,8 @@ export default function Partners() {
         <PartnerWithUs />
         <DownloadMeraPartners />
         <HowItWorks data={data} headerData={headerData} isPartner />
-        <PartnerFeedBack />
-        <AutoplaySlider />
+        {/* <PartnerFeedBack /> */}
+        {/* <AutoplaySlider /> */}
       </section>
     </main>
   );

@@ -4,7 +4,7 @@ export const pricingPlans = [
   {
     id: 1,
     title: 'Basic',
-    amount: '1299',
+    amount: '1060',
     icon: <CheckIcon width={14} height={14} />,
     rowContent: [
       'Digital Report',
