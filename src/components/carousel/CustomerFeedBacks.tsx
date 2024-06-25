@@ -25,7 +25,7 @@ export default function CustomerFeedBacks() {
   return (
     <div className='h-full '>
       <Carousel
-        slideInterval={1000}
+        slideInterval={3000}
         indicators
         theme={{
           indicators: {
