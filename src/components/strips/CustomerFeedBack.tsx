@@ -1,5 +1,6 @@
 import CustomerFeedBacks from '@/components/carousel/CustomerFeedBacks';
 import HeaderWithBranding from '@/components/headers/HeaderWithBranding';
+import { testimonials } from '@/data/testimonials';
 import React from 'react';
 
 export const CustomerFeedBack = () => {
@@ -9,7 +10,7 @@ export const CustomerFeedBack = () => {
         heading='Our Customer Feedback'
         subHeading='See what our happy customers say about MeraCars'
       />
-      <CustomerFeedBacks />
+      <CustomerFeedBacks data={testimonials} />
     </div>
   );
 };

@@ -9,11 +9,11 @@ import PerfectQualityCars from '../../public/images/MeraPartners/PerfectQualityC
 import TransparentBidding from '../../public/images/MeraPartners/TransparentBidding.png';
 import HassleFreePayment from '../../public/images/MeraPartners/HassleFreePayment.png';
 
-export interface PartnerReviews {
-  icon: JSX.Element;
-  rating: number;
-  partner: string;
+interface Testimonial {
+  customer: string;
   comments: string;
+  icon: React.ReactNode;
+  rating: number;
 }
 
 export const meraPartners = [
@@ -31,34 +31,30 @@ export const meraPartners = [
   },
 ];
 
-export const partnerReviews: PartnerReviews[] = [
+export const partnerReviews: Testimonial[] = [
   {
     icon: <Vyshak width={60} height={60} />,
     rating: 5,
-    partner: 'Vyshak',
-    comments: `Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. 
-      Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. `,
+    customer: 'Vyshak',
+    comments: `Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.`,
   },
   {
     icon: <Jamshad width={60} height={60} />,
     rating: 5,
-    partner: 'Jamshad',
-    comments: `Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. 
-      Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. `,
+    customer: 'Jamshad',
+    comments: `Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.`,
   },
   {
     icon: <Derin width={60} height={60} />,
     rating: 5,
-    partner: 'Derin',
-    comments: `Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. 
-      Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. `,
+    customer: 'Derin',
+    comments: `Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.`,
   },
   {
     icon: <Nighil width={60} height={60} />,
     rating: 5,
-    partner: 'Nighil',
-    comments: `Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. 
-      Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. `,
+    customer: 'Nighil',
+    comments: `Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.`,
   },
 ];
 

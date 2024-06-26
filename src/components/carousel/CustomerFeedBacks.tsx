@@ -3,6 +3,17 @@ import CustomerFeedCarousel from '@/components/carousel/CustomerFeedCarousel';
 import useGetScreenSize from '@/hooks/useGetScreenSize';
 import { Carousel } from 'flowbite-react';
 
+interface Testimonial {
+  customer: string;
+  comments: string;
+  icon: React.ReactNode;
+  rating: number;
+}
+
+interface props {
+  data?: Testimonial[];
+}
+
 function getTotalCarousels(screen: string) {
   switch (screen) {
     case '2xl':
@@ -19,7 +30,8 @@ function getTotalCarousels(screen: string) {
   }
 }
 
-export default function CustomerFeedBacks() {
+export default function CustomerFeedBacks(props: props) {
+  const { data } = props;
   const screenSize = useGetScreenSize();
   const screenData = getTotalCarousels(screenSize);
   return (
@@ -45,6 +57,7 @@ export default function CustomerFeedBacks() {
               key={number}
               carouselNumber={number}
               slides={screenData.slidesPerPage}
+              data={data}
             />
           );
         })}

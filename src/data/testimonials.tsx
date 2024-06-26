@@ -4,7 +4,14 @@ import Jamshad from '~/svg/Jamshad.svg';
 import Derin from '~/svg/Derin.svg';
 import Nighil from '~/svg/Nighil.svg';
 
-export const testimonials = [
+interface Testimonial {
+  customer: string;
+  comments: string;
+  icon: React.ReactNode;
+  rating: number;
+}
+
+export const testimonials: Testimonial[] = [
   {
     icon: <Vyshak width={60} height={60} />,
     rating: 5,

@@ -17,7 +17,7 @@ export default function Partners() {
   const headerData = howItWorksHeaderData.partner;
 
   return (
-    <main>
+    <main className='overflow-x-clip'>
       <Head>
         <title>MeraPartners</title>
       </Head>
