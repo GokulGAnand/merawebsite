@@ -1,4 +1,7 @@
-import Floyd from '../../public/images/MeraPartners/FloydMiles.svg';
+import Vyshak from '~/svg/Vyshak.svg';
+import Jamshad from '~/svg/Jamshad.svg';
+import Derin from '~/svg/Derin.svg';
+import Nighil from '~/svg/Nighil.svg';
 import PlaceYourBid from '../../public/images/MeraPartners/PlaceYourBid.webp';
 import DealClosed from '../../public/images/MeraPartners/DealClosed.webp';
 import CarDelivered from '../../public/images/MeraPartners/CarDelivered.webp';
@@ -30,23 +33,30 @@ export const meraPartners = [
 
 export const partnerReviews: PartnerReviews[] = [
   {
-    icon: <Floyd width={60} height={60} />,
+    icon: <Vyshak width={60} height={60} />,
     rating: 5,
-    partner: 'Floyd Miles',
+    partner: 'Vyshak',
     comments: `Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. 
       Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. `,
   },
   {
-    icon: <Floyd width={60} height={60} />,
+    icon: <Jamshad width={60} height={60} />,
     rating: 5,
-    partner: 'Floyd Miles',
+    partner: 'Jamshad',
     comments: `Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. 
       Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. `,
   },
   {
-    icon: <Floyd width={60} height={60} />,
+    icon: <Derin width={60} height={60} />,
     rating: 5,
-    partner: 'Floyd Miles',
+    partner: 'Derin',
+    comments: `Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. 
+      Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. `,
+  },
+  {
+    icon: <Nighil width={60} height={60} />,
+    rating: 5,
+    partner: 'Nighil',
     comments: `Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. 
       Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. `,
   },

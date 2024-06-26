@@ -1,6 +1,6 @@
 'use client';
-import { partnerReviews } from '@/data/partner';
 import PartnerReviewCard from '../cards/PartnerReviewCard';
+import { partnerReviews } from '@/data/partner';
 
 export default function PartnerFeedCarousel({
   carouselNumber,
@@ -11,24 +11,21 @@ export default function PartnerFeedCarousel({
 }) {
   const start = slides * carouselNumber;
   const end = start + slides;
-
   return (
-    <div>
-      {partnerReviews.slice(start, end).map((review) => {
-        const { icon, rating, partner, comments } = review;
-        return (
-          <div className='pt-16' key={partner}>
-            <div className='flex p-8 justify-center'>
-              <PartnerReviewCard
-                comments={comments}
-                partner={partner}
-                icon={icon}
-                rating={rating}
-              />
-            </div>
-          </div>
-        );
-      })}
-    </div>
+    <>
+      <div className=' flex flex-col justify-center items-center mb-8'>
+        <div className='flex  gap-7 mt-16 mb-8 w-[100%]  lg:w-[88%] xl:w-[85%]  justify-center'>
+          {partnerReviews.slice(start, end).map((review) => (
+            <PartnerReviewCard
+              key={review.partner}
+              comments={review.comments}
+              partner={review.partner}
+              icon={review.icon}
+              rating={review.rating}
+            />
+          ))}
+        </div>
+      </div>
+    </>
   );
 }

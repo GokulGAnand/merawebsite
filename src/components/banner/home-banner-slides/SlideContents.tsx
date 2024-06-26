@@ -6,7 +6,14 @@ import MeraVector from '~/svg/MeraCarsVector.svg';
 
 type downloadLink = string;
 
-export const FirstSlideContents = () => {
+interface Props {
+  mainHeaderText: string;
+  subHeaderText: string;
+  description: string;
+}
+
+export default function SlideContents(Props: Props) {
+  const { mainHeaderText, subHeaderText, description } = Props;
   const router = useRouter();
   const handleClick = (link: downloadLink) => {
     router.push(link);
@@ -29,22 +36,16 @@ export const FirstSlideContents = () => {
                 <div className=' mr-6 pb-1 flex justify-end'>
                   <MeraVector width={70} heigth={70} />
                 </div>
-                <div className='flex'>Selling Your Car?</div>
+                <div className='flex'>{mainHeaderText}</div>
               </div>
             </div>
           </div>
           <div>
-            <h1 className='text-4xl lg:text-5xl'>
-              We will Buy It for the Best Price.
-            </h1>
+            <h1 className='text-4xl lg:text-5xl'>{subHeaderText}</h1>
           </div>
         </div>
         <div className=' max-w-xl text-white mt-8 text-lg'>
-          <p>
-            Sell your car quickly and for more money with MeraCars. We handle
-            all the processes. Enjoy doorstep pickup, same-day payment, and free
-            RC transfer.
-          </p>
+          <p>{description}</p>
         </div>
         <div className='flex flex-col md:flex-row w-2/3 md:w-full gap-3 mt-8'>
           {slideButton.map((buttonContent: SlideButtonType) => (
@@ -61,4 +62,4 @@ export const FirstSlideContents = () => {
       </div>
     </div>
   );
-};
+}

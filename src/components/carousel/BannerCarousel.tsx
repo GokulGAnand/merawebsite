@@ -1,6 +1,7 @@
-import { FirstBannerSlide } from '@/components/banner/FirstBannerSlide';
 import { Carousel } from 'flowbite-react';
 import { HiChevronLeft, HiChevronRight } from 'react-icons/hi2';
+import HomeBannerSlide from '../banner/home-banner-slides/HomeBannerSlide';
+import { BannerSlides } from '@/data/home-banner';
 
 const chevronStyles = {
   fontSize: 60,
@@ -22,8 +23,16 @@ const BannerCarousel = () => {
           },
         }}
       >
-        <FirstBannerSlide />
-        <FirstBannerSlide />
+        {BannerSlides.map((slide, index) => (
+          <HomeBannerSlide
+            key={index}
+            CarBanner={slide.content.image}
+            CarBannerMobile={slide.content.mobile_image}
+            mainHeaderText={slide.content.mainHeaderText}
+            subHeaderText={slide.content.subHeaderText}
+            description={slide.content.description}
+          />
+        ))}
       </Carousel>
     </div>
   );

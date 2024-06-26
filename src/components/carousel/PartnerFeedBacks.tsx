@@ -1,20 +1,31 @@
 'use client';
-import PartnerFeedCarousel from './PartnerFeedCarousel';
 import useGetScreenSize from '@/hooks/useGetScreenSize';
 import { Carousel } from 'flowbite-react';
+import PartnerFeedCarousel from './PartnerFeedCarousel';
 
 function getTotalCarousels(screen: string) {
-  return { numArray: [0, 1, 2], slidesPerPage: 1 };
+  switch (screen) {
+    case '2xl':
+    case 'xl':
+      return { numArray: [0, 1], slidesPerPage: 3 };
+    case 'lg':
+      return { numArray: [0, 1], slidesPerPage: 2 };
+    case 'md':
+    case 'sm':
+    case 'xs':
+      return { numArray: [0, 1, 2, 3], slidesPerPage: 1 };
+    default:
+      return { numArray: [0, 1, 2, 3], slidesPerPage: 1 };
+  }
 }
 
-export default function CustomerFeedBacks() {
+export default function PartnerFeedBacks() {
   const screenSize = useGetScreenSize();
   const screenData = getTotalCarousels(screenSize);
   return (
-    <div className='h-full'>
+    <div className='h-full pb-11 lg:pb-16'>
       <Carousel
-        onSlideChange={(index) => console.log('onSlideChange()', index)}
-        slideInterval={1000}
+        slideInterval={3000}
         indicators
         theme={{
           indicators: {
@@ -25,13 +36,6 @@ export default function CustomerFeedBacks() {
             base: 'h-2 w-2 rounded-full',
             wrapper:
               'absolute bottom-5 left-1/2 flex  -translate-x-1/2 space-x-1',
-          },
-          item: {
-            base: 'absolute top-1/2 block w-3/4 -translate-x-1/2 -translate-y-1/2',
-            wrapper: {
-              off: 'w-full flex-shrink-0 transform cursor-default snap-center',
-              on: 'w-3/4 flex-shrink-0 transform cursor-grab snap-center',
-            },
           },
         }}
       >
