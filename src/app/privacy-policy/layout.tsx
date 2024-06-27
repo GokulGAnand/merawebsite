@@ -2,7 +2,6 @@ import { Metadata } from 'next';
 import * as React from 'react';
 
 import '@/styles/colors.css';
-import PageBanner from '@/components/banner/common/PageBanner';
 import SectionBlock from '@/components/SectionBlock';
 
 export const metadata: Metadata = {
@@ -17,10 +16,7 @@ export default function PrivacyLayout({
 }) {
   return (
     <>
-      <SectionBlock>
-        <PageBanner heading='Privacy Policy' subHeading='' />
-        {children}
-      </SectionBlock>
+      <SectionBlock>{children}</SectionBlock>
     </>
   );
 }
