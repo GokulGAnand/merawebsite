@@ -90,7 +90,7 @@ export default function RootLayout({
             gtag('config', 'G-X6N59WN50T');
           `}
         </script>
-        <Script id='facebook-pixel'>
+        <script id='facebook-pixel'>
           {`
             !function(f,b,e,v,n,t,s) {
               if(f.fbq) return; n=f.fbq=function() {
@@ -104,7 +104,7 @@ export default function RootLayout({
             fbq('init', '827600532663696');
             fbq('track', 'PageView');
           `}
-        </Script>
+        </script>
       </head>
       <body>
         <Header />

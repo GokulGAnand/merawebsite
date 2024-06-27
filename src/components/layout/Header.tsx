@@ -9,6 +9,7 @@ import { contactNum } from '@/data/contacts';
 const HamburgerMenu = dynamic(() => import('@/components/links/HamburgerMenu'));
 
 export const Header = () => {
+  console.log('Deployed 1');
   return (
     <div
       className={
