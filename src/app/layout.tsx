@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/next-script-for-ga */
 import { Metadata } from 'next';
 import { DM_Sans } from 'next/font/google';
 import * as React from 'react';
@@ -78,19 +77,19 @@ export default function RootLayout({
           src='https://checkout.razorpay.com/v1/checkout.js'
           strategy='afterInteractive'
         />
-        <script
+        <Script
           async
           src='https://www.googletagmanager.com/gtag/js?id=G-X6N59WN50T'
-        ></script>
-        <script id='google-analytics'>
+        />
+        <Script id='google-analytics'>
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'G-X6N59WN50T');
           `}
-        </script>
-        <script id='facebook-pixel'>
+        </Script>
+        <Script id='facebook-pixel'>
           {`
             !function(f,b,e,v,n,t,s) {
               if(f.fbq) return; n=f.fbq=function() {
@@ -104,7 +103,7 @@ export default function RootLayout({
             fbq('init', '827600532663696');
             fbq('track', 'PageView');
           `}
-        </script>
+        </Script>
       </head>
       <body>
         <Header />
