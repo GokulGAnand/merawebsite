@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable @next/next/no-img-element */
 import { Metadata } from 'next';
 import { DM_Sans } from 'next/font/google';
 import * as React from 'react';
@@ -104,6 +106,14 @@ export default function RootLayout({
             fbq('track', 'PageView');
           `}
         </Script>
+        <noscript>
+          <img
+            height='1'
+            width='1'
+            style={{ display: 'none' }}
+            src='https://www.facebook.com/tr?id=827600532663696&ev=PageView&noscript=1'
+          />
+        </noscript>
       </head>
       <body>
         <Header />
