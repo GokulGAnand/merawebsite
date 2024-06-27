@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable @next/next/no-img-element */
 import { Metadata } from 'next';
 import { DM_Sans } from 'next/font/google';
 import * as React from 'react';
@@ -77,6 +79,41 @@ export default function RootLayout({
           src='https://checkout.razorpay.com/v1/checkout.js'
           strategy='afterInteractive'
         />
+        <Script
+          async
+          src='https://www.googletagmanager.com/gtag/js?id=G-X6N59WN50T'
+        />
+        <Script id='google-analytics'>
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-X6N59WN50T');
+          `}
+        </Script>
+        <Script id='facebook-pixel'>
+          {`
+            !function(f,b,e,v,n,t,s) {
+              if(f.fbq) return; n=f.fbq=function() {
+                n.callMethod ? n.callMethod.apply(n,arguments) : n.queue.push(arguments)
+              };
+              if(!f._fbq) f._fbq=n; n.push=n; n.loaded=!0; n.version='2.0';
+              n.queue=[]; t=b.createElement(e); t.async=!0;
+              t.src=v; s=b.getElementsByTagName(e)[0];
+              s.parentNode.insertBefore(t,s)
+            }(window, document,'script', 'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '827600532663696');
+            fbq('track', 'PageView');
+          `}
+        </Script>
+        <noscript>
+          <img
+            height='1'
+            width='1'
+            style={{ display: 'none' }}
+            src='https://www.facebook.com/tr?id=827600532663696&ev=PageView&noscript=1'
+          />
+        </noscript>
       </head>
       <body>
         <Header />
