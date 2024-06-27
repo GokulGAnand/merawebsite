@@ -1,23 +1,18 @@
-import Button from '@/components/buttons/Button';
+import BannerButton from '@/components/buttons/BannerButton';
 import { slideButton, SlideButtonType } from '@/data/home-buttons';
 import { useRouter } from 'next/navigation';
 
 import MeraVector from '~/svg/MeraCarsVector.svg';
 
-type downloadLink = string;
-
 interface Props {
+  highlightedText: string;
   mainHeaderText: string;
   subHeaderText: string;
   description: string;
 }
 
 export default function SlideContents(Props: Props) {
-  const { mainHeaderText, subHeaderText, description } = Props;
-  const router = useRouter();
-  const handleClick = (link: downloadLink) => {
-    router.push(link);
-  };
+  const { highlightedText, mainHeaderText, subHeaderText, description } = Props;
   return (
     <div className='w-full flex justify-center '>
       <div className='w-[90%] lg:w-[88%] xl:w-[85%] py-24 flex flex-col justify-center'>
@@ -25,7 +20,7 @@ export default function SlideContents(Props: Props) {
           <ul className='list-none'>
             <li className='flex items-center text-md font-bold text-bannerChipText'>
               <span className='h-1 w-1 bg-bannerChipText rounded-full mr-2'></span>
-              Accelerating India's Car Selling Journey
+              {highlightedText}
             </li>
           </ul>
         </div>
@@ -49,14 +44,12 @@ export default function SlideContents(Props: Props) {
         </div>
         <div className='flex flex-col md:flex-row w-2/3 md:w-full gap-3 mt-8'>
           {slideButton.map((buttonContent: SlideButtonType) => (
-            <Button
+            <BannerButton
               key={buttonContent.link}
               variant={buttonContent.variant}
-              className='font-bold min-w-40 lg:min-w-48 min-h-16 justify-center rounded-xl'
-              onClick={() => handleClick(buttonContent.link)}
-            >
-              {buttonContent.label}
-            </Button>
+              link={buttonContent.link}
+              label={buttonContent.label}
+            />
           ))}
         </div>
       </div>
