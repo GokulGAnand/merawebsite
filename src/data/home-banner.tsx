@@ -2,12 +2,11 @@ import CarBanner from '~/images/CarBanner.webp';
 import CarBannerMobile from '~/images/CarBannerMobile.png';
 import BannerWithHand from '~/images/BannerWithHand.webp';
 import BannerWithHandMobile from '~/images/BannerWithHandMobile.png';
-import FirstBannerSlide from '@/components/banner/home-banner-slides/FirstBannerSlide';
-import SecondBannerSlide from '@/components/banner/home-banner-slides/SecondBannerSlide';
+import BannerSlide from '@/components/banner/home-banner-slides/BannerSlide';
 
 export const BannerSlides = [
   {
-    component: FirstBannerSlide,
+    component: BannerSlide,
     props: {
       image: CarBanner,
       mobileImage: CarBannerMobile,
@@ -19,7 +18,7 @@ export const BannerSlides = [
     },
   },
   {
-    component: SecondBannerSlide,
+    component: BannerSlide,
     props: {
       image: BannerWithHand,
       mobileImage: BannerWithHandMobile,
