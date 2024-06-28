@@ -5,7 +5,7 @@ import { pricingPlans } from '@/data/pricing-plans';
 
 const Pricing = () => {
   return (
-    <div className='py-16 lg:pb-32 flex flex-col justify-center items-center w-full'>
+    <div className='py-[5%] xl:py-[8.75%] lg:pb-32 flex flex-col justify-center items-center w-full'>
       <div className='flex flex-col justify-center lg:pt-10'>
         <HeaderWithBranding
           heading='Pick a right plan'
