@@ -33,9 +33,12 @@ const ContactForm: React.FC = () => {
           <p className='text-stepsText text-lg font-medium pt-6 md:pt-9'>
             Email
           </p>
-          <p className='text-headerLinkColor text-sm font-normal pt-2'>
+          <a
+            href='mailto:meracars@gmail.com'
+            className='text-headerLinkColor text-sm font-normal pt-2'
+          >
             meracars@gmail.com
-          </p>
+          </a>
           <p className='text-stepsText text-lg font-medium pt-9 md:pt-11'>
             Socials
           </p>
