@@ -13,14 +13,16 @@ export default function SellUsedCar() {
   const headerData = howItWorksHeaderData.sell;
   return (
     <div className='flex flex-col'>
-      <div className='bg-gradient-to-r from-[#53BDE5] to-[#2B6FB7] min-h-[836px]'>
+      <div className='bg-gradient-to-r from-[#53BDE5] to-[#2B6FB7] min-h-[836px] relative'>
         <SellUsedHeading />
         <VectorContainer>
-          <VehicleForm />
+          <div className='relative z-30'>
+            <VehicleForm />
+          </div>
         </VectorContainer>
       </div>
 
-      <div className='flex justify-center -mt-20 lg:-mt-56'>
+      <div className='flex justify-center -mt-20 lg:-mt-56 z-30'>
         <Image
           src={SellUsedCars}
           alt='Sell Used Car'
