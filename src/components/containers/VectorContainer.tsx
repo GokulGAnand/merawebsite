@@ -8,13 +8,19 @@ export default function VectorContainer({
   children: React.ReactNode;
 }) {
   return (
-    <div className='relative'>
-      <div className='absolute -left-36 bottom-36 flex z-50'>
+    <div className='relative overflow-x-clip'>
+      <div className='absolute -left-36 bottom-36 hidden lg:flex z-20'>
         <UpVector height={410} width={870} />
       </div>
+      <div className='absolute -right-36 -top-40 flex lg:hidden z-20'>
+        <UpVector height={210} width={870} />
+      </div>
       <div className='relative z-10 mt-16'>{children}</div>
-      <div className='absolute -right-36 top-60 flex z-50'>
-        <DownVector className='' height={410} width={870} />
+      <div className='absolute -right-36 top-60 hidden lg:flex z-20'>
+        <DownVector height={410} width={870} />
+      </div>
+      <div className='absolute -left-36 -top-20 flex lg:hidden z-20'>
+        <DownVector height={210} width={870} />
       </div>
     </div>
   );

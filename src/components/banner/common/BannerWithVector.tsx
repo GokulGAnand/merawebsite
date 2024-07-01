@@ -29,7 +29,7 @@ const BannerWithVector = (props: BannerWithVectorProps) => {
   return (
     <div
       className={clsx(
-        'hero bg-opacity-90 relative',
+        'hero bg-opacity-90 relative overflow-x-clip',
         isInspection ? 'xl:h-[550px]' : 'xl:h-[650px]',
       )}
     >
@@ -39,23 +39,45 @@ const BannerWithVector = (props: BannerWithVectorProps) => {
           isInspection ? 'py-44 lg:py-52' : 'py-52 lg:py-72',
         )}
       ></div>
-      <div className='flex w-full h-auto absolute z-20'>
+      <div className='flex w-full h-auto z-20'>
         <div className='flex-col h-full'>
           {srcVector && (
-            <Image
-              src={srcVector}
-              alt='Banner Vector'
-              className='h-full hidden lg:flex skew-y-[30deg]'
-            />
+            <div>
+              <Image
+                src={srcVector}
+                alt='Banner Vector'
+                className='h-full absolute -top-72 -left-20 hidden xl:flex skew-y-[30deg]'
+              />
+              <Image
+                src={srcVector}
+                alt='Banner Vector'
+                className={clsx(
+                  isInspection
+                    ? 'h-1/2 w- md:hidden flex absolute -top-10 -left-56 skew-y-12'
+                    : 'hidden',
+                )}
+              />
+            </div>
           )}
         </div>
         <div className='flex-col h-full'>
           {srcVector && (
-            <Image
-              src={srcVector}
-              alt='Banner Vector'
-              className='h-full hidden lg:flex skew-y-12'
-            />
+            <div>
+              <Image
+                src={srcVector}
+                alt='Banner Vector'
+                className='h-full absolute top-36 right-3 hidden xl:flex skew-y-12'
+              />
+              <Image
+                src={srcVector}
+                alt='Banner Vector'
+                className={clsx(
+                  isInspection
+                    ? 'h-1/2 md:hidden flex absolute bottom-20 -right-10 skew-y-12'
+                    : 'hidden',
+                )}
+              />
+            </div>
           )}
         </div>
       </div>
