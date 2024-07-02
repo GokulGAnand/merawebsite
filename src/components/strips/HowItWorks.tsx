@@ -33,7 +33,7 @@ export default function HowItWorks(props: props) {
         subHeading={headerData.subHeading}
       />
       <div className='w-full flex justify-center'>
-        <div className='grid grid-cols-1 lg:grid-cols-3 lg:gap-9 gap-5 my-12 w-[90%] lg:w-[88%] xl:w-[85%]'>
+        <div className='grid grid-cols-1 lg:grid-cols-3 lg:gap-9 gap-5 my-12 w-[90%] lg:w-[88%] xl:w-[85%] justify-items-center'>
           {data.map((service, index) => {
             return (
               <ServiceCard
