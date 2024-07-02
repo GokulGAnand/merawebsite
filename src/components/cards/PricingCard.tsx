@@ -34,7 +34,7 @@ const PricingCard = (props: PricingProps) => {
           <div>
             <div className='flex justify-center'>
               <div className='flex flex-col mx-auto rounded-lg border-bannerChipText border-[2.5px] shadow dark:text-white'>
-                <div className='block flex-col mt-6 ml-6 mr-14 bg-red-200'>
+                <div className='block flex-col mt-6 ml-6 mr-14'>
                   <h3 className='mb-2 text-sm font-medium text-whiteButtonText'>
                     {title}
                   </h3>
@@ -55,7 +55,7 @@ const PricingCard = (props: PricingProps) => {
 
                   <ul
                     role='list'
-                    className='mb-8 space-y-4 text-left text-sm font-normal bg-red-100'
+                    className='mb-8 space-y-4 text-left text-sm font-normal'
                   >
                     {rowContent.map((rowItem) => (
                       <li
