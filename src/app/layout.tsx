@@ -91,7 +91,7 @@ export default function RootLayout({
             gtag('config', 'G-X6N59WN50T');
           `}
         </Script>
-        <Script id='google-tag'>
+        {/* <Script id='google-tag'>
           {`
             <script>
               gtag('event', 'conversion_event_page_view',{' '}
@@ -101,7 +101,7 @@ export default function RootLayout({
               );
             </script>
           `}
-        </Script>
+        </Script> */}
         <Script id='facebook-pixel'>
           {`
             !function(f,b,e,v,n,t,s) {
