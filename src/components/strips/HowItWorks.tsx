@@ -13,19 +13,12 @@ interface ServiceData {
   image: StaticImageData;
 }
 interface props {
-  isInspection?: boolean;
-  isPartner?: boolean;
   data?: ServiceData[];
   headerData?: HeaderData;
 }
 
 export default function HowItWorks(props: props) {
-  const {
-    isInspection,
-    isPartner,
-    data = [],
-    headerData = { heading: '', subHeading: '' },
-  } = props;
+  const { data = [], headerData = { heading: '', subHeading: '' } } = props;
   return (
     <>
       <HeaderWithBranding

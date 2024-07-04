@@ -30,7 +30,7 @@ export default function Inspection() {
           isInspection
         />
         <Pricing />
-        <HowItWorks data={data} headerData={headerData} isInspection />
+        <HowItWorks data={data} headerData={headerData} />
       </section>
     </main>
   );
