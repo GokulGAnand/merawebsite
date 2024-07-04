@@ -35,7 +35,7 @@ export default function CustomerFeedBacks(props: props) {
   const screenSize = useGetScreenSize();
   const screenData = getTotalCarousels(screenSize);
   return (
-    <div className='h-full '>
+    <div className='h-full lg:pb-16 pb-11'>
       <Carousel
         slideInterval={3000}
         indicators

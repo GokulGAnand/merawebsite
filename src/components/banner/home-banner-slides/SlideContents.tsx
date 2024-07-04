@@ -1,6 +1,5 @@
 import BannerButton from '@/components/buttons/BannerButton';
 import { slideButton, SlideButtonType } from '@/data/home-buttons';
-import { useRouter } from 'next/navigation';
 
 import MeraVector from '~/svg/MeraCarsVector.svg';
 

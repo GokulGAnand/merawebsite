@@ -1,6 +1,6 @@
 import { Carousel } from 'flowbite-react';
 import { HiChevronLeft, HiChevronRight } from 'react-icons/hi2';
-import { BannerSlides } from '@/data/home-banner';
+import { bannerSlides } from '@/data/home-banner';
 
 const chevronStyles = {
   fontSize: 60,
@@ -22,7 +22,7 @@ const BannerCarousel = () => {
           },
         }}
       >
-        {BannerSlides.map((slide, index) => {
+        {bannerSlides.map((slide, index) => {
           const SlideComponent = slide.component;
           return <SlideComponent key={index} content={slide.props} />;
         })}

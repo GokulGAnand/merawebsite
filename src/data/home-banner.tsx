@@ -4,7 +4,7 @@ import BannerWithHand from '~/images/BannerWithHand.webp';
 import BannerWithHandMobile from '~/images/BannerWithHandMobile.png';
 import BannerSlide from '@/components/banner/home-banner-slides/BannerSlide';
 
-export const BannerSlides = [
+export const bannerSlides = [
   {
     component: BannerSlide,
     props: {
