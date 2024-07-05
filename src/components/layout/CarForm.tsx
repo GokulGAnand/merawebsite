@@ -10,13 +10,13 @@ export default function CarFormLayout({
   return (
     <div className='bg-carFormGradient'>
       <div className='relative overflow-x-clip'>
-        {/* <div className='absolute -left-16 top-0 hidden lg:flex z-50'>
+        <div className='absolute -left-16 top-0 hidden lg:flex z-20'>
           <UpVector height={410} width={870} />
-        </div> */}
-        <div className='relative z-10 mt-16'>{children}</div>
-        {/* <div className='absolute -right-2 -bottom-24 hidden lg:flex z-50'>
+        </div>
+        <div className='relative z-30 mt-16'>{children}</div>
+        <div className='absolute -right-2 -bottom-24 hidden lg:flex z-20'>
           <DownVector height={410} width={870} />
-        </div> */}
+        </div>
       </div>
     </div>
   );

@@ -15,11 +15,11 @@ export default function SellUsedCar() {
     <div className='flex flex-col'>
       <div className='bg-gradient-to-r from-[#53BDE5] to-[#2B6FB7] min-h-[836px] relative'>
         <SellUsedHeading />
-        {/* <VectorContainer> */}
-        <div className='relative z-50'>
-          <VehicleForm />
-        </div>
-        {/* </VectorContainer> */}
+        <VectorContainer>
+          <div className='relative z-50'>
+            <VehicleForm />
+          </div>
+        </VectorContainer>
       </div>
 
       <div className='flex justify-center -mt-20 lg:-mt-56 z-30'>

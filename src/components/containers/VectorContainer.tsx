@@ -15,7 +15,7 @@ export default function VectorContainer({
       <div className='absolute -right-36 -top-40 flex lg:hidden z-20'>
         <UpVector height={210} width={870} />
       </div>
-      <div className='relative z-10 mt-16'>{children}</div>
+      <div className='mt-16'>{children}</div>
       <div className='absolute -right-36 top-60 hidden lg:flex z-20'>
         <DownVector height={410} width={870} />
       </div>

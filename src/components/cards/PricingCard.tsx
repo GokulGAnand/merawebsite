@@ -31,12 +31,11 @@ const PricingCard = (props: PricingProps) => {
     >
       <div className='flex justify-center'>
         <div className='flex flex-col mx-auto rounded-lg border-bannerChipText border-[2.5px] shadow dark:text-white'>
-          <div className='block flex-col mt-6 ml-6 mr-14'>
+          <div className='flex flex-col mt-6 ml-6 mr-14 w-11/12'>
             <h3 className='mb-2 text-sm font-medium text-whiteButtonText'>
               {title}
             </h3>
-            <p className='font-light sm:text-lg'></p>
-            <div className='flex items-center gap-2'>
+            <div className='flex items-center mb-6 gap-2'>
               <div className='flex lg:gap-2'>
                 <span className='text-lg md:text-4xl font-bold font-roboto justify-start text-headerLinkColor'>
                   ₹
@@ -49,9 +48,10 @@ const PricingCard = (props: PricingProps) => {
                 per Month
               </span>
             </div>
+
             <ul
               role='list'
-              className='mt-6 mb-8 space-y-4 text-left text-sm font-normal bg-red-200'
+              className='mb-8 space-y-4 text-left text-sm font-normal'
             >
               {rowContent.map((rowItem) => (
                 <li
