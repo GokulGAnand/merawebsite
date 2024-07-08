@@ -48,7 +48,6 @@ const PricingCard = (props: PricingProps) => {
                 per Month
               </span>
             </div>
-
             <ul
               role='list'
               className='mb-8 space-y-4 text-left text-sm font-normal'

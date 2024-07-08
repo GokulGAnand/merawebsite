@@ -13,7 +13,7 @@ const Pricing = () => {
         />
       </div>
       <div className='flex flex-col items-center w-full lg:pt-16 pt-5'>
-        <div className='grid lg:grid-cols-3 lg:gap-2 xl:gap-32 justify-between'>
+        <div className='grid lg:grid-cols-3 lg:gap-2 xl:gap-32 w-[80%] justify-between'>
           {pricingPlans.map((plan) => (
             <PricingCard
               key={plan.id}
