@@ -55,13 +55,13 @@ const PricingCard = (props: PricingProps) => {
               {rowContent.map((rowItem) => (
                 <li
                   key={rowItem}
-                  className='flex items-start text-subHeadingColor'
+                  className='flex items-start text-subHeadingColor w-[100%]'
                 >
                   <div className='flex-shrink-0 w-5 h-5 flex items-center justify-center'>
                     {icon}
                   </div>
                   <div className='ml-2 flex-col justify-center block'>
-                    <span className='break-words'>{rowItem}</span>
+                    <span className='inline-block w-[100%]'>{rowItem}</span>
                   </div>
                 </li>
               ))}

@@ -1,10 +1,12 @@
-interface Props<T> {
+/* eslint-disable @typescript-eslint/no-explicit-any */
+interface Props {
   text: string;
-  array: T[];
-  key: keyof T;
+  array: any[];
+  key: string;
 }
 
-export const filterByText = <T>({ array, text, key }: Props<T>): T[] => {
+export const filterByText = (props: Props) => {
+  const { array, text, key } = props;
   if (!array.length || !text) {
     return [];
   }
