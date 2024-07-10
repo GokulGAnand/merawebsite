@@ -1,11 +1,13 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-interface Props {
+interface Props<T> {
   text: string;
-  array: any[];
-  key: string;
+  array: T[];
+  key: keyof T;
 }
 
-export const filterByText = (props: Props) => {
+export const filterByText = <T extends Record<string, any>>(
+  props: Props<T>,
+): T[] => {
   const { array, text, key } = props;
   if (!array.length || !text) {
     return [];

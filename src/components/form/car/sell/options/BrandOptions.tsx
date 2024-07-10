@@ -6,15 +6,16 @@ import { filterByText } from '@/utils/filter-by-string';
 import axios from 'axios';
 import { LoadingDots } from '@/components/loaders/LoadingDots';
 
+interface Brand {
+  id: string;
+  logo_with_name: string;
+  display_name: string;
+  is_usable: boolean;
+}
+
 interface DataProps {
-  popular: {
-    id: string;
-    logo_with_name: string;
-  }[];
-  results: {
-    id: string;
-    logo_with_name: string;
-  }[];
+  popular: Brand[];
+  results: Brand[];
 }
 
 async function getData() {
