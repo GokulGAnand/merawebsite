@@ -28,6 +28,7 @@ const PricingCard = (props: PricingProps) => {
   return (
     <div
       className={`mb-18 md:mb-18 lg:mb-0 ${isDisabled ? 'filter opacity-50 hidden lg:block' : ''}`}
+      style={{ display: 'flex', flexGrow: 1 }}
     >
       <div className='flex justify-center'>
         <div className='flex flex-col mx-auto rounded-lg border-bannerChipText border-[2.5px] shadow dark:text-white'>
@@ -35,7 +36,7 @@ const PricingCard = (props: PricingProps) => {
             <h3 className='mb-2 text-sm font-medium text-whiteButtonText'>
               {title}
             </h3>
-            <div className='flex items-center mb-6 gap-2'>
+            <div className='flex items-baseline mb-6 gap-2'>
               <div className='flex lg:gap-2'>
                 <span className='text-lg md:text-4xl font-bold font-roboto justify-start text-headerLinkColor'>
                   ₹
