@@ -27,21 +27,20 @@ const PricingCard = (props: PricingProps) => {
 
   return (
     <div
-      className={`mb-18 md:mb-18 lg:mb-0 justify-around ${isDisabled ? 'filter opacity-50 hidden lg:block' : ''}`}
-      style={{ display: 'flex', flexGrow: 1 }}
+      className={`flex grow mb-18 md:mb-18 lg:mb-0 justify-around ${isDisabled ? 'filter opacity-50 hidden lg:flex grow' : ''}`}
     >
       <div className='flex justify-center'>
-        <div className='flex flex-col mx-auto rounded-lg border-bannerChipText border-[2.5px] shadow dark:text-white justify-between'>
-          <div className='flex flex-col mt-6 ml-6 mr-14 w-11/12'>
+        <div className='flex flex-col mx-auto pt-7 pl-6 pb-7 pr-12 rounded-lg border-bannerChipText border-[2.5px] justify-between'>
+          <div className='flex flex-col'>
             <h3 className='mb-2 text-sm font-medium text-whiteButtonText'>
               {title}
             </h3>
             <div className='flex items-baseline mb-6 gap-2'>
               <div className='flex lg:gap-2'>
-                <span className='text-lg md:text-4xl font-bold font-roboto justify-start text-headerLinkColor'>
+                <span className='text-lg md:text-4xl font-bold font-roboto text-headerLinkColor'>
                   ₹
                 </span>
-                <span className='text-lg md:text-4xl font-bold justify-start text-headerLinkColor'>
+                <span className='text-lg md:text-4xl font-bold text-headerLinkColor'>
                   {amount}
                 </span>
               </div>
@@ -49,16 +48,13 @@ const PricingCard = (props: PricingProps) => {
                 per Month
               </span>
             </div>
-            <ul
-              role='list'
-              className='mb-8 space-y-4 text-left text-sm font-normal'
-            >
+            <ul role='list' className='mb-8 space-y-4 text-sm font-normal'>
               {rowContent.map((rowItem) => (
                 <li
                   key={rowItem}
-                  className='flex items-start text-subHeadingColor w-[100%]'
+                  className='flex text-subHeadingColor w-[100%]'
                 >
-                  <div className='flex-shrink-0 w-5 h-5 flex items-center justify-center'>
+                  <div className='flex flex-shrink-0 w-5 h-5 items-center justify-center'>
                     {icon}
                   </div>
                   <div className='ml-2 flex-col justify-center block'>
@@ -68,7 +64,7 @@ const PricingCard = (props: PricingProps) => {
               ))}
             </ul>
           </div>
-          <div className='flex items-center ml-6 mb-6 mr-12'>
+          <div className='flex items-center'>
             <Button
               variant='primary'
               className='font-bold justify-center flex rounded-lg w-full h-12'

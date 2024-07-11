@@ -12,22 +12,20 @@ const Pricing = () => {
           subHeading='Get a paid certified car inspection report quickly, tailored to your needs.'
         />
       </div>
-      <div className='flex flex-col items-center w-full lg:pt-16 pt-5'>
-        <div className='grid lg:grid-cols-3 lg:gap-2 xl:gap-32 w-[80%]'>
-          {pricingPlans.map((plan) => (
-            <PricingCard
-              key={plan.id}
-              id={plan.id}
-              icon={plan.icon}
-              title={plan.title}
-              amount={plan.amount}
-              rowContent={plan.rowContent}
-              actionContent={plan.actionContent}
-              link={plan.link}
-              isDisabled={plan.isDisabled}
-            />
-          ))}
-        </div>
+      <div className='grid lg:grid-cols-3 lg:pt-16 pt-5 lg:gap-2 xl:gap-32 2xl:w-[80%]'>
+        {pricingPlans.map((plan) => (
+          <PricingCard
+            key={plan.id}
+            id={plan.id}
+            icon={plan.icon}
+            title={plan.title}
+            amount={plan.amount}
+            rowContent={plan.rowContent}
+            actionContent={plan.actionContent}
+            link={plan.link}
+            isDisabled={plan.isDisabled}
+          />
+        ))}
       </div>
     </div>
   );
