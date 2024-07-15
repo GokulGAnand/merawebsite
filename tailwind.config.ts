@@ -90,6 +90,9 @@ export default {
         flicker: 'flicker 3s linear infinite',
         shimmer: 'shimmer 1.3s linear infinite',
       },
+      maxWidth: {
+        xxs: '13.832rem',
+      },
     },
   },
   daisyui: {

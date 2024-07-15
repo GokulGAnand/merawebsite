@@ -30,7 +30,7 @@ const PricingCard = (props: PricingProps) => {
       className={`flex grow mb-18 md:mb-18 lg:mb-0 justify-around ${isDisabled ? 'filter opacity-50 hidden lg:flex grow' : ''}`}
     >
       <div className='flex justify-center'>
-        <div className='flex flex-col mx-auto pt-7 pl-6 pb-7 pr-12 rounded-lg border-bannerChipText border-[2.5px] justify-between'>
+        <div className='flex flex-col mx-auto pt-7 pl-6 pb-7 pr-12 rounded-2xl border-bannerChipText border-[2.5px] justify-between'>
           <div className='flex flex-col'>
             <h3 className='mb-2 text-sm font-medium text-whiteButtonText'>
               {title}
@@ -48,7 +48,10 @@ const PricingCard = (props: PricingProps) => {
                 per Month
               </span>
             </div>
-            <ul role='list' className='mb-8 space-y-4 text-sm font-normal'>
+            <ul
+              role='list'
+              className='mb-8 space-y-4 text-sm font-normal max-w-xxs'
+            >
               {rowContent.map((rowItem) => (
                 <li
                   key={rowItem}

@@ -12,7 +12,7 @@ const Pricing = () => {
           subHeading='Get a paid certified car inspection report quickly, tailored to your needs.'
         />
       </div>
-      <div className='grid lg:grid-cols-3 lg:pt-16 pt-5 lg:gap-2 xl:gap-32 2xl:w-[80%]'>
+      <div className='grid lg:grid-cols-3 justify-items-center lg:pt-16 pt-5 w-[94%] lg:w-[88%]'>
         {pricingPlans.map((plan) => (
           <PricingCard
             key={plan.id}
