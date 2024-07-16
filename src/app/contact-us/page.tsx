@@ -6,11 +6,11 @@ import PageBanner from '@/components/banner/common/PageBanner';
 import Banner from 'public/images/ContactUs/ContactUsBanner.jpg';
 import AboutBannerMobile from 'public/images/AboutUs/AboutBannerMobile.png';
 
-export default function AboutPage() {
+export default function ContactPage() {
   return (
     <main>
       <Head>
-        <title>About us</title>
+        <title>Contact us</title>
       </Head>
       <section>
         <PageBanner

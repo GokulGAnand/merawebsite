@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: 'Contact Us Page',
 };
 
-export default function AboutUsLayout({
+export default function ContactUsLayout({
   children,
 }: {
   children: React.ReactNode;
