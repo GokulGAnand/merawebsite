@@ -1,11 +1,10 @@
 import Head from 'next/head';
 import * as React from 'react';
-import Faq from '@/components/strips/Faq';
-import ContactContent from '@/components/strips/ContactContent';
 import PageBanner from '@/components/banner/common/PageBanner';
-import Banner from 'public/images/Careers/BannerImage.jpg';
+import Banner from 'public/images/Careers/BannerImageNew.jpg';
 import AboutBannerMobile from 'public/images/Careers/BannerMobileImage.jpg';
 import Commitment from '@/components/strips/Commitment';
+import CareerOverview from '@/components/strips/CareerOverview';
 
 export default function CareersPage() {
   return (
@@ -20,6 +19,7 @@ export default function CareersPage() {
           srcPath={Banner}
           srcMobile={AboutBannerMobile}
         />
+        <CareerOverview />
         <Commitment />
       </section>
     </main>
