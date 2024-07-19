@@ -20,3 +20,14 @@ export const overview = [
     imageSrc: Overview,
   },
 ];
+
+export const hiring = {
+  header: 'About the Company',
+  main_header: 'Open Roles. We’re hiring!',
+  content: 'Get up to ₹20,000 when you sell and buy your next car from us.',
+};
+
+export const hiringButton = {
+  label: 'See Roles',
+  link: '/',
+};

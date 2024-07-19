@@ -14,7 +14,7 @@ export default function UsefulLinks() {
           Contact us
         </Link>
 
-        <Link className='text-sm' href='/'>
+        <Link className='text-sm' href='/careers'>
           Careers
         </Link>
 

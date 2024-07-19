@@ -16,7 +16,7 @@ const CareerSlide: React.FC<CareerSlideProps> = ({
 }) => {
   return (
     <div className='flex flex-col lg:flex-row justify-between'>
-      <div className='w-3/6 pl-36'>
+      <div className='lg:w-3/6 lg:pl-36'>
         <div className='flex flex-row mt-12 lg:mt-24'>
           <div className='flex md:hidden pt-3'>
             <Quote width={18} heigth={13} />
@@ -30,7 +30,10 @@ const CareerSlide: React.FC<CareerSlideProps> = ({
           {description}
         </p>
       </div>
-      <div className='border-serviceCardBorder border rounded-2xl mt-10 w-1/4 mr-32'>
+      <div className='hidden lg:flex border-serviceCardBorder border rounded-2xl mt-10 mr-32 w-1/4'>
+        <Image src={imageSrc} alt='Carousel slide' className='rounded-xl p-4' />
+      </div>
+      <div className='flex lg:hidden border-serviceCardBorder border rounded-2xl mt-10 w-3/4 sm:w-5/12'>
         <Image src={imageSrc} alt='Carousel slide' className='rounded-xl p-4' />
       </div>
     </div>
