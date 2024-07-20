@@ -6,6 +6,7 @@ import Button from '@/components/buttons/Button';
 import { GrFormNextLink } from 'react-icons/gr';
 import NextImage from '@/components/NextImage';
 import { useRouter } from 'next/navigation';
+import SectionBannerImage from '../SectionBannerImage';
 
 type downloadLink = string;
 
@@ -17,17 +18,10 @@ const CallToAction = () => {
   return (
     <SectionBlock className='last:pb-0 mt-10'>
       <div className='relative flex w-full overflow-hidden  bg-gray-100  pt-10 pb-48 md:pt-8 px-[6%] md:px-[6.15%] lg:px-[7%]  xl:px-[7.25%] lg:py-24'>
-        <NextImage
-          src={ToyCarBanner}
-          layout='fill'
-          alt='car'
-          className='hidden lg:flex'
-        />
-        <NextImage
-          src={ToyCarBannerMobile}
-          layout='fill'
-          alt='background pattern'
-          className='flex lg:hidden'
+        <SectionBannerImage
+          Banner={ToyCarBanner}
+          BannerMobile={ToyCarBannerMobile}
+          BannerTab=''
         />
         <div className='z-0 flex w-full justify-between '>
           <div className='flex max-w-[500px] flex-col   items-start'>

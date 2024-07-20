@@ -5,6 +5,7 @@ import Banner from 'public/images/Careers/BannerImageNew.jpg';
 import AboutBannerMobile from 'public/images/Careers/BannerMobileImage.jpg';
 import Commitment from '@/components/strips/Commitment';
 import CareerOverview from '@/components/strips/CareerOverview';
+import Hiring from '@/components/strips/Hiring';
 
 export default function CareersPage() {
   return (
@@ -20,6 +21,7 @@ export default function CareersPage() {
           srcMobile={AboutBannerMobile}
         />
         <CareerOverview />
+        <Hiring />
         <Commitment />
       </section>
     </main>

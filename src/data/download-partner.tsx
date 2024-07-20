@@ -1,7 +1,14 @@
 import PlayStoreButton from '~/svg/PlayStoreVector.svg';
 import AppStoreButton from '~/svg/AppStoreVector.svg';
+import { ReactElement } from 'react';
 
-export const downloadButton = [
+interface DownloadButton {
+  label: string;
+  icon?: ReactElement;
+  link: string;
+}
+
+export const downloadButton: DownloadButton[] = [
   {
     label: 'Playstore Button',
     icon: <PlayStoreButton width={144} height={33} />,
