@@ -1,9 +1,11 @@
 import Overview from '~/images/Careers/OverviewImage.png';
 import Vector from '~/images/Careers/Vector.png';
 import VectorMobile from '~/images/Careers/VectorMobile.png';
+import { SlideButtonVariant } from './home-buttons';
 
 interface hiringButton {
   label: string;
+  variant: SlideButtonVariant;
   link: string;
 }
 
@@ -40,6 +42,7 @@ export const hiring = {
 export const hiringButton: hiringButton[] = [
   {
     label: 'See Roles',
+    variant: 'primary',
     link: '/',
   },
 ];
