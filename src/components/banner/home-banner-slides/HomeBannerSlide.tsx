@@ -1,6 +1,5 @@
 'use client';
 import SlideContents from '@/components/banner/home-banner-slides/SlideContents';
-import NextImage from '@/components/NextImage';
 import { StaticImageData } from 'next/image';
 import ImageSlide from './ImageSlide';
 

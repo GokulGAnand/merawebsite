@@ -4,9 +4,8 @@ import ToyCarBanner from '~/images/ToyCarBanner.png';
 import ToyCarBannerMobile from '~/images/ToyCarMobileBanner.png';
 import Button from '@/components/buttons/Button';
 import { GrFormNextLink } from 'react-icons/gr';
-import NextImage from '@/components/NextImage';
 import { useRouter } from 'next/navigation';
-import SectionBannerImage from '../SectionBannerImage';
+import SectionBannerBackground from '../SectionBannerBackground';
 
 type downloadLink = string;
 
@@ -18,7 +17,7 @@ const CallToAction = () => {
   return (
     <SectionBlock className='last:pb-0 mt-10'>
       <div className='relative flex w-full overflow-hidden  bg-gray-100  pt-10 pb-48 md:pt-8 px-[6%] md:px-[6.15%] lg:px-[7%]  xl:px-[7.25%] lg:py-24'>
-        <SectionBannerImage
+        <SectionBannerBackground
           Banner={ToyCarBanner}
           BannerMobile={ToyCarBannerMobile}
           BannerTab=''

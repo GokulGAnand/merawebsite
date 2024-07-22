@@ -2,6 +2,8 @@ import Overview from '~/images/Careers/OverviewImage.png';
 import Vector from '~/images/Careers/Vector.png';
 import VectorMobile from '~/images/Careers/VectorMobile.png';
 import { SlideButtonVariant } from './home-buttons';
+import HiringBanner from '~/images/Careers/HiringBanner.png';
+import HiringBannerMobile from '~/images/Careers/HiringBannerMobile.png';
 
 interface hiringButton {
   label: string;
@@ -35,6 +37,8 @@ export const hiring = {
   main_header: 'Open Roles. We’re hiring!',
   content:
     'Sell your car easily and get a top price with MeraCars Sell your car easily and get a top price with Mera Cars Sell your car easily.',
+  image: HiringBanner,
+  mobile_image: HiringBannerMobile,
   vector: Vector,
   vector_mobile: VectorMobile,
 };

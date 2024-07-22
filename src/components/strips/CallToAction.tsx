@@ -5,6 +5,8 @@ import { ReactElement } from 'react';
 import clsx from 'clsx';
 import { SlideButtonVariant } from '@/data/home-buttons';
 import { GrFormNextLink } from 'react-icons/gr';
+import SectionBannerImage from '../SectionBannerImage';
+import { StaticImageData } from 'next/image';
 
 type downloadLink = string;
 
@@ -19,6 +21,8 @@ interface props {
   header: string;
   main_header: string;
   content: string;
+  image?: StaticImageData;
+  mobileImage?: StaticImageData;
   isHiring?: boolean;
   buttonData: ButtonData[];
 }
@@ -27,6 +31,8 @@ export default function CallToAction({
   header,
   main_header,
   content,
+  image,
+  mobileImage,
   isHiring,
   buttonData,
 }: props) {
@@ -37,8 +43,13 @@ export default function CallToAction({
   };
 
   return (
-    <div className='z-0 flex w-[595px] justify-between'>
-      <div className='flex w-full flex-col items-start'>
+    <div className='z-0 flex w-full'>
+      {isHiring && (
+        <div className='hidden lg:flex'>
+          <SectionBannerImage image={image} />
+        </div>
+      )}
+      <div className='flex justify-end flex-col'>
         <div className='flex flex-col gap-4 pb-0 w-[86%] md:w-full'>
           <ul
             className={clsx(
@@ -79,7 +90,7 @@ export default function CallToAction({
                 <Button
                   key={index}
                   variant={buttonContent.variant}
-                  className='font-bold text-center flex justify-center rounded-lg min-w-48 min-h-16  '
+                  className='font-bold text-center flex justify-center rounded-lg min-w-48 min-h-16'
                   rightIcon={GrFormNextLink}
                   onClick={() => handleClick(buttonContent.link)}
                 >
@@ -98,6 +109,11 @@ export default function CallToAction({
               ))}
         </div>
       </div>
+      {isHiring && (
+        <div className='flex lg:hidden'>
+          <SectionBannerImage image={mobileImage} />
+        </div>
+      )}
     </div>
   );
 }
