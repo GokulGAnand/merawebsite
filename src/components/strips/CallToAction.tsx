@@ -43,13 +43,20 @@ export default function CallToAction({
   };
 
   return (
-    <div className='z-0 flex w-full'>
+    <div
+      className={clsx(
+        'z-0 flex',
+        isHiring
+          ? 'flex-col lg:flex-row w-[90%] lg:w-[88%] xl:w-[85%]'
+          : 'w-[595px]',
+      )}
+    >
       {isHiring && (
-        <div className='hidden lg:flex'>
+        <div className='hidden lg:flex w-full'>
           <SectionBannerImage image={image} />
         </div>
       )}
-      <div className='flex justify-end flex-col'>
+      <div className={clsx('flex flex-col', isHiring ? 'w-full my-auto' : '')}>
         <div className='flex flex-col gap-4 pb-0 w-[86%] md:w-full'>
           <ul
             className={clsx(
@@ -57,7 +64,7 @@ export default function CallToAction({
               isHiring ? 'text-bannerChipText' : 'text-white',
             )}
           >
-            <li className='flex items-center text-sm lg:text-md font-bold lg:bg-transparent flex-1 w-fit px-3 lg:px-0 lg:py-0 rounded-3xl'>
+            <li className='flex items-center text-sm lg:text-md font-bold lg:bg-transparent flex-1 w-fit rounded-3xl'>
               <span
                 className={clsx(
                   'h-1 w-1 rounded-full mr-1',
@@ -77,8 +84,8 @@ export default function CallToAction({
           </div>
           <div
             className={clsx(
-              'text-sm lg:text-lg w-full',
-              isHiring ? 'text-subHeadingColor' : 'text-white',
+              'text-sm lg:text-lg',
+              isHiring ? 'text-subHeadingColor w-[86%]' : 'text-white',
             )}
           >
             {content}
@@ -90,7 +97,7 @@ export default function CallToAction({
                 <Button
                   key={index}
                   variant={buttonContent.variant}
-                  className='font-bold text-center flex justify-center rounded-lg min-w-48 min-h-16'
+                  className='font-bold text-center flex justify-center rounded-lg min-w-40 min-h-12 max-w-48 max-h-16'
                   rightIcon={GrFormNextLink}
                   onClick={() => handleClick(buttonContent.link)}
                 >

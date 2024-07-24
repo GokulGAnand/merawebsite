@@ -35,8 +35,7 @@ export const overview = [
 export const hiring = {
   header: 'About the Company',
   main_header: 'Open Roles. We’re hiring!',
-  content:
-    'Sell your car easily and get a top price with MeraCars Sell your car easily and get a top price with Mera Cars Sell your car easily.',
+  content: 'Get up to ₹20,000 when you sell and buy your next car from us.',
   image: HiringBanner,
   mobile_image: HiringBannerMobile,
   vector: Vector,

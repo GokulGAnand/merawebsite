@@ -5,23 +5,22 @@ import { overview } from '@/data/career';
 
 const CareerOverview = () => {
   return (
-    <div className='flex mt-12 lg:mt-16'>
-      <div className='w-full h-[600px]'>
+    <div className='flex px-4 lg:px:0 justify-center'>
+      <div className='flex w-[90%] lg:w-[88%] xl:w-[85%] h-[600px]'>
         <Carousel
           pauseOnHover
           leftControl
           rightControl
-          slideInterval={100000}
+          slide={false}
           indicators
           theme={{
             indicators: {
-              base: 'w-32 h-1 hover:bg-gray-400 rounded-none',
+              base: 'w-24 lg:w-32 h-1 hover:bg-gray-400 rounded-none',
               active: {
                 off: 'bg-subHeadingColor opacity-20',
                 on: 'bg-stepsText hover:bg-white',
               },
-              wrapper:
-                'flex absolute left-1/4 bottom-1/4 -translate-x-1/2 space-x-1 gap-x-3',
+              wrapper: 'flex gap-2 lg:gap-3 lg:-mt-[13%]',
             },
           }}
         >
