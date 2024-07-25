@@ -8,6 +8,7 @@ import { OptionsWithHeading } from './OptionsWithHeading';
 import { SearchVariantOptions } from './SearchVariantOptions';
 import axios from 'axios';
 import { LoadingDots } from '@/components/loaders/LoadingDots';
+import FormSideHeading from '@/components/form/components/FormSideHeading';
 
 interface DataProps {
   results: Options[];
@@ -73,6 +74,9 @@ export default function VariantOptions() {
 
   const showTransmission = selectedFuel && !selectedTransmission;
   const showVarients = selectedFuel && selectedTransmission;
+  const showVarientOpts = showVarients && varientOpts.length;
+
+  console.log(varientOpts, 'dataCheck');
 
   return data ? (
     <>
@@ -90,8 +94,10 @@ export default function VariantOptions() {
           optionType='transmission'
         />
       )}
-      {showVarients && varientOpts.length && (
+      {showVarientOpts ? (
         <SearchVariantOptions varients={varientOpts} />
+      ) : (
+        <FormSideHeading text='No Data' />
       )}
     </>
   ) : (
