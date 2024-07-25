@@ -15,7 +15,8 @@ export default function CareersPage() {
       </Head>
       <section>
         <PageBanner
-          heading='Explore Exciting Career Opportunities With Us'
+          heading='Explore Exciting Career'
+          lastpartHeading='Opportunities With Us'
           subHeading='Home/Careers'
           srcPath={Banner}
           srcMobile={AboutBannerMobile}

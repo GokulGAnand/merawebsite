@@ -5,13 +5,14 @@ import MeraVector from '~/svg/MeraCarsVector.svg';
 
 interface Props {
   heading: string;
+  lastpartHeading?: string;
   subHeading?: string;
   isStart?: boolean;
   isBannerHead?: boolean;
 }
 
 export default function HeaderWithBranding(props: Props) {
-  const { heading, subHeading, isStart, isBannerHead } = props;
+  const { heading, lastpartHeading, subHeading, isStart, isBannerHead } = props;
   return (
     <div
       className={clsx(
@@ -38,6 +39,16 @@ export default function HeaderWithBranding(props: Props) {
             )}
           >
             {heading}
+          </div>
+          <div
+            className={clsx(
+              'flex ',
+              isBannerHead
+                ? 'text-white md:text-5xl sm:text-4xl text-3xl '
+                : 'text-stepsText text-xl sm:text-2xl md:text-3xl',
+            )}
+          >
+            {lastpartHeading}
           </div>
         </div>
       </div>

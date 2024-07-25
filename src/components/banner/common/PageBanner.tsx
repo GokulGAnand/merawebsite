@@ -4,6 +4,7 @@ import Image, { StaticImageData } from 'next/image';
 
 interface PageBannerProps {
   heading: string;
+  lastpartHeading?: string;
   subHeading: string;
   image?: React.ReactNode;
   srcPath?: StaticImageData;
@@ -12,7 +13,8 @@ interface PageBannerProps {
 }
 
 const PageBanner = (props: PageBannerProps) => {
-  const { heading, subHeading, srcPath, srcMobile, srcTab } = props;
+  const { heading, lastpartHeading, subHeading, srcPath, srcMobile, srcTab } =
+    props;
   return (
     <div className='hero min-h-[300px] bg-gradient-to-r from-[#53BDE5] to-[#2B6FB7] bg-opacity-90 relative'>
       <>
@@ -46,6 +48,7 @@ const PageBanner = (props: PageBannerProps) => {
         <div className='max-w-xl absolute z-40'>
           <HeaderWithBranding
             heading={heading}
+            lastpartHeading={lastpartHeading}
             subHeading={subHeading}
             isBannerHead
           />

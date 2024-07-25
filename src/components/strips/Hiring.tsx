@@ -14,6 +14,7 @@ const Hiring = () => {
           Banner={hiring.vector}
           BannerMobile={hiring.vector_mobile}
           BannerTab=''
+          isHiring
         />
         <HiringSection
           header={hiring.header}

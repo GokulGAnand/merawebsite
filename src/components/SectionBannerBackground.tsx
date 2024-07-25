@@ -1,36 +1,54 @@
 import React from 'react';
 import NextImage from './NextImage';
 import { StaticImageData } from 'next/image';
+import clsx from 'clsx';
 
-interface props {
+interface Props {
   Banner: StaticImageData;
   BannerMobile: StaticImageData;
   BannerTab: StaticImageData | '';
+  isHiring?: boolean;
 }
 
-const SectionBannerBackground = (props: props) => {
-  const { Banner, BannerMobile, BannerTab } = props;
+const SectionBannerBackground = (props: Props) => {
+  const { Banner, BannerMobile, BannerTab, isHiring } = props;
   return (
     <>
-      <NextImage
-        src={Banner}
-        layout='fill'
-        alt='background pattern'
-        className='hidden lg:flex'
-      />
-      <NextImage
-        src={BannerMobile}
-        layout='fill'
-        alt='background pattern'
-        className='flex lg:hidden'
-      />
-      {BannerTab && (
+      <div
+        className={clsx(
+          'absolute inset-0 hidden lg:flex',
+          isHiring ? 'right-60' : '',
+        )}
+      >
         <NextImage
-          src={BannerTab}
+          src={Banner}
           layout='fill'
           alt='background pattern'
-          className='hidden md:flex lg:hidden'
+          className='w-full h-full'
         />
+      </div>
+      <div
+        className={clsx(
+          'absolute inset-0 flex lg:hidden',
+          isHiring ? 'h-[30%] top-40' : '',
+        )}
+      >
+        <NextImage
+          src={BannerMobile}
+          layout='fill'
+          alt='background pattern'
+          className='w-full h-full'
+        />
+      </div>
+      {BannerTab && (
+        <div className='absolute inset-0 hidden md:flex lg:hidden'>
+          <NextImage
+            src={BannerTab}
+            layout='fill'
+            alt='background pattern'
+            className='w-full h-full'
+          />
+        </div>
       )}
     </>
   );
