@@ -74,7 +74,7 @@ export default function VariantOptions() {
 
   const showTransmission = selectedFuel && !selectedTransmission;
   const showVarients = selectedFuel && selectedTransmission;
-  const showVarientOpts = showVarients && varientOpts.length;
+  const showVarientOptions = showVarients && varientOpts.length;
 
   console.log(varientOpts, 'dataCheck');
 
@@ -94,11 +94,13 @@ export default function VariantOptions() {
           optionType='transmission'
         />
       )}
-      {showVarientOpts ? (
-        <SearchVariantOptions varients={varientOpts} />
-      ) : (
-        <FormSideHeading text='No Data' />
-      )}
+      {showVarients ? (
+        showVarientOptions ? (
+          <SearchVariantOptions varients={varientOpts} />
+        ) : (
+          <FormSideHeading text='No Data' />
+        )
+      ) : null}
     </>
   ) : (
     <LoadingDots />
