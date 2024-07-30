@@ -5,7 +5,7 @@ import { overview } from '@/data/career';
 
 const CareerOverview = () => {
   return (
-    <div className='flex px-4 lg:px:0 justify-center'>
+    <div className='flex px-4 lg:px-1 justify-center'>
       <div className='flex w-[90%] lg:w-[88%] xl:w-[85%] h-[600px]'>
         <Carousel
           pauseOnHover
@@ -20,7 +20,7 @@ const CareerOverview = () => {
                 off: 'bg-subHeadingColor opacity-20',
                 on: 'bg-stepsText hover:bg-white',
               },
-              wrapper: 'flex gap-2 lg:gap-3 lg:-mt-[13%]',
+              wrapper: 'flex gap-2 lg:gap-3 lg:-mt-[13%] lg:pl-2',
             },
           }}
         >

@@ -8,7 +8,7 @@ import SectionBannerBackground from '../SectionBannerBackground';
 
 const Hiring = () => {
   return (
-    <SectionBlock className='last:pb-0 mt-10 pb-12 lg:pb-44'>
+    <SectionBlock className='last:pb-0 mt-10 pb-12 lg:pb-16'>
       <div className='relative flex w-full overflow-hidden bg-contactFormBackgroundColor pt-8 lg:pt-0 pl-4 lg:pl-0 justify-center'>
         <SectionBannerBackground
           Banner={hiring.vector}

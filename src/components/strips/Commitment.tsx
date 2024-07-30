@@ -6,7 +6,7 @@ const Commitment = () => {
   const headerData = titleContent;
   return (
     <div className='flex justify-center'>
-      <div className='flex-col mt-12 text-center lg:mt-16 w-[90%] lg:w-[88%] xl:w-[85%]'>
+      <div className='flex-col text-center w-[90%] lg:w-[88%] xl:w-[85%]'>
         <div className='text-lg lg:text-3xl font-bold text-stepsText'>
           {headerData.header}
         </div>

@@ -46,6 +46,6 @@ export const hiringButton: hiringButton[] = [
   {
     label: 'See Roles',
     variant: 'primary',
-    link: '/',
+    link: 'https://www.linkedin.com/jobs/search/?currentJobId=3982717294&distance=25&geoId=102713980&keywords=mera%20cars%20by%20teamtech&origin=JOBS_HOME_KEYWORD_HISTORY&refresh=true',
   },
 ];
